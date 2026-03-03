@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SUPER MARIO BROS PRO2: Fichero Fuente Stack.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SUPER MARIO BROS PRO2
+   &#160;<span id="projectnumber">1</span>
+   </div>
+   <div id="projectbrief">Un juego basado en el primer super Mario Bros de la NES con tematica de componentes informaticos retro</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Stack.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Stack_8hh.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef STACK__HH</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define STACK__HH</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepro2.html">pro2</a>{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classpro2_1_1Stack.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classpro2_1_1Stack.html">Stack</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="comment">// Items:</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structpro2_1_1Stack_1_1Item.html">   17</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structpro2_1_1Stack_1_1Item.html">Item</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structpro2_1_1Stack_1_1Item.html#a7a920f6e81027a2f5128f10fe4e832dd">   18</a></span>&#160;    T <a class="code" href="structpro2_1_1Stack_1_1Item.html#a7a920f6e81027a2f5128f10fe4e832dd">value</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structpro2_1_1Stack_1_1Item.html#a296ab4e86ec48b463adaa35fa8837443">   19</a></span>&#160;    <a class="code" href="structpro2_1_1Stack_1_1Item.html">Item</a>* <a class="code" href="structpro2_1_1Stack_1_1Item.html#a296ab4e86ec48b463adaa35fa8837443">next</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  };</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="comment">// Data:</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classpro2_1_1Stack.html#ac0108c0668d35c703e698e4436d07dda">   24</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classpro2_1_1Stack.html#ac0108c0668d35c703e698e4436d07dda">_size</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classpro2_1_1Stack.html#aa1cecf3dc50001bbc8edd2bb9140b4f1">   25</a></span>&#160;  <a class="code" href="structpro2_1_1Stack_1_1Item.html">Item</a>* <a class="code" href="classpro2_1_1Stack.html#aa1cecf3dc50001bbc8edd2bb9140b4f1">ptopitem</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="comment">// Helpers:</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classpro2_1_1Stack.html#a08b24455f127b5ff4d6782f54bdeb163">   29</a></span>&#160;  <a class="code" href="structpro2_1_1Stack_1_1Item.html">Item</a>* <a class="code" href="classpro2_1_1Stack.html#a08b24455f127b5ff4d6782f54bdeb163">copyItems</a>(<a class="code" href="structpro2_1_1Stack_1_1Item.html">Item</a> *pitem) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">if</span> (pitem == NULL) <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="structpro2_1_1Stack_1_1Item.html">Item</a> *pfirstitem = <span class="keyword">new</span> <a class="code" href="structpro2_1_1Stack_1_1Item.html">Item</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="structpro2_1_1Stack_1_1Item.html">Item</a> *pcurrentitem = pfirstitem;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">while</span> (pitem != NULL) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      pcurrentitem-&gt;<a class="code" href="structpro2_1_1Stack_1_1Item.html#a7a920f6e81027a2f5128f10fe4e832dd">value</a> = pitem-&gt;<a class="code" href="structpro2_1_1Stack_1_1Item.html#a7a920f6e81027a2f5128f10fe4e832dd">value</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keywordflow">if</span> (pitem-&gt;<a class="code" href="structpro2_1_1Stack_1_1Item.html#a296ab4e86ec48b463adaa35fa8837443">next</a> != NULL) pcurrentitem-&gt;<a class="code" href="structpro2_1_1Stack_1_1Item.html#a296ab4e86ec48b463adaa35fa8837443">next</a> = <span class="keyword">new</span> <a class="code" href="structpro2_1_1Stack_1_1Item.html">Item</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="keywordflow">else</span> pcurrentitem-&gt;<a class="code" href="structpro2_1_1Stack_1_1Item.html#a296ab4e86ec48b463adaa35fa8837443">next</a> = NULL;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      pcurrentitem = pcurrentitem-&gt;<a class="code" href="structpro2_1_1Stack_1_1Item.html#a296ab4e86ec48b463adaa35fa8837443">next</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      pitem = pitem-&gt;<a class="code" href="structpro2_1_1Stack_1_1Item.html#a296ab4e86ec48b463adaa35fa8837443">next</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> pfirstitem;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classpro2_1_1Stack.html#a54b6a56d625c3ec4ceccd074799ec8ad">   43</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classpro2_1_1Stack.html#a54b6a56d625c3ec4ceccd074799ec8ad">deleteItems</a>()</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="structpro2_1_1Stack_1_1Item.html">Item</a> *pitem = ptopitem;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">while</span> (pitem != NULL) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <a class="code" href="structpro2_1_1Stack_1_1Item.html">Item</a> *pitemaux = pitem;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      pitem = pitem-&gt;<a class="code" href="structpro2_1_1Stack_1_1Item.html#a296ab4e86ec48b463adaa35fa8837443">next</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keyword">delete</span> pitemaux;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    _size = 0;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="comment">// Constructors/destructors.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classpro2_1_1Stack.html#ac8177590ad689b65f9ab1f9fdef49422">   57</a></span>&#160;  <a class="code" href="classpro2_1_1Stack.html#ac8177590ad689b65f9ab1f9fdef49422">Stack</a>() {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    ptopitem = NULL;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    _size = 0;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 300; ++i) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      push(1);  <span class="comment">// inserta  1 300 veces para time;</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;   </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classpro2_1_1Stack.html#a1f0cd97bad7cd292a420932d873391b3">   65</a></span>&#160;  <a class="code" href="classpro2_1_1Stack.html#a1f0cd97bad7cd292a420932d873391b3">Stack</a>(<span class="keyword">const</span> <a class="code" href="classpro2_1_1Stack.html">Stack&lt;T&gt;</a> &amp;<a class="code" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    ptopitem = copyItems(<a class="code" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>.ptopitem);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    _size = <a class="code" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>._size;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classpro2_1_1Stack.html#a61cea0bf2159e83df24df11cd92c0433">   70</a></span>&#160;  <a class="code" href="classpro2_1_1Stack.html#a61cea0bf2159e83df24df11cd92c0433">~Stack</a>() {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    deleteItems();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="comment">// Assignment:</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classpro2_1_1Stack.html#a6585c88f848e5d118fad513ba4a029af">   76</a></span>&#160;  <a class="code" href="classpro2_1_1Stack.html">Stack&lt;T&gt;</a> &amp;<a class="code" href="classpro2_1_1Stack.html#a6585c88f848e5d118fad513ba4a029af">operator=</a>(<span class="keyword">const</span> <a class="code" href="classpro2_1_1Stack.html">Stack&lt;T&gt;</a> &amp;<a class="code" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>) {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;<a class="code" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      deleteItems();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      ptopitem = copyItems(<a class="code" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>.ptopitem);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      _size = <a class="code" href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a>._size;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="comment">// Standard functions:</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classpro2_1_1Stack.html#a1b761de09a8514a69bbcd186e211b8cc">   87</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classpro2_1_1Stack.html#a1b761de09a8514a69bbcd186e211b8cc">size</a>() {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">return</span> _size;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classpro2_1_1Stack.html#aa5df380e38e0a732ccb7f78f0f598a84">   91</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classpro2_1_1Stack.html#aa5df380e38e0a732ccb7f78f0f598a84">empty</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> ptopitem == NULL;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classpro2_1_1Stack.html#ad1df86661024ed3349ebe717729e52a1">   95</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classpro2_1_1Stack.html#ad1df86661024ed3349ebe717729e52a1">push</a>(T value) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="structpro2_1_1Stack_1_1Item.html">Item</a> *pnewitem = <span class="keyword">new</span> <a class="code" href="structpro2_1_1Stack_1_1Item.html">Item</a>();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    pnewitem-&gt;<a class="code" href="structpro2_1_1Stack_1_1Item.html#a7a920f6e81027a2f5128f10fe4e832dd">value</a> = value;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    pnewitem-&gt;<a class="code" href="structpro2_1_1Stack_1_1Item.html#a296ab4e86ec48b463adaa35fa8837443">next</a> = ptopitem;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    ptopitem = pnewitem;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    _size++;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  </div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classpro2_1_1Stack.html#ab4c606e185aaf7ef6fb05139f030cb7a">  103</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classpro2_1_1Stack.html#ab4c606e185aaf7ef6fb05139f030cb7a">pop</a>() {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">if</span> (ptopitem == NULL) {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      cerr &lt;&lt; <span class="stringliteral">&quot;Error: pop on empty stack&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      exit(1);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="code" href="structpro2_1_1Stack_1_1Item.html">Item</a> *paux = ptopitem;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    ptopitem = ptopitem-&gt;<a class="code" href="structpro2_1_1Stack_1_1Item.html#a296ab4e86ec48b463adaa35fa8837443">next</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keyword">delete</span> paux;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    _size--;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    </div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classpro2_1_1Stack.html#a8deba03f4741da4cd85147fdd3a4ccc3">  114</a></span>&#160;  T <a class="code" href="classpro2_1_1Stack.html#a8deba03f4741da4cd85147fdd3a4ccc3">top</a>() {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">if</span> (ptopitem == NULL) {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      cerr &lt;&lt; <span class="stringliteral">&quot;Error: accessing top of empty stack&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      exit(1);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">return</span> ptopitem-&gt;<a class="code" href="structpro2_1_1Stack_1_1Item.html#a7a920f6e81027a2f5128f10fe4e832dd">value</a>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    </div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="classpro2_1_1Stack.html#a9d953de1561ab78b1bf3d74885bd2827">  122</a></span>&#160;  <span class="keyword">const</span> T <a class="code" href="classpro2_1_1Stack.html#a9d953de1561ab78b1bf3d74885bd2827">top</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">if</span> (ptopitem == NULL) {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      cerr &lt;&lt; <span class="stringliteral">&quot;Error: accessing top of empty stack&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      exit(1);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">return</span> ptopitem-&gt;<a class="code" href="structpro2_1_1Stack_1_1Item.html#a7a920f6e81027a2f5128f10fe4e832dd">value</a>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;};</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}<span class="comment">//namespace pro2</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclasspro2_1_1Stack_html"><div class="ttname"><a href="classpro2_1_1Stack.html">pro2::Stack</a></div><div class="ttdef"><b>Definition:</b> <a href="Stack_8hh_source.html#l00012">Stack.hh:12</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Stack_html_a08b24455f127b5ff4d6782f54bdeb163"><div class="ttname"><a href="classpro2_1_1Stack.html#a08b24455f127b5ff4d6782f54bdeb163">pro2::Stack::copyItems</a></div><div class="ttdeci">Item * copyItems(Item *pitem)</div><div class="ttdef"><b>Definition:</b> <a href="Stack_8hh_source.html#l00029">Stack.hh:29</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Stack_html_a1b761de09a8514a69bbcd186e211b8cc"><div class="ttname"><a href="classpro2_1_1Stack.html#a1b761de09a8514a69bbcd186e211b8cc">pro2::Stack::size</a></div><div class="ttdeci">int size()</div><div class="ttdef"><b>Definition:</b> <a href="Stack_8hh_source.html#l00087">Stack.hh:87</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Stack_html_a1f0cd97bad7cd292a420932d873391b3"><div class="ttname"><a href="classpro2_1_1Stack.html#a1f0cd97bad7cd292a420932d873391b3">pro2::Stack::Stack</a></div><div class="ttdeci">Stack(const Stack&lt; T &gt; &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="Stack_8hh_source.html#l00065">Stack.hh:65</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Stack_html_a54b6a56d625c3ec4ceccd074799ec8ad"><div class="ttname"><a href="classpro2_1_1Stack.html#a54b6a56d625c3ec4ceccd074799ec8ad">pro2::Stack::deleteItems</a></div><div class="ttdeci">void deleteItems()</div><div class="ttdef"><b>Definition:</b> <a href="Stack_8hh_source.html#l00043">Stack.hh:43</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Stack_html_a61cea0bf2159e83df24df11cd92c0433"><div class="ttname"><a href="classpro2_1_1Stack.html#a61cea0bf2159e83df24df11cd92c0433">pro2::Stack::~Stack</a></div><div class="ttdeci">~Stack()</div><div class="ttdef"><b>Definition:</b> <a href="Stack_8hh_source.html#l00070">Stack.hh:70</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Stack_html_a6585c88f848e5d118fad513ba4a029af"><div class="ttname"><a href="classpro2_1_1Stack.html#a6585c88f848e5d118fad513ba4a029af">pro2::Stack::operator=</a></div><div class="ttdeci">Stack&lt; T &gt; &amp; operator=(const Stack&lt; T &gt; &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="Stack_8hh_source.html#l00076">Stack.hh:76</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Stack_html_a8deba03f4741da4cd85147fdd3a4ccc3"><div class="ttname"><a href="classpro2_1_1Stack.html#a8deba03f4741da4cd85147fdd3a4ccc3">pro2::Stack::top</a></div><div class="ttdeci">T top()</div><div class="ttdef"><b>Definition:</b> <a href="Stack_8hh_source.html#l00114">Stack.hh:114</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Stack_html_a9d953de1561ab78b1bf3d74885bd2827"><div class="ttname"><a href="classpro2_1_1Stack.html#a9d953de1561ab78b1bf3d74885bd2827">pro2::Stack::top</a></div><div class="ttdeci">const T top() const</div><div class="ttdef"><b>Definition:</b> <a href="Stack_8hh_source.html#l00122">Stack.hh:122</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Stack_html_aa1cecf3dc50001bbc8edd2bb9140b4f1"><div class="ttname"><a href="classpro2_1_1Stack.html#aa1cecf3dc50001bbc8edd2bb9140b4f1">pro2::Stack::ptopitem</a></div><div class="ttdeci">Item * ptopitem</div><div class="ttdef"><b>Definition:</b> <a href="Stack_8hh_source.html#l00025">Stack.hh:25</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Stack_html_aa5df380e38e0a732ccb7f78f0f598a84"><div class="ttname"><a href="classpro2_1_1Stack.html#aa5df380e38e0a732ccb7f78f0f598a84">pro2::Stack::empty</a></div><div class="ttdeci">bool empty() const</div><div class="ttdef"><b>Definition:</b> <a href="Stack_8hh_source.html#l00091">Stack.hh:91</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Stack_html_ab4c606e185aaf7ef6fb05139f030cb7a"><div class="ttname"><a href="classpro2_1_1Stack.html#ab4c606e185aaf7ef6fb05139f030cb7a">pro2::Stack::pop</a></div><div class="ttdeci">void pop()</div><div class="ttdef"><b>Definition:</b> <a href="Stack_8hh_source.html#l00103">Stack.hh:103</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Stack_html_ac0108c0668d35c703e698e4436d07dda"><div class="ttname"><a href="classpro2_1_1Stack.html#ac0108c0668d35c703e698e4436d07dda">pro2::Stack::_size</a></div><div class="ttdeci">int _size</div><div class="ttdef"><b>Definition:</b> <a href="Stack_8hh_source.html#l00024">Stack.hh:24</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Stack_html_ac8177590ad689b65f9ab1f9fdef49422"><div class="ttname"><a href="classpro2_1_1Stack.html#ac8177590ad689b65f9ab1f9fdef49422">pro2::Stack::Stack</a></div><div class="ttdeci">Stack()</div><div class="ttdef"><b>Definition:</b> <a href="Stack_8hh_source.html#l00057">Stack.hh:57</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Stack_html_ad1df86661024ed3349ebe717729e52a1"><div class="ttname"><a href="classpro2_1_1Stack.html#ad1df86661024ed3349ebe717729e52a1">pro2::Stack::push</a></div><div class="ttdeci">void push(T value)</div><div class="ttdef"><b>Definition:</b> <a href="Stack_8hh_source.html#l00095">Stack.hh:95</a></div></div>
+<div class="ttc" id="amario_8cc_html_af8696c95f62af6274dc8b026e8cad660"><div class="ttname"><a href="mario_8cc.html#af8696c95f62af6274dc8b026e8cad660">s</a></div><div class="ttdeci">const int s</div><div class="ttdef"><b>Definition:</b> <a href="mario_8cc_source.html#l00008">mario.cc:8</a></div></div>
+<div class="ttc" id="anamespacepro2_html"><div class="ttname"><a href="namespacepro2.html">pro2</a></div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hh_source.html#l00004">geometry.hh:4</a></div></div>
+<div class="ttc" id="astructpro2_1_1Stack_1_1Item_html"><div class="ttname"><a href="structpro2_1_1Stack_1_1Item.html">pro2::Stack::Item</a></div><div class="ttdef"><b>Definition:</b> <a href="Stack_8hh_source.html#l00017">Stack.hh:17</a></div></div>
+<div class="ttc" id="astructpro2_1_1Stack_1_1Item_html_a296ab4e86ec48b463adaa35fa8837443"><div class="ttname"><a href="structpro2_1_1Stack_1_1Item.html#a296ab4e86ec48b463adaa35fa8837443">pro2::Stack::Item::next</a></div><div class="ttdeci">Item * next</div><div class="ttdef"><b>Definition:</b> <a href="Stack_8hh_source.html#l00019">Stack.hh:19</a></div></div>
+<div class="ttc" id="astructpro2_1_1Stack_1_1Item_html_a7a920f6e81027a2f5128f10fe4e832dd"><div class="ttname"><a href="structpro2_1_1Stack_1_1Item.html#a7a920f6e81027a2f5128f10fe4e832dd">pro2::Stack::Item::value</a></div><div class="ttdeci">T value</div><div class="ttdef"><b>Definition:</b> <a href="Stack_8hh_source.html#l00018">Stack.hh:18</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

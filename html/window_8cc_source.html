@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SUPER MARIO BROS PRO2: Fichero Fuente window.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SUPER MARIO BROS PRO2
+   &#160;<span id="projectnumber">1</span>
+   </div>
+   <div id="projectbrief">Un juego basado en el primer super Mario Bros de la NES con tematica de componentes informaticos retro</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">window.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="window_8cc.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// &lt;HUGE-WARNING&gt;: This #include has to be first, don&#39;t move it!</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;fenster.h&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// &lt;/HUGE-WARNING&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="window_8hh.html">window.hh</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> std::string;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepro2.html">pro2</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classpro2_1_1Window.html#a64ffe9a6cd8e21cdb17546f7d53a8e0f">   10</a></span>&#160;<a class="code" href="classpro2_1_1Window.html#a64ffe9a6cd8e21cdb17546f7d53a8e0f">Window::Window</a>(<span class="keywordtype">string</span> title, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">int</span> zoom)</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    : fenster_{.title = title.c_str(), .width = width * zoom, .height = height * zoom},</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;      zoom_(zoom),</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;      pixels_size_(width * height * zoom * zoom)  <span class="comment">//</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classpro2_1_1Window.html#a66caf9db1012c67bac35e8170ea84b67">pixels_</a> = <span class="keyword">new</span> uint32_t[<a class="code" href="classpro2_1_1Window.html#a2dae6ae56e14dbec41f724866e1cd898">width</a> * <a class="code" href="classpro2_1_1Window.html#a3a9de727550a76cd1b33d470f79db00d">height</a> * zoom * zoom];</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classpro2_1_1Window.html#a848d23fa62759162a118cce27a7378a7">fenster_</a>.buf = <a class="code" href="classpro2_1_1Window.html#a66caf9db1012c67bac35e8170ea84b67">pixels_</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    fenster_open(&amp;<a class="code" href="classpro2_1_1Window.html#a848d23fa62759162a118cce27a7378a7">fenster_</a>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classpro2_1_1Window.html#a1f849469330d4d2e208862cdf91184e0">last_time_</a> = fenster_time();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classpro2_1_1Window.html#ab7e10a36f347292e5fb9a0bffd0e3b49">   21</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classpro2_1_1Window.html#ab7e10a36f347292e5fb9a0bffd0e3b49">Window::update_camera_</a>() {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classpro2_1_1Window.html#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.<a class="code" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> &lt; <a class="code" href="classpro2_1_1Window.html#ab127fa03b52a81750424dd84c9a40811">topleft_target_</a>.<a class="code" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a>) {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="classpro2_1_1Window.html#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.<a class="code" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> += std::min(<a class="code" href="classpro2_1_1Window.html#a3fc2ec7b7dcd41b28be129634463e20f">camera_speed_</a>, <a class="code" href="classpro2_1_1Window.html#ab127fa03b52a81750424dd84c9a40811">topleft_target_</a>.<a class="code" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> - <a class="code" href="classpro2_1_1Window.html#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.<a class="code" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classpro2_1_1Window.html#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.<a class="code" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> &gt; <a class="code" href="classpro2_1_1Window.html#ab127fa03b52a81750424dd84c9a40811">topleft_target_</a>.<a class="code" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a>) {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="classpro2_1_1Window.html#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.<a class="code" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> -= std::min(<a class="code" href="classpro2_1_1Window.html#a3fc2ec7b7dcd41b28be129634463e20f">camera_speed_</a>, <a class="code" href="classpro2_1_1Window.html#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.<a class="code" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> - <a class="code" href="classpro2_1_1Window.html#ab127fa03b52a81750424dd84c9a40811">topleft_target_</a>.<a class="code" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classpro2_1_1Window.html#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.<a class="code" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> &lt; <a class="code" href="classpro2_1_1Window.html#ab127fa03b52a81750424dd84c9a40811">topleft_target_</a>.<a class="code" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a>) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="classpro2_1_1Window.html#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.<a class="code" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> += std::min(<a class="code" href="classpro2_1_1Window.html#a3fc2ec7b7dcd41b28be129634463e20f">camera_speed_</a>, <a class="code" href="classpro2_1_1Window.html#ab127fa03b52a81750424dd84c9a40811">topleft_target_</a>.<a class="code" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> - <a class="code" href="classpro2_1_1Window.html#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.<a class="code" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classpro2_1_1Window.html#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.<a class="code" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> &gt; <a class="code" href="classpro2_1_1Window.html#ab127fa03b52a81750424dd84c9a40811">topleft_target_</a>.<a class="code" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a>) {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classpro2_1_1Window.html#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.<a class="code" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> -= std::min(<a class="code" href="classpro2_1_1Window.html#a3fc2ec7b7dcd41b28be129634463e20f">camera_speed_</a>, <a class="code" href="classpro2_1_1Window.html#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.<a class="code" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> - <a class="code" href="classpro2_1_1Window.html#ab127fa03b52a81750424dd84c9a40811">topleft_target_</a>.<a class="code" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classpro2_1_1Window.html#a3a2e9797e7da3874fd62727531e711d6">   35</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classpro2_1_1Window.html#a3a2e9797e7da3874fd62727531e711d6">Window::next_frame</a>() {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classpro2_1_1Window.html#ab7e10a36f347292e5fb9a0bffd0e3b49">update_camera_</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">int</span> wait = int(1000.0 / <a class="code" href="classpro2_1_1Window.html#a660d498936402b0395f151836f27ec4b">fps_</a>) - (fenster_time() - <a class="code" href="classpro2_1_1Window.html#a1f849469330d4d2e208862cdf91184e0">last_time_</a>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">if</span> (wait &gt; 0) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        fenster_sleep(wait);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classpro2_1_1Window.html#a1f849469330d4d2e208862cdf91184e0">last_time_</a> = fenster_time();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="classpro2_1_1Window.html#ac919f2ff4f15e2b3e2694101f7da587e">frame_count_</a>++;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// Copy the keys array</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; 256; i++) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="classpro2_1_1Window.html#a75da6563d9789fc8c8fde8d20891ce40">last_keys_</a>[i] = <a class="code" href="classpro2_1_1Window.html#a848d23fa62759162a118cce27a7378a7">fenster_</a>.keys[i];</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classpro2_1_1Window.html#a435df41b0b5042199d4a73f08ce0fcbe">last_mouse_</a> = <a class="code" href="classpro2_1_1Window.html#a848d23fa62759162a118cce27a7378a7">fenster_</a>.mouse;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> fenster_loop(&amp;<a class="code" href="classpro2_1_1Window.html#a848d23fa62759162a118cce27a7378a7">fenster_</a>) == 0;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classpro2_1_1Window.html#adb1c39426484aa6776b0cd7d1253932f">   53</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classpro2_1_1Window.html#adb1c39426484aa6776b0cd7d1253932f">Window::clear</a>(<a class="code" href="namespacepro2.html#a1cf275c5d221949062bba6a49b3daa13">Color</a> color) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="classpro2_1_1Window.html#afd582a445ca5857ead1627e5b2b07df9">pixels_size_</a>; i++) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="classpro2_1_1Window.html#a66caf9db1012c67bac35e8170ea84b67">pixels_</a>[i] = color;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classpro2_1_1Window.html#a1362ea74501506424e5b8c4177d19aa1">   59</a></span>&#160;<a class="code" href="structpro2_1_1Pt.html">Pt</a> <a class="code" href="classpro2_1_1Window.html#a1362ea74501506424e5b8c4177d19aa1">Window::mouse_pos</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classpro2_1_1Window.html#a2dae6ae56e14dbec41f724866e1cd898">width</a> = <a class="code" href="classpro2_1_1Window.html#a848d23fa62759162a118cce27a7378a7">fenster_</a>.width / <a class="code" href="classpro2_1_1Window.html#a5818f0989d62d00402330b317e11cb0a">zoom_</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classpro2_1_1Window.html#a3a9de727550a76cd1b33d470f79db00d">height</a> = <a class="code" href="classpro2_1_1Window.html#a848d23fa62759162a118cce27a7378a7">fenster_</a>.height / <a class="code" href="classpro2_1_1Window.html#a5818f0989d62d00402330b317e11cb0a">zoom_</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="Cd_8cc.html#aa5ed323274431e0aff568bb688f5f956">x</a> = <a class="code" href="classpro2_1_1Window.html#a848d23fa62759162a118cce27a7378a7">fenster_</a>.x / <a class="code" href="classpro2_1_1Window.html#a5818f0989d62d00402330b317e11cb0a">zoom_</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="Backround_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a> = <a class="code" href="classpro2_1_1Window.html#a848d23fa62759162a118cce27a7378a7">fenster_</a>.y / <a class="code" href="classpro2_1_1Window.html#a5818f0989d62d00402330b317e11cb0a">zoom_</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="Cd_8cc.html#aa5ed323274431e0aff568bb688f5f956">x</a> &gt;= <a class="code" href="classpro2_1_1Window.html#a2dae6ae56e14dbec41f724866e1cd898">width</a>) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="Cd_8cc.html#aa5ed323274431e0aff568bb688f5f956">x</a> = <a class="code" href="classpro2_1_1Window.html#a2dae6ae56e14dbec41f724866e1cd898">width</a> - 1;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="Cd_8cc.html#aa5ed323274431e0aff568bb688f5f956">x</a> &lt; 0) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="Cd_8cc.html#aa5ed323274431e0aff568bb688f5f956">x</a> = 0;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="Backround_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a> &gt;= <a class="code" href="classpro2_1_1Window.html#a3a9de727550a76cd1b33d470f79db00d">height</a>) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="Backround_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a> = <a class="code" href="classpro2_1_1Window.html#a3a9de727550a76cd1b33d470f79db00d">height</a> - 1;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="Backround_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a> &lt; 0) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="Backround_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a> = 0;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="structpro2_1_1Pt.html">Pt</a>{<a class="code" href="Cd_8cc.html#aa5ed323274431e0aff568bb688f5f956">x</a> + <a class="code" href="classpro2_1_1Window.html#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.<a class="code" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a>, <a class="code" href="Backround_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a> + <a class="code" href="classpro2_1_1Window.html#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.<a class="code" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a>};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classpro2_1_1Window.html#af656aaa062615c33e183199ba2387cac">   79</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classpro2_1_1Window.html#af656aaa062615c33e183199ba2387cac">Window::set_pixel</a>(<a class="code" href="structpro2_1_1Pt.html">Pt</a> pt, <a class="code" href="namespacepro2.html#a1cf275c5d221949062bba6a49b3daa13">Color</a> color) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">const</span> <a class="code" href="structpro2_1_1Pt.html">Pt</a> camera_pt = {pt.<a class="code" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> - <a class="code" href="classpro2_1_1Window.html#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.<a class="code" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a>, pt.<a class="code" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> - <a class="code" href="classpro2_1_1Window.html#a82a44da7790b45e5b8168ec67519fadf">topleft_</a>.<a class="code" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a>};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classpro2_1_1Window.html#a5818f0989d62d00402330b317e11cb0a">zoom_</a>; i++) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; <a class="code" href="classpro2_1_1Window.html#a5818f0989d62d00402330b317e11cb0a">zoom_</a>; j++) {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span> _i = camera_pt.<a class="code" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> * <a class="code" href="classpro2_1_1Window.html#a5818f0989d62d00402330b317e11cb0a">zoom_</a> + i;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span> _j = camera_pt.<a class="code" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> * <a class="code" href="classpro2_1_1Window.html#a5818f0989d62d00402330b317e11cb0a">zoom_</a> + j;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">if</span> (_i &gt;= 0 &amp;&amp; _i &lt; fenster_.width &amp;&amp; _j &gt;= 0 &amp;&amp; _j &lt; <a class="code" href="classpro2_1_1Window.html#a848d23fa62759162a118cce27a7378a7">fenster_</a>.height) {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                fenster_pixel(&amp;<a class="code" href="classpro2_1_1Window.html#a848d23fa62759162a118cce27a7378a7">fenster_</a>, _i, _j) = color;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}  <span class="comment">// namespace pro2</span></div>
+<div class="ttc" id="aBackround_8cc_html_a536c339057ad4fa1840581ffde1bec6b"><div class="ttname"><a href="Backround_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a></div><div class="ttdeci">const int y</div><div class="ttdef"><b>Definition:</b> <a href="Backround_8cc_source.html#l00008">Backround.cc:8</a></div></div>
+<div class="ttc" id="aCd_8cc_html_aa5ed323274431e0aff568bb688f5f956"><div class="ttname"><a href="Cd_8cc.html#aa5ed323274431e0aff568bb688f5f956">x</a></div><div class="ttdeci">const int x</div><div class="ttdef"><b>Definition:</b> <a href="Cd_8cc_source.html#l00008">Cd.cc:8</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a1362ea74501506424e5b8c4177d19aa1"><div class="ttname"><a href="classpro2_1_1Window.html#a1362ea74501506424e5b8c4177d19aa1">pro2::Window::mouse_pos</a></div><div class="ttdeci">Pt mouse_pos() const</div><div class="ttdoc">Devuelve la posición del cursor del ratón.</div><div class="ttdef"><b>Definition:</b> <a href="window_8cc_source.html#l00059">window.cc:59</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a1f849469330d4d2e208862cdf91184e0"><div class="ttname"><a href="classpro2_1_1Window.html#a1f849469330d4d2e208862cdf91184e0">pro2::Window::last_time_</a></div><div class="ttdeci">int64_t last_time_</div><div class="ttdoc">Instance del último fotograma (epoch)</div><div class="ttdef"><b>Definition:</b> <a href="window_8hh_source.html#l00101">window.hh:101</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a2dae6ae56e14dbec41f724866e1cd898"><div class="ttname"><a href="classpro2_1_1Window.html#a2dae6ae56e14dbec41f724866e1cd898">pro2::Window::width</a></div><div class="ttdeci">int width() const</div><div class="ttdoc">Devuelve el ancho de la ventana.</div><div class="ttdef"><b>Definition:</b> <a href="window_8hh_source.html#l00170">window.hh:170</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a3a2e9797e7da3874fd62727531e711d6"><div class="ttname"><a href="classpro2_1_1Window.html#a3a2e9797e7da3874fd62727531e711d6">pro2::Window::next_frame</a></div><div class="ttdeci">bool next_frame()</div><div class="ttdoc">Gestiona las tareas necesarias para pasar al siguiente fotograma.</div><div class="ttdef"><b>Definition:</b> <a href="window_8cc_source.html#l00035">window.cc:35</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a3a9de727550a76cd1b33d470f79db00d"><div class="ttname"><a href="classpro2_1_1Window.html#a3a9de727550a76cd1b33d470f79db00d">pro2::Window::height</a></div><div class="ttdeci">int height() const</div><div class="ttdoc">Devuelve el alto de la ventana.</div><div class="ttdef"><b>Definition:</b> <a href="window_8hh_source.html#l00178">window.hh:178</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a3fc2ec7b7dcd41b28be129634463e20f"><div class="ttname"><a href="classpro2_1_1Window.html#a3fc2ec7b7dcd41b28be129634463e20f">pro2::Window::camera_speed_</a></div><div class="ttdeci">static constexpr int camera_speed_</div><div class="ttdoc">Constante de la velocidad a la que la cámara se desplaza a la nueva posición.</div><div class="ttdef"><b>Definition:</b> <a href="window_8hh_source.html#l00137">window.hh:137</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a435df41b0b5042199d4a73f08ce0fcbe"><div class="ttname"><a href="classpro2_1_1Window.html#a435df41b0b5042199d4a73f08ce0fcbe">pro2::Window::last_mouse_</a></div><div class="ttdeci">int last_mouse_</div><div class="ttdef"><b>Definition:</b> <a href="window_8hh_source.html#l00077">window.hh:77</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a5818f0989d62d00402330b317e11cb0a"><div class="ttname"><a href="classpro2_1_1Window.html#a5818f0989d62d00402330b317e11cb0a">pro2::Window::zoom_</a></div><div class="ttdeci">int zoom_</div><div class="ttdoc">Parámetro de zoom para esta ventana.</div><div class="ttdef"><b>Definition:</b> <a href="window_8hh_source.html#l00096">window.hh:96</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a64ffe9a6cd8e21cdb17546f7d53a8e0f"><div class="ttname"><a href="classpro2_1_1Window.html#a64ffe9a6cd8e21cdb17546f7d53a8e0f">pro2::Window::Window</a></div><div class="ttdeci">Window(std::string title, int width, int height, int zoom=1)</div><div class="ttdoc">Contruye una ventana con título, anchura y altura.</div><div class="ttdef"><b>Definition:</b> <a href="window_8cc_source.html#l00010">window.cc:10</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a660d498936402b0395f151836f27ec4b"><div class="ttname"><a href="classpro2_1_1Window.html#a660d498936402b0395f151836f27ec4b">pro2::Window::fps_</a></div><div class="ttdeci">uint8_t fps_</div><div class="ttdoc">Fotogramas por segundo (FPS)</div><div class="ttdef"><b>Definition:</b> <a href="window_8hh_source.html#l00111">window.hh:111</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a66caf9db1012c67bac35e8170ea84b67"><div class="ttname"><a href="classpro2_1_1Window.html#a66caf9db1012c67bac35e8170ea84b67">pro2::Window::pixels_</a></div><div class="ttdeci">uint32_t * pixels_</div><div class="ttdoc">El buffer de pixels que se reserva como zona de pintado.</div><div class="ttdef"><b>Definition:</b> <a href="window_8hh_source.html#l00086">window.hh:86</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a75da6563d9789fc8c8fde8d20891ce40"><div class="ttname"><a href="classpro2_1_1Window.html#a75da6563d9789fc8c8fde8d20891ce40">pro2::Window::last_keys_</a></div><div class="ttdeci">int last_keys_[256]</div><div class="ttdoc">La estructura de datos que Fenster necesita para trabajar.</div><div class="ttdef"><b>Definition:</b> <a href="window_8hh_source.html#l00076">window.hh:76</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a82a44da7790b45e5b8168ec67519fadf"><div class="ttname"><a href="classpro2_1_1Window.html#a82a44da7790b45e5b8168ec67519fadf">pro2::Window::topleft_</a></div><div class="ttdeci">Pt topleft_</div><div class="ttdoc">Camera topleft.</div><div class="ttdef"><b>Definition:</b> <a href="window_8hh_source.html#l00118">window.hh:118</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a848d23fa62759162a118cce27a7378a7"><div class="ttname"><a href="classpro2_1_1Window.html#a848d23fa62759162a118cce27a7378a7">pro2::Window::fenster_</a></div><div class="ttdeci">fenster fenster_</div><div class="ttdef"><b>Definition:</b> <a href="window_8hh_source.html#l00078">window.hh:78</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_ab127fa03b52a81750424dd84c9a40811"><div class="ttname"><a href="classpro2_1_1Window.html#ab127fa03b52a81750424dd84c9a40811">pro2::Window::topleft_target_</a></div><div class="ttdeci">Pt topleft_target_</div><div class="ttdef"><b>Definition:</b> <a href="window_8hh_source.html#l00119">window.hh:119</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_ab7e10a36f347292e5fb9a0bffd0e3b49"><div class="ttname"><a href="classpro2_1_1Window.html#ab7e10a36f347292e5fb9a0bffd0e3b49">pro2::Window::update_camera_</a></div><div class="ttdeci">void update_camera_()</div><div class="ttdoc">Este método actualiza la cámara en función de la velocidad.</div><div class="ttdef"><b>Definition:</b> <a href="window_8cc_source.html#l00021">window.cc:21</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_ac919f2ff4f15e2b3e2694101f7da587e"><div class="ttname"><a href="classpro2_1_1Window.html#ac919f2ff4f15e2b3e2694101f7da587e">pro2::Window::frame_count_</a></div><div class="ttdeci">int frame_count_</div><div class="ttdoc">Contador de frames (o fotogramas)</div><div class="ttdef"><b>Definition:</b> <a href="window_8hh_source.html#l00106">window.hh:106</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_adb1c39426484aa6776b0cd7d1253932f"><div class="ttname"><a href="classpro2_1_1Window.html#adb1c39426484aa6776b0cd7d1253932f">pro2::Window::clear</a></div><div class="ttdeci">void clear(Color color=black)</div><div class="ttdoc">Rellena la ventana con un color.</div><div class="ttdef"><b>Definition:</b> <a href="window_8cc_source.html#l00053">window.cc:53</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_af656aaa062615c33e183199ba2387cac"><div class="ttname"><a href="classpro2_1_1Window.html#af656aaa062615c33e183199ba2387cac">pro2::Window::set_pixel</a></div><div class="ttdeci">void set_pixel(Pt xy, Color color)</div><div class="ttdoc">Cambia un pixel de la ventana.</div><div class="ttdef"><b>Definition:</b> <a href="window_8cc_source.html#l00079">window.cc:79</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_afd582a445ca5857ead1627e5b2b07df9"><div class="ttname"><a href="classpro2_1_1Window.html#afd582a445ca5857ead1627e5b2b07df9">pro2::Window::pixels_size_</a></div><div class="ttdeci">size_t pixels_size_</div><div class="ttdoc">Tamaño del buffer en bytes.</div><div class="ttdef"><b>Definition:</b> <a href="window_8hh_source.html#l00091">window.hh:91</a></div></div>
+<div class="ttc" id="anamespacepro2_html"><div class="ttname"><a href="namespacepro2.html">pro2</a></div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hh_source.html#l00004">geometry.hh:4</a></div></div>
+<div class="ttc" id="anamespacepro2_html_a1cf275c5d221949062bba6a49b3daa13"><div class="ttname"><a href="namespacepro2.html#a1cf275c5d221949062bba6a49b3daa13">pro2::Color</a></div><div class="ttdeci">uint32_t Color</div><div class="ttdef"><b>Definition:</b> <a href="window_8hh_source.html#l00027">window.hh:27</a></div></div>
+<div class="ttc" id="astructpro2_1_1Pt_html"><div class="ttname"><a href="structpro2_1_1Pt.html">pro2::Pt</a></div><div class="ttdoc">Punt amb coordenades enters (x, y).</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hh_source.html#l00008">geometry.hh:8</a></div></div>
+<div class="ttc" id="astructpro2_1_1Pt_html_a66aed2131ecee1ac8d9b7a114beead56"><div class="ttname"><a href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">pro2::Pt::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hh_source.html#l00009">geometry.hh:9</a></div></div>
+<div class="ttc" id="astructpro2_1_1Pt_html_ac3bf243622bd81d35086e7adb53c9b74"><div class="ttname"><a href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">pro2::Pt::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hh_source.html#l00009">geometry.hh:9</a></div></div>
+<div class="ttc" id="awindow_8hh_html"><div class="ttname"><a href="window_8hh.html">window.hh</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

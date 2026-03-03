@@ -1,0 +1,803 @@
+\hypertarget{classBowser}{}\doxysection{Referencia de la Clase Bowser}
+\label{classBowser}\index{Bowser@{Bowser}}
+
+
+Representa l\textquotesingle{}enemic \mbox{\hyperlink{classBowser}{Bowser}} amb moviment, atacs i física.  
+
+
+
+
+{\ttfamily \#include $<$Bowser.\+hh$>$}
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBowser_a94ffa18f857da16d3ffd8a5580e52f41}{Bowser}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classBowser_abf434aba68a5fed024307e9ebf0e3eb4}{pos}})
+\begin{DoxyCompactList}\small\item\em Constructor de \mbox{\hyperlink{classBowser}{Bowser}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBowser_a035b694f2e26953f4cf30ad89c186292}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window) const
+\begin{DoxyCompactList}\small\item\em Dibuixa \mbox{\hyperlink{classBowser}{Bowser}} a la finestra. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classBowser_abf434aba68a5fed024307e9ebf0e3eb4}{pos}} () const
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classBowser_a78c6a7107bbcfcb8bb78da94eef4023c}{last\+\_\+pos}} () const
+\item 
+\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \mbox{\hyperlink{classBowser_a734a30ef6b25e8b502d24051bdc070de}{get\+\_\+rect}} () const
+\item 
+std\+::list$<$ \mbox{\hyperlink{classSpark}{Spark}} $>$ \mbox{\hyperlink{classBowser_a179a3fa198743aad3846c80796369fa3}{get\+\_\+sparks}} ()
+\item 
+int \mbox{\hyperlink{classBowser_abe993d84c165691167c2b89668dc6eaa}{speed\+\_\+y}} ()
+\item 
+void \mbox{\hyperlink{classBowser_a9d60105ed9e49009cb141233c77032b5}{set\+\_\+y}} (int \mbox{\hyperlink{mario_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}})
+\item 
+void \mbox{\hyperlink{classBowser_af9b8a40064e19d458ccf074d514cf092}{set\+\_\+x}} (int \mbox{\hyperlink{Cd_8cc_aa5ed323274431e0aff568bb688f5f956}{x}})
+\item 
+bool \mbox{\hyperlink{classBowser_a31f826cda4b0aa9b8a410756bba26ddb}{is\+\_\+grounded}} () const
+\item 
+\mbox{\hyperlink{Bowser_8hh_a184cabb72b370cfe0c7d593527728cd6}{bowser\+\_\+state\+\_\+s}} \mbox{\hyperlink{classBowser_af35f68b2e111c4c7ceabc06215e08248}{bowser\+\_\+state}} ()
+\item 
+void \mbox{\hyperlink{classBowser_a4e2d94aec479cdb0a73c397dc4776a29}{set\+\_\+grounded}} (bool grounded)
+\item 
+void \mbox{\hyperlink{classBowser_a843c6ff712de797aa5178391f2db29b1}{toggle\+\_\+state}} (\mbox{\hyperlink{Bowser_8hh_a184cabb72b370cfe0c7d593527728cd6}{bowser\+\_\+state\+\_\+s}} \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}})
+\item 
+void \mbox{\hyperlink{classBowser_ad90e639dcd8f6bb75ed6d45e3717a689}{toggle\+\_\+grounded}} ()
+\item 
+void \mbox{\hyperlink{classBowser_a22057caf94ed3d96190177b7764da93a}{jump}} ()
+\begin{DoxyCompactList}\small\item\em Fa saltar a bowser. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBowser_a9e013f9af404e4873a655a20a2d92429}{update\+\_\+platform}} (std\+::set$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&queryplat)
+\begin{DoxyCompactList}\small\item\em Actualitza la posició i estat de \mbox{\hyperlink{classBowser}{Bowser}} segons les colisions amb les plataformes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBowser_a301a505e55bad8a464d8f106b187d645}{update\+\_\+cfloor}} (std\+::set$<$ \mbox{\hyperlink{classCircuitfloor}{Circuitfloor}} $\ast$ $>$ \&cfloor)
+\begin{DoxyCompactList}\small\item\em Actualitza la posició i estat de \mbox{\hyperlink{classBowser}{Bowser}} segons les col·lisions amb els circuit floors. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBowser_a471e2f1b6e3e22becab39714a4bfce65}{update}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, std\+::set$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&queryplat, std\+::set$<$ \mbox{\hyperlink{classCircuitfloor}{Circuitfloor}} $\ast$ $>$ \&cfloor, const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&rmario, bool \&mkilled)
+\begin{DoxyCompactList}\small\item\em Actualitza \mbox{\hyperlink{classBowser}{Bowser}} segons la física, col·lisions i interaccions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBowser_a58eb18a7f43b4b4c03917860124f8586}{launch\+\_\+spark}} (const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&rmario)
+\begin{DoxyCompactList}\small\item\em Llança una espurna des de \mbox{\hyperlink{classBowser}{Bowser}} cap a \mbox{\hyperlink{classMario}{Mario}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBowser_aa7df26b0bf00f18efaead292a44d0157}{mario\+\_\+has\+\_\+crossed\+\_\+downwards}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} plast, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} pcurr) const
+\begin{DoxyCompactList}\small\item\em Comprova si \mbox{\hyperlink{classMario}{Mario}} ha creuat \mbox{\hyperlink{classBowser}{Bowser}} en moviment descendent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classBowser_a8ae506e6649808640db49df2de7d6e9e}{apply\+\_\+physics\+\_\+}} ()
+\begin{DoxyCompactList}\small\item\em Aplica la física (moviment, acceleració, gravetat) a \mbox{\hyperlink{classBowser}{Bowser}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+std\+::list$<$ \mbox{\hyperlink{classSpark}{Spark}} $>$ \mbox{\hyperlink{classBowser_ae46559d5946bf77605301c50e82e381c}{sparks\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classBowser_a3ad8ea271403dee9a36c5bef511da900}{pos\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classBowser_a3f575b32b07d0e5a2e1355c0f0ffcd0c}{last\+\_\+pos\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classBowser_a42edf5816be3c02db9eb30b8a898ba1d}{speed\+\_\+}} = \{0, 0\}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classBowser_a97b436656ea51471e03af5af1752abef}{accel\+\_\+}} = \{0, 0\}
+\item 
+\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \mbox{\hyperlink{classBowser_a469bde58c18aa7161a352cf687e12434}{rect\+\_\+\+Bowser\+\_\+}}
+\item 
+double \mbox{\hyperlink{classBowser_af104d75c8b01b5dcb914ea9859e8df13}{accel\+\_\+time\+\_\+}} = 0
+\item 
+bool \mbox{\hyperlink{classBowser_a4b4f1b371c62f29ac855be4760f651ba}{grounded\+\_\+}} = false
+\item 
+\mbox{\hyperlink{Bowser_8hh_a184cabb72b370cfe0c7d593527728cd6}{bowser\+\_\+state\+\_\+s}} \mbox{\hyperlink{classBowser_addc158c685932aa22a399f8464c555a2}{bstate}} = \mbox{\hyperlink{Bowser_8hh_a184cabb72b370cfe0c7d593527728cd6a4f34c5c191d6e0d028ca831b6c0b1571}{ALIVE}}
+\item 
+bool \mbox{\hyperlink{classBowser_aedf8a5a0a2ec1df89d7479f53457265a}{looking\+\_\+left\+\_\+}} = true
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{classBowser_a9c946811dee7de11d5ab6fbb48f4ed6e}{bowser\+\_\+sprite\+\_\+normal\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Matriu de sprites de bowser. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Representa l\textquotesingle{}enemic \mbox{\hyperlink{classBowser}{Bowser}} amb moviment, atacs i física. 
+
+La classe \mbox{\hyperlink{classBowser}{Bowser}} gestiona la posició, velocitat, estat (viu o mort), moviment, salts, llançament d\textquotesingle{}espurnes i interaccions amb \mbox{\hyperlink{classMario}{Mario}} i l\textquotesingle{}entorn. 
+
+Definición en la línea 131 del archivo Bowser.\+hh.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classBowser_a94ffa18f857da16d3ffd8a5580e52f41}\label{classBowser_a94ffa18f857da16d3ffd8a5580e52f41}} 
+\index{Bowser@{Bowser}!Bowser@{Bowser}}
+\index{Bowser@{Bowser}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{Bowser()}{Bowser()}}
+{\footnotesize\ttfamily Bowser\+::\+Bowser (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor de \mbox{\hyperlink{classBowser}{Bowser}}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pos} & Posició inicial de \mbox{\hyperlink{classBowser}{Bowser}} \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 161 del archivo Bowser.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{161 : \mbox{\hyperlink{classBowser_a3ad8ea271403dee9a36c5bef511da900}{pos\_}}(\mbox{\hyperlink{classBowser_abf434aba68a5fed024307e9ebf0e3eb4}{pos}}), \mbox{\hyperlink{classBowser_a3f575b32b07d0e5a2e1355c0f0ffcd0c}{last\_pos\_}}(\mbox{\hyperlink{classBowser_abf434aba68a5fed024307e9ebf0e3eb4}{pos}}) \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classBowser_a8ae506e6649808640db49df2de7d6e9e}\label{classBowser_a8ae506e6649808640db49df2de7d6e9e}} 
+\index{Bowser@{Bowser}!apply\_physics\_@{apply\_physics\_}}
+\index{apply\_physics\_@{apply\_physics\_}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{apply\_physics\_()}{apply\_physics\_()}}
+{\footnotesize\ttfamily void Bowser\+::apply\+\_\+physics\+\_\+ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Aplica la física (moviment, acceleració, gravetat) a \mbox{\hyperlink{classBowser}{Bowser}}. 
+
+\begin{DoxyPrecond}{Precondición}
+\+: Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+L’estat de posició i velocitat s’actualitzen segons les físiques. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 139 del archivo Bowser.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{139                             \{}
+\DoxyCodeLine{140     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classBowser_a4b4f1b371c62f29ac855be4760f651ba}{grounded\_}}) \{}
+\DoxyCodeLine{141         \mbox{\hyperlink{classBowser_a42edf5816be3c02db9eb30b8a898ba1d}{speed\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} = 0;}
+\DoxyCodeLine{142         \mbox{\hyperlink{classBowser_a97b436656ea51471e03af5af1752abef}{accel\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} = 0;}
+\DoxyCodeLine{143     \}}
+\DoxyCodeLine{144 }
+\DoxyCodeLine{145     \textcolor{keyword}{const} \textcolor{keywordtype}{int} gravity = 1;  }
+\DoxyCodeLine{146     \mbox{\hyperlink{classBowser_a42edf5816be3c02db9eb30b8a898ba1d}{speed\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} += gravity;}
+\DoxyCodeLine{147 }
+\DoxyCodeLine{148     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classBowser_af104d75c8b01b5dcb914ea9859e8df13}{accel\_time\_}} > 0) \{}
+\DoxyCodeLine{149         \mbox{\hyperlink{classBowser_a42edf5816be3c02db9eb30b8a898ba1d}{speed\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} += \mbox{\hyperlink{classBowser_a97b436656ea51471e03af5af1752abef}{accel\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}};}
+\DoxyCodeLine{150         \mbox{\hyperlink{classBowser_af104d75c8b01b5dcb914ea9859e8df13}{accel\_time\_}}-\/-\/;}
+\DoxyCodeLine{151     \}}
+\DoxyCodeLine{152 }
+\DoxyCodeLine{153     \mbox{\hyperlink{classBowser_a3ad8ea271403dee9a36c5bef511da900}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} += \mbox{\hyperlink{classBowser_a42edf5816be3c02db9eb30b8a898ba1d}{speed\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}};}
+\DoxyCodeLine{154     \mbox{\hyperlink{classBowser_a3ad8ea271403dee9a36c5bef511da900}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} += \mbox{\hyperlink{classBowser_a42edf5816be3c02db9eb30b8a898ba1d}{speed\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}};}
+\DoxyCodeLine{155 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classBowser_af35f68b2e111c4c7ceabc06215e08248}\label{classBowser_af35f68b2e111c4c7ceabc06215e08248}} 
+\index{Bowser@{Bowser}!bowser\_state@{bowser\_state}}
+\index{bowser\_state@{bowser\_state}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{bowser\_state()}{bowser\_state()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Bowser_8hh_a184cabb72b370cfe0c7d593527728cd6}{bowser\+\_\+state\+\_\+s}} Bowser\+::bowser\+\_\+state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 198 del archivo Bowser.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{198                                  \{}
+\DoxyCodeLine{199         \textcolor{keywordflow}{return} \mbox{\hyperlink{classBowser_addc158c685932aa22a399f8464c555a2}{bstate}};}
+\DoxyCodeLine{200     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classBowser_a734a30ef6b25e8b502d24051bdc070de}\label{classBowser_a734a30ef6b25e8b502d24051bdc070de}} 
+\index{Bowser@{Bowser}!get\_rect@{get\_rect}}
+\index{get\_rect@{get\_rect}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{get\_rect()}{get\_rect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} Bowser\+::get\+\_\+rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 173 del archivo Bowser.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{173                               \{                       }
+\DoxyCodeLine{174         \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}} hitbox\_bowser = \{\mbox{\hyperlink{classBowser_a3ad8ea271403dee9a36c5bef511da900}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} -\/ 32, \mbox{\hyperlink{classBowser_a3ad8ea271403dee9a36c5bef511da900}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} -\/ 55, \mbox{\hyperlink{classBowser_a3ad8ea271403dee9a36c5bef511da900}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} + 32, \mbox{\hyperlink{classBowser_a3ad8ea271403dee9a36c5bef511da900}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}}\};}
+\DoxyCodeLine{175         \textcolor{keywordflow}{return} hitbox\_bowser;}
+\DoxyCodeLine{176     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classBowser_a179a3fa198743aad3846c80796369fa3}\label{classBowser_a179a3fa198743aad3846c80796369fa3}} 
+\index{Bowser@{Bowser}!get\_sparks@{get\_sparks}}
+\index{get\_sparks@{get\_sparks}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{get\_sparks()}{get\_sparks()}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{classSpark}{Spark}}$>$ Bowser\+::get\+\_\+sparks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 178 del archivo Bowser.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{178                                \{}
+\DoxyCodeLine{179         \textcolor{keywordflow}{return} \mbox{\hyperlink{classBowser_ae46559d5946bf77605301c50e82e381c}{sparks\_}};}
+\DoxyCodeLine{180     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classBowser_a31f826cda4b0aa9b8a410756bba26ddb}\label{classBowser_a31f826cda4b0aa9b8a410756bba26ddb}} 
+\index{Bowser@{Bowser}!is\_grounded@{is\_grounded}}
+\index{is\_grounded@{is\_grounded}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{is\_grounded()}{is\_grounded()}}
+{\footnotesize\ttfamily bool Bowser\+::is\+\_\+grounded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 194 del archivo Bowser.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{194                              \{}
+\DoxyCodeLine{195         \textcolor{keywordflow}{return} \mbox{\hyperlink{classBowser_a4b4f1b371c62f29ac855be4760f651ba}{grounded\_}};}
+\DoxyCodeLine{196     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classBowser_a22057caf94ed3d96190177b7764da93a}\label{classBowser_a22057caf94ed3d96190177b7764da93a}} 
+\index{Bowser@{Bowser}!jump@{jump}}
+\index{jump@{jump}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{jump()}{jump()}}
+{\footnotesize\ttfamily void Bowser\+::jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fa saltar a bowser. 
+
+
+
+Definición en la línea 157 del archivo Bowser.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{157                   \{}
+\DoxyCodeLine{158     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classBowser_a4b4f1b371c62f29ac855be4760f651ba}{grounded\_}}) \{}
+\DoxyCodeLine{159         \mbox{\hyperlink{classBowser_a97b436656ea51471e03af5af1752abef}{accel\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} = -\/7;}
+\DoxyCodeLine{160         \mbox{\hyperlink{classBowser_a4b4f1b371c62f29ac855be4760f651ba}{grounded\_}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{161         \mbox{\hyperlink{classBowser_af104d75c8b01b5dcb914ea9859e8df13}{accel\_time\_}} = 2;}
+\DoxyCodeLine{162     \}}
+\DoxyCodeLine{163 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classBowser_a78c6a7107bbcfcb8bb78da94eef4023c}\label{classBowser_a78c6a7107bbcfcb8bb78da94eef4023c}} 
+\index{Bowser@{Bowser}!last\_pos@{last\_pos}}
+\index{last\_pos@{last\_pos}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{last\_pos()}{last\_pos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Bowser\+::last\+\_\+pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 169 del archivo Bowser.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{169                            \{}
+\DoxyCodeLine{170         \textcolor{keywordflow}{return} \mbox{\hyperlink{classBowser_a3f575b32b07d0e5a2e1355c0f0ffcd0c}{last\_pos\_}};}
+\DoxyCodeLine{171     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classBowser_a58eb18a7f43b4b4c03917860124f8586}\label{classBowser_a58eb18a7f43b4b4c03917860124f8586}} 
+\index{Bowser@{Bowser}!launch\_spark@{launch\_spark}}
+\index{launch\_spark@{launch\_spark}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{launch\_spark()}{launch\_spark()}}
+{\footnotesize\ttfamily void Bowser\+::launch\+\_\+spark (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&}]{rmario }\end{DoxyParamCaption})}
+
+
+
+Llança una espurna des de \mbox{\hyperlink{classBowser}{Bowser}} cap a \mbox{\hyperlink{classMario}{Mario}}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em rmario} & Rectangle que representa la hitbox de \mbox{\hyperlink{classMario}{Mario}}, per orientar el llançament \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+S’afegeix una nova espurna a la llista de projectils de \mbox{\hyperlink{classBowser}{Bowser}}, dirigida cap a \mbox{\hyperlink{classMario}{Mario}} 
+\end{DoxyPostcond}
+
+
+Definición en la línea 253 del archivo Bowser.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{253                                                 \{}
+\DoxyCodeLine{254     \mbox{\hyperlink{structpro2_1_1Ptd}{pro2::Ptd}} \mbox{\hyperlink{Circuitfloor_8cc_a0d2d8836216fc94b61aa0824eb239db2}{m}} = \{(double) (rmario.\mbox{\hyperlink{structpro2_1_1Rect_a68877597032a2bb4630f37e44b885e81}{left}}+rmario.\mbox{\hyperlink{structpro2_1_1Rect_aae04a074de42a64bff8e9781b8e2af2b}{right}})/2, (double)(rmario.\mbox{\hyperlink{structpro2_1_1Rect_abea25fc7da9516fc9e1e88fb54e49737}{top}}+rmario.\mbox{\hyperlink{structpro2_1_1Rect_a5240a907c581979ec7981419286a8637}{bottom}})/2\};}
+\DoxyCodeLine{255     \mbox{\hyperlink{structpro2_1_1Ptd}{pro2::Ptd}} \mbox{\hyperlink{Cd_8cc_ad9bdd84c32d7e9f36d5f7dcb8a458a31}{p}} = \{(double) \mbox{\hyperlink{classBowser_a3ad8ea271403dee9a36c5bef511da900}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}},  (\textcolor{keywordtype}{double})\mbox{\hyperlink{classBowser_a3ad8ea271403dee9a36c5bef511da900}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} -\/24\};}
+\DoxyCodeLine{256     \mbox{\hyperlink{classBowser_ae46559d5946bf77605301c50e82e381c}{sparks\_}}.push\_back(\mbox{\hyperlink{classSpark}{Spark}}(\mbox{\hyperlink{Cd_8cc_ad9bdd84c32d7e9f36d5f7dcb8a458a31}{p}},\mbox{\hyperlink{Circuitfloor_8cc_a0d2d8836216fc94b61aa0824eb239db2}{m}}));}
+\DoxyCodeLine{257     }
+\DoxyCodeLine{258 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classBowser_aa7df26b0bf00f18efaead292a44d0157}\label{classBowser_aa7df26b0bf00f18efaead292a44d0157}} 
+\index{Bowser@{Bowser}!mario\_has\_crossed\_downwards@{mario\_has\_crossed\_downwards}}
+\index{mario\_has\_crossed\_downwards@{mario\_has\_crossed\_downwards}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{mario\_has\_crossed\_downwards()}{mario\_has\_crossed\_downwards()}}
+{\footnotesize\ttfamily bool Bowser\+::mario\+\_\+has\+\_\+crossed\+\_\+downwards (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{plast,  }\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pcurr }\end{DoxyParamCaption}) const}
+
+
+
+Comprova si \mbox{\hyperlink{classMario}{Mario}} ha creuat \mbox{\hyperlink{classBowser}{Bowser}} en moviment descendent. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em plast} & Posició anterior de \mbox{\hyperlink{classMario}{Mario}} \\
+\hline
+{\em pcurr} & Posició actual de \mbox{\hyperlink{classMario}{Mario}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+plast i pcurr són posicions vàlides 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna cert si \mbox{\hyperlink{classMario}{Mario}} ha creuat cap avall la posició de \mbox{\hyperlink{classBowser}{Bowser}} entre plast i pcurr; fals en cas contrari 
+\end{DoxyPostcond}
+
+
+Definición en la línea 260 del archivo Bowser.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{260                                                                         \{}
+\DoxyCodeLine{261     \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}} bowserhb = \mbox{\hyperlink{classBowser_a734a30ef6b25e8b502d24051bdc070de}{get\_rect}}();}
+\DoxyCodeLine{262     \textcolor{keywordflow}{return} (bowserhb.\mbox{\hyperlink{structpro2_1_1Rect_a68877597032a2bb4630f37e44b885e81}{left}} <= plast.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} \&\& plast.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} <= bowserhb.\mbox{\hyperlink{structpro2_1_1Rect_aae04a074de42a64bff8e9781b8e2af2b}{right}}) \&\& (bowserhb.\mbox{\hyperlink{structpro2_1_1Rect_a68877597032a2bb4630f37e44b885e81}{left}} <= pcurr.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} \&\& pcurr.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} <= bowserhb.\mbox{\hyperlink{structpro2_1_1Rect_aae04a074de42a64bff8e9781b8e2af2b}{right}}) \&\&}
+\DoxyCodeLine{263     (plast.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} <= bowserhb.\mbox{\hyperlink{structpro2_1_1Rect_abea25fc7da9516fc9e1e88fb54e49737}{top}} \&\& pcurr.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} >= bowserhb.\mbox{\hyperlink{structpro2_1_1Rect_abea25fc7da9516fc9e1e88fb54e49737}{top}});}
+\DoxyCodeLine{264 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classBowser_a035b694f2e26953f4cf30ad89c186292}\label{classBowser_a035b694f2e26953f4cf30ad89c186292}} 
+\index{Bowser@{Bowser}!paint@{paint}}
+\index{paint@{paint}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Bowser\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window }\end{DoxyParamCaption}) const}
+
+
+
+Dibuixa \mbox{\hyperlink{classBowser}{Bowser}} a la finestra. 
+
+
+
+Definición en la línea 128 del archivo Bowser.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{128                                            \{}
+\DoxyCodeLine{129     \textcolor{keyword}{const} \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}} topleft = \{\mbox{\hyperlink{classBowser_a3ad8ea271403dee9a36c5bef511da900}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} -\/32, \mbox{\hyperlink{classBowser_a3ad8ea271403dee9a36c5bef511da900}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} -\/ 55\};}
+\DoxyCodeLine{130     \mbox{\hyperlink{namespacepro2_a416c3e13d8244d9b102f7df30696c186}{paint\_sprite}}(window, topleft, \mbox{\hyperlink{classBowser_a9c946811dee7de11d5ab6fbb48f4ed6e}{bowser\_sprite\_normal\_}}, not \mbox{\hyperlink{classBowser_aedf8a5a0a2ec1df89d7479f53457265a}{looking\_left\_}});}
+\DoxyCodeLine{131     }
+\DoxyCodeLine{132     }
+\DoxyCodeLine{133     \textcolor{keywordflow}{for}(\textcolor{keyword}{const} \mbox{\hyperlink{classSpark}{Spark}}\& \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}} : \mbox{\hyperlink{classBowser_ae46559d5946bf77605301c50e82e381c}{sparks\_}}) \{}
+\DoxyCodeLine{134         \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}}.paint(window);}
+\DoxyCodeLine{135     \}}
+\DoxyCodeLine{136 }
+\DoxyCodeLine{137 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classBowser_abf434aba68a5fed024307e9ebf0e3eb4}\label{classBowser_abf434aba68a5fed024307e9ebf0e3eb4}} 
+\index{Bowser@{Bowser}!pos@{pos}}
+\index{pos@{pos}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{pos()}{pos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Bowser\+::pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 166 del archivo Bowser.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{166                        \{}
+\DoxyCodeLine{167         \textcolor{keywordflow}{return} \mbox{\hyperlink{classBowser_a3ad8ea271403dee9a36c5bef511da900}{pos\_}};}
+\DoxyCodeLine{168     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classBowser_a4e2d94aec479cdb0a73c397dc4776a29}\label{classBowser_a4e2d94aec479cdb0a73c397dc4776a29}} 
+\index{Bowser@{Bowser}!set\_grounded@{set\_grounded}}
+\index{set\_grounded@{set\_grounded}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{set\_grounded()}{set\_grounded()}}
+{\footnotesize\ttfamily void Bowser\+::set\+\_\+grounded (\begin{DoxyParamCaption}\item[{bool}]{grounded }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 202 del archivo Bowser.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{202                                      \{}
+\DoxyCodeLine{203         \mbox{\hyperlink{classBowser_a4b4f1b371c62f29ac855be4760f651ba}{grounded\_}} = grounded;}
+\DoxyCodeLine{204         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classBowser_a4b4f1b371c62f29ac855be4760f651ba}{grounded\_}}) \{}
+\DoxyCodeLine{205             \mbox{\hyperlink{classBowser_a42edf5816be3c02db9eb30b8a898ba1d}{speed\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} = 0;}
+\DoxyCodeLine{206         \}}
+\DoxyCodeLine{207     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classBowser_af9b8a40064e19d458ccf074d514cf092}\label{classBowser_af9b8a40064e19d458ccf074d514cf092}} 
+\index{Bowser@{Bowser}!set\_x@{set\_x}}
+\index{set\_x@{set\_x}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{set\_x()}{set\_x()}}
+{\footnotesize\ttfamily void Bowser\+::set\+\_\+x (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 190 del archivo Bowser.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{190                      \{}
+\DoxyCodeLine{191         \mbox{\hyperlink{classBowser_a3ad8ea271403dee9a36c5bef511da900}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} = \mbox{\hyperlink{Cd_8cc_aa5ed323274431e0aff568bb688f5f956}{x}};}
+\DoxyCodeLine{192     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classBowser_a9d60105ed9e49009cb141233c77032b5}\label{classBowser_a9d60105ed9e49009cb141233c77032b5}} 
+\index{Bowser@{Bowser}!set\_y@{set\_y}}
+\index{set\_y@{set\_y}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{set\_y()}{set\_y()}}
+{\footnotesize\ttfamily void Bowser\+::set\+\_\+y (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 186 del archivo Bowser.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{186                       \{}
+\DoxyCodeLine{187         \mbox{\hyperlink{classBowser_a3ad8ea271403dee9a36c5bef511da900}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} = \mbox{\hyperlink{Backround_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}};}
+\DoxyCodeLine{188     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classBowser_abe993d84c165691167c2b89668dc6eaa}\label{classBowser_abe993d84c165691167c2b89668dc6eaa}} 
+\index{Bowser@{Bowser}!speed\_y@{speed\_y}}
+\index{speed\_y@{speed\_y}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{speed\_y()}{speed\_y()}}
+{\footnotesize\ttfamily int Bowser\+::speed\+\_\+y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 182 del archivo Bowser.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{182                  \{}
+\DoxyCodeLine{183         \textcolor{keywordflow}{return} \mbox{\hyperlink{classBowser_a42edf5816be3c02db9eb30b8a898ba1d}{speed\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}};}
+\DoxyCodeLine{184     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classBowser_ad90e639dcd8f6bb75ed6d45e3717a689}\label{classBowser_ad90e639dcd8f6bb75ed6d45e3717a689}} 
+\index{Bowser@{Bowser}!toggle\_grounded@{toggle\_grounded}}
+\index{toggle\_grounded@{toggle\_grounded}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{toggle\_grounded()}{toggle\_grounded()}}
+{\footnotesize\ttfamily void Bowser\+::toggle\+\_\+grounded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 213 del archivo Bowser.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{213                            \{}
+\DoxyCodeLine{214         \mbox{\hyperlink{classBowser_a4e2d94aec479cdb0a73c397dc4776a29}{set\_grounded}}(!\mbox{\hyperlink{classBowser_a4b4f1b371c62f29ac855be4760f651ba}{grounded\_}});}
+\DoxyCodeLine{215     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classBowser_a843c6ff712de797aa5178391f2db29b1}\label{classBowser_a843c6ff712de797aa5178391f2db29b1}} 
+\index{Bowser@{Bowser}!toggle\_state@{toggle\_state}}
+\index{toggle\_state@{toggle\_state}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{toggle\_state()}{toggle\_state()}}
+{\footnotesize\ttfamily void Bowser\+::toggle\+\_\+state (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Bowser_8hh_a184cabb72b370cfe0c7d593527728cd6}{bowser\+\_\+state\+\_\+s}}}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 209 del archivo Bowser.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{209                                        \{}
+\DoxyCodeLine{210         \mbox{\hyperlink{classBowser_addc158c685932aa22a399f8464c555a2}{bstate}} = \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}};}
+\DoxyCodeLine{211     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classBowser_a471e2f1b6e3e22becab39714a4bfce65}\label{classBowser_a471e2f1b6e3e22becab39714a4bfce65}} 
+\index{Bowser@{Bowser}!update@{update}}
+\index{update@{update}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Bowser\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{std\+::set$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&}]{queryplat,  }\item[{std\+::set$<$ \mbox{\hyperlink{classCircuitfloor}{Circuitfloor}} $\ast$ $>$ \&}]{cfloor,  }\item[{const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&}]{rmario,  }\item[{bool \&}]{mkilled }\end{DoxyParamCaption})}
+
+
+
+Actualitza \mbox{\hyperlink{classBowser}{Bowser}} segons la física, col·lisions i interaccions. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em window} & Finestra on es dibuixa \\
+\hline
+{\em queryplat} & Conjunt de plataformes per col·lisions \\
+\hline
+{\em cfloor} & Conjunt de circuit floors per col·lisions \\
+\hline
+{\em rmario} & Hitbox de \mbox{\hyperlink{classMario}{Mario}} \\
+\hline
+{\em mkilled} & Referència per indicar si \mbox{\hyperlink{classMario}{Mario}} ha mort \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+L’estat, posició i accions de \mbox{\hyperlink{classBowser}{Bowser}} s’actualitzen; si \mbox{\hyperlink{classBowser}{Bowser}} mata \mbox{\hyperlink{classMario}{Mario}}, mkilled queda a true. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 208 del archivo Bowser.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{208                                                                                                                                           \{}
+\DoxyCodeLine{209     \mbox{\hyperlink{classBowser_a3f575b32b07d0e5a2e1355c0f0ffcd0c}{last\_pos\_}} = \mbox{\hyperlink{classBowser_a3ad8ea271403dee9a36c5bef511da900}{pos\_}};}
+\DoxyCodeLine{210     \mbox{\hyperlink{classBowser_a42edf5816be3c02db9eb30b8a898ba1d}{speed\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} = 0; }
+\DoxyCodeLine{211     }
+\DoxyCodeLine{212     \textcolor{keywordtype}{int} mpos\_y = rmario.\mbox{\hyperlink{structpro2_1_1Rect_abea25fc7da9516fc9e1e88fb54e49737}{top}};}
+\DoxyCodeLine{213     \textcolor{keywordtype}{int} mpos\_x = rmario.\mbox{\hyperlink{structpro2_1_1Rect_a68877597032a2bb4630f37e44b885e81}{left}};}
+\DoxyCodeLine{214     }
+\DoxyCodeLine{215     \textcolor{keywordflow}{if} (std::abs(\mbox{\hyperlink{classBowser_a3ad8ea271403dee9a36c5bef511da900}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} -\/ mpos\_y) <= 150 and abs(\mbox{\hyperlink{classBowser_a3ad8ea271403dee9a36c5bef511da900}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} -\/ mpos\_x) <= 160) \{}
+\DoxyCodeLine{216         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classBowser_a3ad8ea271403dee9a36c5bef511da900}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} < mpos\_x) \{}
+\DoxyCodeLine{217             \mbox{\hyperlink{classBowser_a42edf5816be3c02db9eb30b8a898ba1d}{speed\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} = 1; }
+\DoxyCodeLine{218         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{classBowser_a3ad8ea271403dee9a36c5bef511da900}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} > mpos\_x) \{}
+\DoxyCodeLine{219             \mbox{\hyperlink{classBowser_a42edf5816be3c02db9eb30b8a898ba1d}{speed\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} = -\/1; }
+\DoxyCodeLine{220         \}}
+\DoxyCodeLine{221     \}}
+\DoxyCodeLine{222 }
+\DoxyCodeLine{223     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classBowser_a42edf5816be3c02db9eb30b8a898ba1d}{speed\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} != 0) \{}
+\DoxyCodeLine{224         \mbox{\hyperlink{classBowser_aedf8a5a0a2ec1df89d7479f53457265a}{looking\_left\_}} = \mbox{\hyperlink{classBowser_a42edf5816be3c02db9eb30b8a898ba1d}{speed\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} < 0;}
+\DoxyCodeLine{225     \}}
+\DoxyCodeLine{226     }
+\DoxyCodeLine{227 }
+\DoxyCodeLine{228     \textcolor{comment}{// Apply acceleration and speed}}
+\DoxyCodeLine{229     \mbox{\hyperlink{classBowser_a8ae506e6649808640db49df2de7d6e9e}{apply\_physics\_}}();}
+\DoxyCodeLine{230     }
+\DoxyCodeLine{231     \textcolor{comment}{// Check position}}
+\DoxyCodeLine{232     \mbox{\hyperlink{classBowser_a4e2d94aec479cdb0a73c397dc4776a29}{set\_grounded}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{233     }
+\DoxyCodeLine{234     \mbox{\hyperlink{classBowser_a301a505e55bad8a464d8f106b187d645}{update\_cfloor}}(cfloor);}
+\DoxyCodeLine{235     \mbox{\hyperlink{classBowser_a9e013f9af404e4873a655a20a2d92429}{update\_platform}}(queryplat);}
+\DoxyCodeLine{236     \textcolor{comment}{//Metode per matar a mario}}
+\DoxyCodeLine{237     mkilled = \textcolor{keyword}{false};}
+\DoxyCodeLine{238     \textcolor{keywordflow}{for}(\mbox{\hyperlink{classSpark}{Spark}}\& \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}} : \mbox{\hyperlink{classBowser_ae46559d5946bf77605301c50e82e381c}{sparks\_}}) \{}
+\DoxyCodeLine{239         \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}}.update(window);}
+\DoxyCodeLine{240         \textcolor{keywordflow}{if}(\mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}}.mario\_killed(rmario)) \{}
+\DoxyCodeLine{241             mkilled = \textcolor{keyword}{true};}
+\DoxyCodeLine{242             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{243         \}}
+\DoxyCodeLine{244     \}}
+\DoxyCodeLine{245     }
+\DoxyCodeLine{246     \textcolor{comment}{//salta cada 5 sec}}
+\DoxyCodeLine{247     \textcolor{keywordflow}{if} (window.\mbox{\hyperlink{classpro2_1_1Window_a36747221fc49f9b5dcf42d2d7bdf6964}{frame\_count}}() \% 240 == 0 and \mbox{\hyperlink{classBowser_a4b4f1b371c62f29ac855be4760f651ba}{grounded\_}}) \{}
+\DoxyCodeLine{248         \mbox{\hyperlink{classBowser_a22057caf94ed3d96190177b7764da93a}{jump}}();}
+\DoxyCodeLine{249     \}}
+\DoxyCodeLine{250 }
+\DoxyCodeLine{251 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classBowser_a301a505e55bad8a464d8f106b187d645}\label{classBowser_a301a505e55bad8a464d8f106b187d645}} 
+\index{Bowser@{Bowser}!update\_cfloor@{update\_cfloor}}
+\index{update\_cfloor@{update\_cfloor}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{update\_cfloor()}{update\_cfloor()}}
+{\footnotesize\ttfamily void Bowser\+::update\+\_\+cfloor (\begin{DoxyParamCaption}\item[{std\+::set$<$ \mbox{\hyperlink{classCircuitfloor}{Circuitfloor}} $\ast$ $>$ \&}]{cfloor }\end{DoxyParamCaption})}
+
+
+
+Actualitza la posició i estat de \mbox{\hyperlink{classBowser}{Bowser}} segons les col·lisions amb els circuit floors. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em cfloor} & Conjunt de circuit floors amb les quals \mbox{\hyperlink{classBowser}{Bowser}} pot col·lisionar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+L’estat i posició de \mbox{\hyperlink{classBowser}{Bowser}} s’actualitza tenint en compte les col·lisions amb els circuit floors. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 197 del archivo Bowser.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{197                                                        \{}
+\DoxyCodeLine{198     \textcolor{keywordflow}{for}(\mbox{\hyperlink{classCircuitfloor}{Circuitfloor}}* cf : cfloor)\{}
+\DoxyCodeLine{199 }
+\DoxyCodeLine{200         \textcolor{keywordflow}{if}((*cf).has\_crossed\_floor\_downwards(\mbox{\hyperlink{classBowser_a3f575b32b07d0e5a2e1355c0f0ffcd0c}{last\_pos\_}}, \mbox{\hyperlink{classBowser_a3ad8ea271403dee9a36c5bef511da900}{pos\_}}))\{}
+\DoxyCodeLine{201             \mbox{\hyperlink{classBowser_a4e2d94aec479cdb0a73c397dc4776a29}{set\_grounded}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{202             \mbox{\hyperlink{classBowser_a9d60105ed9e49009cb141233c77032b5}{set\_y}}((*cf).top());}
+\DoxyCodeLine{203         \}}
+\DoxyCodeLine{204         }
+\DoxyCodeLine{205     \}}
+\DoxyCodeLine{206 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classBowser_a9e013f9af404e4873a655a20a2d92429}\label{classBowser_a9e013f9af404e4873a655a20a2d92429}} 
+\index{Bowser@{Bowser}!update\_platform@{update\_platform}}
+\index{update\_platform@{update\_platform}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{update\_platform()}{update\_platform()}}
+{\footnotesize\ttfamily void Bowser\+::update\+\_\+platform (\begin{DoxyParamCaption}\item[{std\+::set$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ \&}]{queryplat }\end{DoxyParamCaption})}
+
+
+
+Actualitza la posició i estat de \mbox{\hyperlink{classBowser}{Bowser}} segons les colisions amb les plataformes. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em queryplat} & Conjunt de plataformes amb les quals \mbox{\hyperlink{classBowser}{Bowser}} pot colisionar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+L’estat i posició de \mbox{\hyperlink{classBowser}{Bowser}} s’actualitza tenint en compte les colisions amb les plataformes 
+\end{DoxyPostcond}
+
+
+Definición en la línea 165 del archivo Bowser.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{165                                                         \{}
+\DoxyCodeLine{166     \textcolor{keywordflow}{for} (\mbox{\hyperlink{classPlatform}{Platform}}* platform : queryplat) \{}
+\DoxyCodeLine{167         \textcolor{keywordflow}{if} (not \mbox{\hyperlink{classBowser_a4b4f1b371c62f29ac855be4760f651ba}{grounded\_}} and \mbox{\hyperlink{namespacepro2_a0949bec566043f033c7cc2e9d5ba2686}{rect\_touch}}(\mbox{\hyperlink{classBowser_a734a30ef6b25e8b502d24051bdc070de}{get\_rect}}(), platform-\/>get\_rect())) \{}
+\DoxyCodeLine{168             \mbox{\hyperlink{classBowser_a22057caf94ed3d96190177b7764da93a}{jump}}();}
+\DoxyCodeLine{169         \}}
+\DoxyCodeLine{170         \textcolor{keywordflow}{if} ((*platform).has\_crossed\_floor\_downwards(\mbox{\hyperlink{classBowser_a3f575b32b07d0e5a2e1355c0f0ffcd0c}{last\_pos\_}}, \mbox{\hyperlink{classBowser_a3ad8ea271403dee9a36c5bef511da900}{pos\_}})) \{}
+\DoxyCodeLine{171             \mbox{\hyperlink{classBowser_a4e2d94aec479cdb0a73c397dc4776a29}{set\_grounded}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{172             \mbox{\hyperlink{classBowser_a9d60105ed9e49009cb141233c77032b5}{set\_y}}((*platform).top());}
+\DoxyCodeLine{173         \}}
+\DoxyCodeLine{174 }
+\DoxyCodeLine{175         \textcolor{keywordflow}{if}((*platform).has\_crossed\_floor\_horizontall(\mbox{\hyperlink{classBowser_a3f575b32b07d0e5a2e1355c0f0ffcd0c}{last\_pos\_}}, \mbox{\hyperlink{classBowser_a3ad8ea271403dee9a36c5bef511da900}{pos\_}}))\{}
+\DoxyCodeLine{176             \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}} prect = platform-\/>get\_rect();}
+\DoxyCodeLine{177             \textcolor{keywordtype}{int} height = platform-\/>\mbox{\hyperlink{structpro2_1_1Rect_a5240a907c581979ec7981419286a8637}{bottom}}() -\/ platform-\/>top();}
+\DoxyCodeLine{178             \textcolor{comment}{//hascrossed left}}
+\DoxyCodeLine{179             \textcolor{keywordflow}{if}(\mbox{\hyperlink{namespacepro2_a0949bec566043f033c7cc2e9d5ba2686}{rect\_touch}}(\mbox{\hyperlink{classBowser_a734a30ef6b25e8b502d24051bdc070de}{get\_rect}}(), prect))\{}
+\DoxyCodeLine{180                 }
+\DoxyCodeLine{181                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classBowser_a3f575b32b07d0e5a2e1355c0f0ffcd0c}{last\_pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} <= prect.\mbox{\hyperlink{structpro2_1_1Rect_a68877597032a2bb4630f37e44b885e81}{left}} and \mbox{\hyperlink{classBowser_a3ad8ea271403dee9a36c5bef511da900}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} <= prect.\mbox{\hyperlink{structpro2_1_1Rect_aae04a074de42a64bff8e9781b8e2af2b}{right}})\{}
+\DoxyCodeLine{182                     }
+\DoxyCodeLine{183                     \mbox{\hyperlink{classBowser_af9b8a40064e19d458ccf074d514cf092}{set\_x}}(prect.\mbox{\hyperlink{structpro2_1_1Rect_a68877597032a2bb4630f37e44b885e81}{left}} -\/ 20);}
+\DoxyCodeLine{184                     }
+\DoxyCodeLine{185                 \}}
+\DoxyCodeLine{186                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\mbox{\hyperlink{classBowser_a3f575b32b07d0e5a2e1355c0f0ffcd0c}{last\_pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} >= prect.\mbox{\hyperlink{structpro2_1_1Rect_aae04a074de42a64bff8e9781b8e2af2b}{right}} and  \mbox{\hyperlink{classBowser_a3ad8ea271403dee9a36c5bef511da900}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} >= prect.\mbox{\hyperlink{structpro2_1_1Rect_a68877597032a2bb4630f37e44b885e81}{left}})\{}
+\DoxyCodeLine{187                    }
+\DoxyCodeLine{188                     \mbox{\hyperlink{classBowser_af9b8a40064e19d458ccf074d514cf092}{set\_x}}(prect.\mbox{\hyperlink{structpro2_1_1Rect_aae04a074de42a64bff8e9781b8e2af2b}{right}} + 20);}
+\DoxyCodeLine{189                 \}}
+\DoxyCodeLine{190             \}}
+\DoxyCodeLine{191 }
+\DoxyCodeLine{192         \}}
+\DoxyCodeLine{193       }
+\DoxyCodeLine{194     \}}
+\DoxyCodeLine{195     }
+\DoxyCodeLine{196 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classBowser_a97b436656ea51471e03af5af1752abef}\label{classBowser_a97b436656ea51471e03af5af1752abef}} 
+\index{Bowser@{Bowser}!accel\_@{accel\_}}
+\index{accel\_@{accel\_}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{accel\_}{accel\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Bowser\+::accel\+\_\+ = \{0, 0\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 137 del archivo Bowser.\+hh.
+
+\mbox{\Hypertarget{classBowser_af104d75c8b01b5dcb914ea9859e8df13}\label{classBowser_af104d75c8b01b5dcb914ea9859e8df13}} 
+\index{Bowser@{Bowser}!accel\_time\_@{accel\_time\_}}
+\index{accel\_time\_@{accel\_time\_}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{accel\_time\_}{accel\_time\_}}
+{\footnotesize\ttfamily double Bowser\+::accel\+\_\+time\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 141 del archivo Bowser.\+hh.
+
+\mbox{\Hypertarget{classBowser_a9c946811dee7de11d5ab6fbb48f4ed6e}\label{classBowser_a9c946811dee7de11d5ab6fbb48f4ed6e}} 
+\index{Bowser@{Bowser}!bowser\_sprite\_normal\_@{bowser\_sprite\_normal\_}}
+\index{bowser\_sprite\_normal\_@{bowser\_sprite\_normal\_}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{bowser\_sprite\_normal\_}{bowser\_sprite\_normal\_}}
+{\footnotesize\ttfamily const vector$<$ vector$<$ int $>$ $>$ Bowser\+::bowser\+\_\+sprite\+\_\+normal\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Matriu de sprites de bowser. 
+
+
+
+Definición en la línea 271 del archivo Bowser.\+hh.
+
+\mbox{\Hypertarget{classBowser_addc158c685932aa22a399f8464c555a2}\label{classBowser_addc158c685932aa22a399f8464c555a2}} 
+\index{Bowser@{Bowser}!bstate@{bstate}}
+\index{bstate@{bstate}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{bstate}{bstate}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Bowser_8hh_a184cabb72b370cfe0c7d593527728cd6}{bowser\+\_\+state\+\_\+s}} Bowser\+::bstate = \mbox{\hyperlink{Bowser_8hh_a184cabb72b370cfe0c7d593527728cd6a4f34c5c191d6e0d028ca831b6c0b1571}{ALIVE}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 145 del archivo Bowser.\+hh.
+
+\mbox{\Hypertarget{classBowser_a4b4f1b371c62f29ac855be4760f651ba}\label{classBowser_a4b4f1b371c62f29ac855be4760f651ba}} 
+\index{Bowser@{Bowser}!grounded\_@{grounded\_}}
+\index{grounded\_@{grounded\_}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{grounded\_}{grounded\_}}
+{\footnotesize\ttfamily bool Bowser\+::grounded\+\_\+ = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 143 del archivo Bowser.\+hh.
+
+\mbox{\Hypertarget{classBowser_a3f575b32b07d0e5a2e1355c0f0ffcd0c}\label{classBowser_a3f575b32b07d0e5a2e1355c0f0ffcd0c}} 
+\index{Bowser@{Bowser}!last\_pos\_@{last\_pos\_}}
+\index{last\_pos\_@{last\_pos\_}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{last\_pos\_}{last\_pos\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Bowser\+::last\+\_\+pos\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 135 del archivo Bowser.\+hh.
+
+\mbox{\Hypertarget{classBowser_aedf8a5a0a2ec1df89d7479f53457265a}\label{classBowser_aedf8a5a0a2ec1df89d7479f53457265a}} 
+\index{Bowser@{Bowser}!looking\_left\_@{looking\_left\_}}
+\index{looking\_left\_@{looking\_left\_}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{looking\_left\_}{looking\_left\_}}
+{\footnotesize\ttfamily bool Bowser\+::looking\+\_\+left\+\_\+ = true\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 147 del archivo Bowser.\+hh.
+
+\mbox{\Hypertarget{classBowser_a3ad8ea271403dee9a36c5bef511da900}\label{classBowser_a3ad8ea271403dee9a36c5bef511da900}} 
+\index{Bowser@{Bowser}!pos\_@{pos\_}}
+\index{pos\_@{pos\_}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{pos\_}{pos\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Bowser\+::pos\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 135 del archivo Bowser.\+hh.
+
+\mbox{\Hypertarget{classBowser_a469bde58c18aa7161a352cf687e12434}\label{classBowser_a469bde58c18aa7161a352cf687e12434}} 
+\index{Bowser@{Bowser}!rect\_Bowser\_@{rect\_Bowser\_}}
+\index{rect\_Bowser\_@{rect\_Bowser\_}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{rect\_Bowser\_}{rect\_Bowser\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} Bowser\+::rect\+\_\+\+Bowser\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 139 del archivo Bowser.\+hh.
+
+\mbox{\Hypertarget{classBowser_ae46559d5946bf77605301c50e82e381c}\label{classBowser_ae46559d5946bf77605301c50e82e381c}} 
+\index{Bowser@{Bowser}!sparks\_@{sparks\_}}
+\index{sparks\_@{sparks\_}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{sparks\_}{sparks\_}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{classSpark}{Spark}}$>$ Bowser\+::sparks\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+Llista d\textquotesingle{}espurnes a llençar 
+
+Definición en la línea 134 del archivo Bowser.\+hh.
+
+\mbox{\Hypertarget{classBowser_a42edf5816be3c02db9eb30b8a898ba1d}\label{classBowser_a42edf5816be3c02db9eb30b8a898ba1d}} 
+\index{Bowser@{Bowser}!speed\_@{speed\_}}
+\index{speed\_@{speed\_}!Bowser@{Bowser}}
+\doxysubsubsection{\texorpdfstring{speed\_}{speed\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Bowser\+::speed\+\_\+ = \{0, 0\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 136 del archivo Bowser.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Bowser_8hh}{Bowser.\+hh}}\item 
+\mbox{\hyperlink{Bowser_8cc}{Bowser.\+cc}}\end{DoxyCompactItemize}

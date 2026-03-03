@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SUPER MARIO BROS PRO2: Fichero Fuente utils.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SUPER MARIO BROS PRO2
+   &#160;<span id="projectnumber">1</span>
+   </div>
+   <div id="projectbrief">Un juego basado en el primer super Mario Bros de la NES con tematica de componentes informaticos retro</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">utils.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="utils_8hh.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef UTILS_HH</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define UTILS_HH</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="geometry_8hh.html">geometry.hh</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="window_8hh.html">window.hh</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepro2.html">pro2</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacepro2.html#abbe0515c5f731a53b2b2afcc7b51a4da">paint_hline</a>(<a class="code" href="classpro2_1_1Window.html">pro2::Window</a>&amp; window, <span class="keywordtype">int</span> xini, <span class="keywordtype">int</span> xfin, <span class="keywordtype">int</span> <a class="code" href="Backround_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a>, <a class="code" href="namespacepro2.html#a1cf275c5d221949062bba6a49b3daa13">pro2::Color</a> color = <a class="code" href="namespacepro2.html#a776e9498a2ffad905d1116b37ac41345">pro2::white</a>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacepro2.html#abb90df6acb9671a913c1f4d91591caae">paint_vline</a>(<a class="code" href="classpro2_1_1Window.html">pro2::Window</a>&amp; window, <span class="keywordtype">int</span> <a class="code" href="Cd_8cc.html#aa5ed323274431e0aff568bb688f5f956">x</a>, <span class="keywordtype">int</span> yini, <span class="keywordtype">int</span> yfin, <a class="code" href="namespacepro2.html#a1cf275c5d221949062bba6a49b3daa13">pro2::Color</a> color = <a class="code" href="namespacepro2.html#a776e9498a2ffad905d1116b37ac41345">pro2::white</a>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacepro2.html#a9e6cd1aef5863a326bbc5fb0006eaaea">paint_frame</a>(<a class="code" href="classpro2_1_1Window.html">pro2::Window</a>&amp; window, <a class="code" href="structpro2_1_1Rect.html">pro2::Rect</a> <a class="code" href="mario_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code" href="namespacepro2.html#a1cf275c5d221949062bba6a49b3daa13">pro2::Color</a> color, <span class="keywordtype">int</span> size);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacepro2.html#a982fe1dca9b9960209c0129dd56379c5">paint_rect</a>(<a class="code" href="classpro2_1_1Window.html">pro2::Window</a>&amp; window, <a class="code" href="structpro2_1_1Rect.html">pro2::Rect</a> <a class="code" href="mario_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a>, <a class="code" href="namespacepro2.html#a1cf275c5d221949062bba6a49b3daa13">pro2::Color</a> color);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacepro2.html#a0949bec566043f033c7cc2e9d5ba2686">rect_touch</a>(<a class="code" href="structpro2_1_1Rect.html">pro2::Rect</a> r1, <a class="code" href="structpro2_1_1Rect.html">pro2::Rect</a> r2);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="namespacepro2.html#ada680859615585a1e6583f904d0d1908">   69</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacepro2.html#a416c3e13d8244d9b102f7df30696c186">paint_sprite</a>(<a class="code" href="classpro2_1_1Window.html">pro2::Window</a>&amp;                        window,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                  <a class="code" href="structpro2_1_1Pt.html">pro2::Pt</a>                             orig,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                  <span class="keyword">const</span> std::vector&lt;std::vector&lt;int&gt;&gt;&amp; sprite,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                  <span class="keywordtype">bool</span>                                 mirror);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}  <span class="comment">// namespace pro2</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aBackround_8cc_html_a536c339057ad4fa1840581ffde1bec6b"><div class="ttname"><a href="Backround_8cc.html#a536c339057ad4fa1840581ffde1bec6b">y</a></div><div class="ttdeci">const int y</div><div class="ttdef"><b>Definition:</b> <a href="Backround_8cc_source.html#l00008">Backround.cc:8</a></div></div>
+<div class="ttc" id="aCd_8cc_html_aa5ed323274431e0aff568bb688f5f956"><div class="ttname"><a href="Cd_8cc.html#aa5ed323274431e0aff568bb688f5f956">x</a></div><div class="ttdeci">const int x</div><div class="ttdef"><b>Definition:</b> <a href="Cd_8cc_source.html#l00008">Cd.cc:8</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html"><div class="ttname"><a href="classpro2_1_1Window.html">pro2::Window</a></div><div class="ttdef"><b>Definition:</b> <a href="window_8hh_source.html#l00071">window.hh:71</a></div></div>
+<div class="ttc" id="ageometry_8hh_html"><div class="ttname"><a href="geometry_8hh.html">geometry.hh</a></div></div>
+<div class="ttc" id="amario_8cc_html_aab1a61aefa4f95e20603bbf888cb2a5f"><div class="ttname"><a href="mario_8cc.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a></div><div class="ttdeci">const int r</div><div class="ttdef"><b>Definition:</b> <a href="mario_8cc_source.html#l00007">mario.cc:7</a></div></div>
+<div class="ttc" id="anamespacepro2_html"><div class="ttname"><a href="namespacepro2.html">pro2</a></div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hh_source.html#l00004">geometry.hh:4</a></div></div>
+<div class="ttc" id="anamespacepro2_html_a0949bec566043f033c7cc2e9d5ba2686"><div class="ttname"><a href="namespacepro2.html#a0949bec566043f033c7cc2e9d5ba2686">pro2::rect_touch</a></div><div class="ttdeci">bool rect_touch(Rect r1, Rect r2)</div><div class="ttdoc">Determina si dos rectangles s'intersequen es a dir &quot;es toquen&quot;.</div><div class="ttdef"><b>Definition:</b> <a href="utils_8cc_source.html#l00041">utils.cc:41</a></div></div>
+<div class="ttc" id="anamespacepro2_html_a1cf275c5d221949062bba6a49b3daa13"><div class="ttname"><a href="namespacepro2.html#a1cf275c5d221949062bba6a49b3daa13">pro2::Color</a></div><div class="ttdeci">uint32_t Color</div><div class="ttdef"><b>Definition:</b> <a href="window_8hh_source.html#l00027">window.hh:27</a></div></div>
+<div class="ttc" id="anamespacepro2_html_a416c3e13d8244d9b102f7df30696c186"><div class="ttname"><a href="namespacepro2.html#a416c3e13d8244d9b102f7df30696c186">pro2::paint_sprite</a></div><div class="ttdeci">void paint_sprite(pro2::Window &amp;window, pro2::Pt orig, const vector&lt; vector&lt; int &gt;&gt; &amp;sprite, bool mirror)</div><div class="ttdef"><b>Definition:</b> <a href="utils_8cc_source.html#l00046">utils.cc:46</a></div></div>
+<div class="ttc" id="anamespacepro2_html_a776e9498a2ffad905d1116b37ac41345"><div class="ttname"><a href="namespacepro2.html#a776e9498a2ffad905d1116b37ac41345">pro2::white</a></div><div class="ttdeci">const Color white</div><div class="ttdef"><b>Definition:</b> <a href="window_8hh_source.html#l00036">window.hh:36</a></div></div>
+<div class="ttc" id="anamespacepro2_html_a982fe1dca9b9960209c0129dd56379c5"><div class="ttname"><a href="namespacepro2.html#a982fe1dca9b9960209c0129dd56379c5">pro2::paint_rect</a></div><div class="ttdeci">void paint_rect(pro2::Window &amp;window, pro2::Rect r, pro2::Color color)</div><div class="ttdoc">Dibuixa un rectangle en el joc.</div><div class="ttdef"><b>Definition:</b> <a href="utils_8cc_source.html#l00033">utils.cc:33</a></div></div>
+<div class="ttc" id="anamespacepro2_html_a9e6cd1aef5863a326bbc5fb0006eaaea"><div class="ttname"><a href="namespacepro2.html#a9e6cd1aef5863a326bbc5fb0006eaaea">pro2::paint_frame</a></div><div class="ttdeci">void paint_frame(pro2::Window &amp;window, pro2::Rect r, pro2::Color color, int size)</div><div class="ttdoc">Dibuixa el marc del joc.</div><div class="ttdef"><b>Definition:</b> <a href="utils_8cc_source.html#l00018">utils.cc:18</a></div></div>
+<div class="ttc" id="anamespacepro2_html_abb90df6acb9671a913c1f4d91591caae"><div class="ttname"><a href="namespacepro2.html#abb90df6acb9671a913c1f4d91591caae">pro2::paint_vline</a></div><div class="ttdeci">void paint_vline(pro2::Window &amp;window, int x, int yini, int yfin, Color color)</div><div class="ttdoc">Dibuja una línea vertical en la ventana.</div><div class="ttdef"><b>Definition:</b> <a href="utils_8cc_source.html#l00012">utils.cc:12</a></div></div>
+<div class="ttc" id="anamespacepro2_html_abbe0515c5f731a53b2b2afcc7b51a4da"><div class="ttname"><a href="namespacepro2.html#abbe0515c5f731a53b2b2afcc7b51a4da">pro2::paint_hline</a></div><div class="ttdeci">void paint_hline(pro2::Window &amp;window, int xini, int xfin, int y, Color color)</div><div class="ttdoc">Dibuja una línea horizontal en la ventana.</div><div class="ttdef"><b>Definition:</b> <a href="utils_8cc_source.html#l00006">utils.cc:6</a></div></div>
+<div class="ttc" id="astructpro2_1_1Pt_html"><div class="ttname"><a href="structpro2_1_1Pt.html">pro2::Pt</a></div><div class="ttdoc">Punt amb coordenades enters (x, y).</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hh_source.html#l00008">geometry.hh:8</a></div></div>
+<div class="ttc" id="astructpro2_1_1Rect_html"><div class="ttname"><a href="structpro2_1_1Rect.html">pro2::Rect</a></div><div class="ttdoc">Rectangle definit per coordenades esquerra, superior, dreta i inferior.</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hh_source.html#l00046">geometry.hh:46</a></div></div>
+<div class="ttc" id="awindow_8hh_html"><div class="ttname"><a href="window_8hh.html">window.hh</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

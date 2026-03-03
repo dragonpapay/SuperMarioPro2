@@ -1,0 +1,385 @@
+\hypertarget{classFinder}{}\doxysection{Referencia de la plantilla de la Clase Finder$<$ T $>$}
+\label{classFinder}\index{Finder$<$ T $>$@{Finder$<$ T $>$}}
+
+
+Estructura per accelerar cerques espacials mitjançant una quadrícula de cel·les.  
+
+
+
+
+{\ttfamily \#include $<$Finder.\+hh$>$}
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFinder_a8a823378bec0a23c9fa080f2332999ad}{Finder}} ()
+\item 
+void \mbox{\hyperlink{classFinder_a60b26c2f502472b2d58823bddea14e7b}{add}} (T $\ast$\mbox{\hyperlink{Circuitfloor_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}})
+\begin{DoxyCompactList}\small\item\em Afegeix un objecte a les celes que el seu rectangle toca. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFinder_a429914516be45896a1049253e768160a}{update}} (T $\ast$\mbox{\hyperlink{Circuitfloor_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}})
+\begin{DoxyCompactList}\small\item\em Actualitza la posició d’un objecte dins l’estructura. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFinder_a6c6f6492df6b83891eaafe534b6f4051}{remove}} (T $\ast$\mbox{\hyperlink{Circuitfloor_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}})
+\begin{DoxyCompactList}\small\item\em Elimina un objecte de l’estructura. \end{DoxyCompactList}\item 
+std\+::set$<$ T $\ast$ $>$ \mbox{\hyperlink{classFinder_ab3046540b3e9d18c87ae117afe9e2b2d}{query}} (\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} rect)
+\begin{DoxyCompactList}\small\item\em Retorna el conjunt d\textquotesingle{}objectes amb rectangles total o parcialment dins de {\ttfamily rect}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classFinder_a82200c474f351c1628e0446fefcb49dd}{rect\+\_\+intersects}} (const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&r1, const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&r2)
+\begin{DoxyCompactList}\small\item\em Comprova si dos rectangles s\textquotesingle{}intersecten. \end{DoxyCompactList}\item 
+std\+::set$<$ \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} $>$ \mbox{\hyperlink{classFinder_a5a3c7e910955a669a040759e8427d694}{get\+\_\+tl\+\_\+of\+\_\+intersections\+\_\+with\+\_\+obj}} (\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \mbox{\hyperlink{mario_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}})
+\begin{DoxyCompactList}\small\item\em retorna les celes (per coordenada topleft) que intersecten amb un rectangle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classFinder_af1eb232345b1a91c963b4160f541bf3b}{cell\+\_\+size}} = 128
+\item 
+std\+::map$<$ \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}, std\+::set$<$ T $\ast$ $>$ $>$ \mbox{\hyperlink{classFinder_aee9d6eaa42c104a432a489ad65dc173a}{screensquares}}
+\item 
+std\+::map$<$ T $\ast$, std\+::set$<$ \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} $>$ $>$ \mbox{\hyperlink{classFinder_a4202d79c6d671ac4c26773c091b087bc}{t\+\_\+cells}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+\subsubsection*{template$<$typename T$>$\newline
+class Finder$<$ T $>$}
+
+Estructura per accelerar cerques espacials mitjançant una quadrícula de cel·les. 
+
+Aquesta classe divideix la pantalla en celes de mida fixa i indexa els objectes segons els rectangles que ocupen. Permet afegir, eliminar, actualitzar i cercar objectes que intersecten amb un rectangle donat de forma eficient.
+
+
+\begin{DoxyTemplParams}{Parámetros del template}
+{\em T} & Tipus de l\textquotesingle{}objecte que ha d\textquotesingle{}implementar la funció \char`\"{}get\+\_\+rect() \char`\"{} que retorna \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \\
+\hline
+\end{DoxyTemplParams}
+
+
+Definición en la línea 25 del archivo Finder.\+hh.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classFinder_a8a823378bec0a23c9fa080f2332999ad}\label{classFinder_a8a823378bec0a23c9fa080f2332999ad}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!Finder@{Finder}}
+\index{Finder@{Finder}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Finder()}{Finder()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::\mbox{\hyperlink{classFinder}{Finder}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 76 del archivo Finder.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{76 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classFinder_a60b26c2f502472b2d58823bddea14e7b}\label{classFinder_a60b26c2f502472b2d58823bddea14e7b}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!add@{add}}
+\index{add@{add}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::add (\begin{DoxyParamCaption}\item[{T $\ast$}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Afegeix un objecte a les celes que el seu rectangle toca. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em t} & Punter a l\textquotesingle{}objecte \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+L\textquotesingle{}objecte te get\+\_\+rect() 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+L\textquotesingle{}objecte queda indexat dins l\textquotesingle{}estructura 
+\end{DoxyPostcond}
+
+
+Definición en la línea 84 del archivo Finder.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{84                   \{}
+\DoxyCodeLine{85         \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}} \mbox{\hyperlink{mario_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}} = \mbox{\hyperlink{Cd_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}}-\/>get\_rect();}
+\DoxyCodeLine{86         std::set<pro2::Pt> intersects = \mbox{\hyperlink{classFinder_a5a3c7e910955a669a040759e8427d694}{get\_tl\_of\_intersections\_with\_obj}}(\mbox{\hyperlink{mario_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}});}
+\DoxyCodeLine{87         std::set<pro2::Pt>::iterator iti = intersects.begin();}
+\DoxyCodeLine{88         \mbox{\hyperlink{classFinder_a4202d79c6d671ac4c26773c091b087bc}{t\_cells}}.insert(\{\mbox{\hyperlink{Cd_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}}, intersects\});}
+\DoxyCodeLine{89         \textcolor{keywordflow}{while} (iti != intersects.end())\{}
+\DoxyCodeLine{90             \mbox{\hyperlink{classFinder_aee9d6eaa42c104a432a489ad65dc173a}{screensquares}}[*(iti)].insert(\mbox{\hyperlink{Cd_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}});}
+\DoxyCodeLine{91             ++iti;}
+\DoxyCodeLine{92         \}}
+\DoxyCodeLine{93         }
+\DoxyCodeLine{94     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classFinder_a5a3c7e910955a669a040759e8427d694}\label{classFinder_a5a3c7e910955a669a040759e8427d694}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!get\_tl\_of\_intersections\_with\_obj@{get\_tl\_of\_intersections\_with\_obj}}
+\index{get\_tl\_of\_intersections\_with\_obj@{get\_tl\_of\_intersections\_with\_obj}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{get\_tl\_of\_intersections\_with\_obj()}{get\_tl\_of\_intersections\_with\_obj()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::set$<$\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}$>$ \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::get\+\_\+tl\+\_\+of\+\_\+intersections\+\_\+with\+\_\+obj (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}}}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+retorna les celes (per coordenada topleft) que intersecten amb un rectangle. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em r} & Rectangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Conjunt de punts que representen les celes tocades pel rectangle 
+\end{DoxyPostcond}
+
+
+Definición en la línea 50 del archivo Finder.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50                                                                  \{}
+\DoxyCodeLine{51         std::set<pro2::Pt> point\_intersect;}
+\DoxyCodeLine{52         \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}} tlobj = \{\mbox{\hyperlink{mario_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}}.left, \mbox{\hyperlink{mario_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}}.top\};}
+\DoxyCodeLine{53         }
+\DoxyCodeLine{54         \textcolor{keywordtype}{int} left = tlobj.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} / \mbox{\hyperlink{classFinder_af1eb232345b1a91c963b4160f541bf3b}{cell\_size}};}
+\DoxyCodeLine{55         \textcolor{keywordtype}{int} right = \mbox{\hyperlink{mario_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}}.right / \mbox{\hyperlink{classFinder_af1eb232345b1a91c963b4160f541bf3b}{cell\_size}};}
+\DoxyCodeLine{56         \textcolor{keywordtype}{int} top =  tlobj.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} / \mbox{\hyperlink{classFinder_af1eb232345b1a91c963b4160f541bf3b}{cell\_size}};}
+\DoxyCodeLine{57         \textcolor{keywordtype}{int} bottom = \mbox{\hyperlink{mario_8cc_aab1a61aefa4f95e20603bbf888cb2a5f}{r}}.bottom / \mbox{\hyperlink{classFinder_af1eb232345b1a91c963b4160f541bf3b}{cell\_size}};}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} row = top; row <= bottom; row++)\{}
+\DoxyCodeLine{60             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} col = left; col <= right; col++)\{}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62                 \textcolor{keywordtype}{int} cell\_x = col * \mbox{\hyperlink{classFinder_af1eb232345b1a91c963b4160f541bf3b}{cell\_size}};}
+\DoxyCodeLine{63                 \textcolor{keywordtype}{int} cell\_y = row * \mbox{\hyperlink{classFinder_af1eb232345b1a91c963b4160f541bf3b}{cell\_size}};}
+\DoxyCodeLine{64                 \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}} tl\_cell = \{cell\_x, cell\_y\};}
+\DoxyCodeLine{65                 point\_intersect.insert(tl\_cell);}
+\DoxyCodeLine{66             \}}
+\DoxyCodeLine{67         \}}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69         \textcolor{keywordflow}{return} point\_intersect;}
+\DoxyCodeLine{70     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classFinder_ab3046540b3e9d18c87ae117afe9e2b2d}\label{classFinder_ab3046540b3e9d18c87ae117afe9e2b2d}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!query@{query}}
+\index{query@{query}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{query()}{query()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::set$<$ T $\ast$$>$ \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::query (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}}}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna el conjunt d\textquotesingle{}objectes amb rectangles total o parcialment dins de {\ttfamily rect}. 
+
+Si el nombre de rectangles del contenidor és {\ttfamily n}, el cost de l\textquotesingle{}algorisme ha de ser O(log n).
+
+
+\begin{DoxyParams}{Parámetros}
+{\em rect} & El rectangle de cerca\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Un conjunt de punters a objectes que tenen un rectangle parcial o totalment dins de {\ttfamily rect} 
+\end{DoxyReturn}
+
+
+Definición en la línea 148 del archivo Finder.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{148                                        \{}
+\DoxyCodeLine{149        \textcolor{keyword}{typename} std::set< T*> res;}
+\DoxyCodeLine{150         std::set<pro2::Pt> intersects = \mbox{\hyperlink{classFinder_a5a3c7e910955a669a040759e8427d694}{get\_tl\_of\_intersections\_with\_obj}}(rect);}
+\DoxyCodeLine{151         std::set<pro2::Pt>::iterator it = intersects.begin();}
+\DoxyCodeLine{152 }
+\DoxyCodeLine{153         \textcolor{keywordflow}{while}(it != intersects.end())\{}
+\DoxyCodeLine{154             \textcolor{keyword}{typename} std::map<pro2::Pt, std::set< T*>>::iterator itcells = \mbox{\hyperlink{classFinder_aee9d6eaa42c104a432a489ad65dc173a}{screensquares}}.find(*it);}
+\DoxyCodeLine{155             \textcolor{keywordflow}{if}(itcells != \mbox{\hyperlink{classFinder_aee9d6eaa42c104a432a489ad65dc173a}{screensquares}}.end())\{}
+\DoxyCodeLine{156                 \textcolor{keyword}{typename} std::set< T*>::iterator itobj = (*itcells).second.begin();}
+\DoxyCodeLine{157                 \textcolor{keywordflow}{while} (itobj != (*itcells).second.end())\{}
+\DoxyCodeLine{158                     T* obj = *itobj;}
+\DoxyCodeLine{159                     \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}} robj = obj-\/>get\_rect();}
+\DoxyCodeLine{160                     \textcolor{keywordflow}{if}(\mbox{\hyperlink{classFinder_a82200c474f351c1628e0446fefcb49dd}{rect\_intersects}}(rect, robj))\{}
+\DoxyCodeLine{161                         res.insert(obj);}
+\DoxyCodeLine{162                     \}}
+\DoxyCodeLine{163                     ++itobj;}
+\DoxyCodeLine{164                 \}}
+\DoxyCodeLine{165             \}}
+\DoxyCodeLine{166 }
+\DoxyCodeLine{167             ++it;}
+\DoxyCodeLine{168         \}}
+\DoxyCodeLine{169         \textcolor{keywordflow}{return} res;}
+\DoxyCodeLine{170     \}   }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classFinder_a82200c474f351c1628e0446fefcb49dd}\label{classFinder_a82200c474f351c1628e0446fefcb49dd}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!rect\_intersects@{rect\_intersects}}
+\index{rect\_intersects@{rect\_intersects}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{rect\_intersects()}{rect\_intersects()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::rect\+\_\+intersects (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&}]{r1,  }\item[{const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&}]{r2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Comprova si dos rectangles s\textquotesingle{}intersecten. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em r1} & Primer rectangle \\
+\hline
+{\em r2} & Segon rectangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Cert si hi ha intersecció 
+\end{DoxyReturn}
+
+
+Definición en la línea 39 del archivo Finder.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{39                                                                   \{}
+\DoxyCodeLine{40         \textcolor{keywordflow}{if} (r1.\mbox{\hyperlink{structpro2_1_1Rect_a68877597032a2bb4630f37e44b885e81}{left}} <= r2.\mbox{\hyperlink{structpro2_1_1Rect_aae04a074de42a64bff8e9781b8e2af2b}{right}} and r1.\mbox{\hyperlink{structpro2_1_1Rect_aae04a074de42a64bff8e9781b8e2af2b}{right}} >= r2.\mbox{\hyperlink{structpro2_1_1Rect_a68877597032a2bb4630f37e44b885e81}{left}} and r1.\mbox{\hyperlink{structpro2_1_1Rect_abea25fc7da9516fc9e1e88fb54e49737}{top}} <= r2.\mbox{\hyperlink{structpro2_1_1Rect_a5240a907c581979ec7981419286a8637}{bottom}} and r1.\mbox{\hyperlink{structpro2_1_1Rect_a5240a907c581979ec7981419286a8637}{bottom}} >= r2.\mbox{\hyperlink{structpro2_1_1Rect_abea25fc7da9516fc9e1e88fb54e49737}{top}} ) \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{41         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{42     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classFinder_a6c6f6492df6b83891eaafe534b6f4051}\label{classFinder_a6c6f6492df6b83891eaafe534b6f4051}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!remove@{remove}}
+\index{remove@{remove}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::remove (\begin{DoxyParamCaption}\item[{T $\ast$}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Elimina un objecte de l’estructura. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em t} & Punter a l’objecte \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+L’objecte ja no estarà indexat 
+\end{DoxyPostcond}
+
+
+Definición en la línea 113 del archivo Finder.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{113                      \{}
+\DoxyCodeLine{114         }
+\DoxyCodeLine{115         \textcolor{keyword}{typename} std::map<T*, std::set<pro2::Pt>>::iterator it = \mbox{\hyperlink{classFinder_a4202d79c6d671ac4c26773c091b087bc}{t\_cells}}.find(\mbox{\hyperlink{Cd_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}});}
+\DoxyCodeLine{116         \textcolor{keywordflow}{if} (it != \mbox{\hyperlink{classFinder_a4202d79c6d671ac4c26773c091b087bc}{t\_cells}}.end())\{}
+\DoxyCodeLine{117             }
+\DoxyCodeLine{118             std::set<pro2::Pt>::iterator cell\_it = it-\/>second.begin();}
+\DoxyCodeLine{119             \textcolor{keywordflow}{while} (cell\_it != it-\/>second.end())\{}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{121                 \textcolor{keyword}{typename} std::map<pro2::Pt, std::set<T*> >::iterator sq\_it = \mbox{\hyperlink{classFinder_aee9d6eaa42c104a432a489ad65dc173a}{screensquares}}.find(*cell\_it);}
+\DoxyCodeLine{122                 \textcolor{keywordflow}{if} (sq\_it != \mbox{\hyperlink{classFinder_aee9d6eaa42c104a432a489ad65dc173a}{screensquares}}.end()) \{}
+\DoxyCodeLine{123                     (*sq\_it).second.erase(\mbox{\hyperlink{Cd_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}});}
+\DoxyCodeLine{124             }
+\DoxyCodeLine{125                     \textcolor{keywordflow}{if} ((*sq\_it).second.empty())\{}
+\DoxyCodeLine{126                         \mbox{\hyperlink{classFinder_aee9d6eaa42c104a432a489ad65dc173a}{screensquares}}.erase(sq\_it);}
+\DoxyCodeLine{127                     \}}
+\DoxyCodeLine{128                 \}}
+\DoxyCodeLine{129                 ++cell\_it;}
+\DoxyCodeLine{130             \}}
+\DoxyCodeLine{131             }
+\DoxyCodeLine{132             \mbox{\hyperlink{classFinder_a4202d79c6d671ac4c26773c091b087bc}{t\_cells}}.erase(it);}
+\DoxyCodeLine{133         \}}
+\DoxyCodeLine{134     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classFinder_a429914516be45896a1049253e768160a}\label{classFinder_a429914516be45896a1049253e768160a}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!update@{update}}
+\index{update@{update}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::update (\begin{DoxyParamCaption}\item[{T $\ast$}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Actualitza la posició d’un objecte dins l’estructura. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em t} & Punter a l’objecte \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+L’objecte es reindexa segons la seva nova posició 
+\end{DoxyPostcond}
+
+
+Definición en la línea 101 del archivo Finder.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{101                      \{}
+\DoxyCodeLine{102         \mbox{\hyperlink{classFinder_a6c6f6492df6b83891eaafe534b6f4051}{remove}}(\mbox{\hyperlink{Cd_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}});}
+\DoxyCodeLine{103         \mbox{\hyperlink{classFinder_a60b26c2f502472b2d58823bddea14e7b}{add}}(\mbox{\hyperlink{Cd_8cc_a9d8bf90e74fd38c19ef18649b5613d7f}{t}});       }
+\DoxyCodeLine{104     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classFinder_af1eb232345b1a91c963b4160f541bf3b}\label{classFinder_af1eb232345b1a91c963b4160f541bf3b}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!cell\_size@{cell\_size}}
+\index{cell\_size@{cell\_size}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{cell\_size}{cell\_size}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::cell\+\_\+size = 128\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 28 del archivo Finder.\+hh.
+
+\mbox{\Hypertarget{classFinder_aee9d6eaa42c104a432a489ad65dc173a}\label{classFinder_aee9d6eaa42c104a432a489ad65dc173a}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!screensquares@{screensquares}}
+\index{screensquares@{screensquares}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{screensquares}{screensquares}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::map$<$\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}, std\+::set$<$ T$\ast$ $>$ $>$ \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::screensquares\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 30 del archivo Finder.\+hh.
+
+\mbox{\Hypertarget{classFinder_a4202d79c6d671ac4c26773c091b087bc}\label{classFinder_a4202d79c6d671ac4c26773c091b087bc}} 
+\index{Finder$<$ T $>$@{Finder$<$ T $>$}!t\_cells@{t\_cells}}
+\index{t\_cells@{t\_cells}!Finder$<$ T $>$@{Finder$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{t\_cells}{t\_cells}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::map$<$T$\ast$, std\+::set$<$\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} $>$ $>$ \mbox{\hyperlink{classFinder}{Finder}}$<$ T $>$\+::t\+\_\+cells\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 31 del archivo Finder.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Finder_8hh}{Finder.\+hh}}\end{DoxyCompactItemize}

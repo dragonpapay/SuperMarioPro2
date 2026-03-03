@@ -1,0 +1,13 @@
+<map id="Bowser.hh" name="Bowser.hh">
+<area shape="rect" id="node1" title="especificacio de la classe Bowser i Spark" alt="" coords="132,5,221,32"/>
+<area shape="rect" id="node2" href="$Android_8hh.html" title="Especificació de la classe Android, que representa un enemic mòbil dins el joc." alt="" coords="175,80,267,107"/>
+<area shape="rect" id="node3" href="$platform_8hh.html" title="Especificació de la classe platform." alt="" coords="86,155,185,181"/>
+<area shape="rect" id="node4" href="$window_8hh.html" title=" " alt="" coords="177,304,267,331"/>
+<area shape="rect" id="node9" href="$Circuitfloor_8hh.html" title="Especificació de la classe Circuitfloor." alt="" coords="259,155,371,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="109,379,178,405"/>
+<area shape="rect" id="node6" title=" " alt="" coords="202,379,261,405"/>
+<area shape="rect" id="node7" title=" " alt="" coords="5,379,84,405"/>
+<area shape="rect" id="node8" href="$geometry_8hh.html" title=" " alt="" coords="285,379,388,405"/>
+<area shape="rect" id="node10" href="$utils_8hh.html" title=" " alt="" coords="311,229,381,256"/>
+<area shape="rect" id="node11" title=" " alt="" coords="375,304,437,331"/>
+</map>

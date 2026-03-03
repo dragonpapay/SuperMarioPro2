@@ -1,0 +1,12 @@
+<map id="Android.hh" name="Android.hh">
+<area shape="rect" id="node1" title="Especificació de la classe Android, que representa un enemic mòbil dins el joc." alt="" coords="169,5,261,32"/>
+<area shape="rect" id="node2" href="$platform_8hh.html" title="Especificació de la classe platform." alt="" coords="79,155,177,181"/>
+<area shape="rect" id="node3" href="$window_8hh.html" title=" " alt="" coords="173,229,264,256"/>
+<area shape="rect" id="node8" href="$Circuitfloor_8hh.html" title="Especificació de la classe Circuitfloor." alt="" coords="252,80,364,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,304,75,331"/>
+<area shape="rect" id="node5" title=" " alt="" coords="99,304,157,331"/>
+<area shape="rect" id="node6" title=" " alt="" coords="182,304,261,331"/>
+<area shape="rect" id="node7" href="$geometry_8hh.html" title=" " alt="" coords="285,304,387,331"/>
+<area shape="rect" id="node9" href="$utils_8hh.html" title=" " alt="" coords="303,155,374,181"/>
+<area shape="rect" id="node10" title=" " alt="" coords="374,229,437,256"/>
+</map>

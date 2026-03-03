@@ -1,0 +1,286 @@
+\hypertarget{classCircuitfloor}{}\doxysection{Referencia de la Clase Circuitfloor}
+\label{classCircuitfloor}\index{Circuitfloor@{Circuitfloor}}
+
+
+Plataforma de 32 x 32 pixels que es un terra.  
+
+
+
+
+{\ttfamily \#include $<$Circuitfloor.\+hh$>$}
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCircuitfloor_a428d29a4251d7fe44335dbc291a1a7b9}{Circuitfloor}} ()
+\begin{DoxyCompactList}\small\item\em Constructor per defecte de la classe \mbox{\hyperlink{classCircuitfloor}{Circuitfloor}}. Inicialitza un terra amb coordenades (0,0) i mida 0. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircuitfloor_a8a92a940212136cbece8fed87f2c1870}{Circuitfloor}} (int left, int right, int \mbox{\hyperlink{classCircuitfloor_a4bfb204b83eedf20e48a086f5f766509}{top}}, int \mbox{\hyperlink{classCircuitfloor_a5c32364b78472231c882ea30a8ab6205}{bottom}})
+\begin{DoxyCompactList}\small\item\em Constructor de la classe \mbox{\hyperlink{classCircuitfloor}{Circuitfloor}} amb coordenades específiques. Inicialitza el terra amb les coordenades donades per als costats esquerre, dret, superior i inferior. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCircuitfloor_a5c32364b78472231c882ea30a8ab6205}{bottom}} () const
+\item 
+int \mbox{\hyperlink{classCircuitfloor_a4bfb204b83eedf20e48a086f5f766509}{top}} () const
+\item 
+\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \mbox{\hyperlink{classCircuitfloor_a8e69f00ca7cc1cd57370e898540efeac}{get\+\_\+rect}} () const
+\item 
+void \mbox{\hyperlink{classCircuitfloor_a8fd696087e020db65309dd3ca074b26d}{paint\+\_\+circuit\+\_\+f}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window) const
+\begin{DoxyCompactList}\small\item\em Pinta el sprite de circuit floor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCircuitfloor_acb92eda2bf24cc5395507a553338f51a}{has\+\_\+crossed\+\_\+floor\+\_\+downwards}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} plast, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} pcurr) const
+\begin{DoxyCompactList}\small\item\em Comprova si un objecte ha creuat per sota de \mbox{\hyperlink{classCircuitfloor}{Circuitfloor}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classCircuitfloor_ac95600d16dc9007fadfef41446bc31f0}{left\+\_\+}}
+\item 
+int \mbox{\hyperlink{classCircuitfloor_ab4e898bab0866898997cebd2d40d3837}{right\+\_\+}}
+\item 
+int \mbox{\hyperlink{classCircuitfloor_a707e756d1f7f4a42e61192a4e81a981c}{top\+\_\+}}
+\item 
+int \mbox{\hyperlink{classCircuitfloor_a03f7a08a4eb2dc65f63b046d93b820d3}{bottom\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{classCircuitfloor_a15bbd6fb1d36b3cda9a46d7c1beafcab}{circuit\+\_\+floor\+\_\+sprite\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Plataforma de 32 x 32 pixels que es un terra. 
+
+Definición en la línea 19 del archivo Circuitfloor.\+hh.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classCircuitfloor_a428d29a4251d7fe44335dbc291a1a7b9}\label{classCircuitfloor_a428d29a4251d7fe44335dbc291a1a7b9}} 
+\index{Circuitfloor@{Circuitfloor}!Circuitfloor@{Circuitfloor}}
+\index{Circuitfloor@{Circuitfloor}!Circuitfloor@{Circuitfloor}}
+\doxysubsubsection{\texorpdfstring{Circuitfloor()}{Circuitfloor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Circuitfloor\+::\+Circuitfloor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor per defecte de la classe \mbox{\hyperlink{classCircuitfloor}{Circuitfloor}}. Inicialitza un terra amb coordenades (0,0) i mida 0. 
+
+
+
+Definición en la línea 32 del archivo Circuitfloor.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{32 : \mbox{\hyperlink{classCircuitfloor_ac95600d16dc9007fadfef41446bc31f0}{left\_}}(0), \mbox{\hyperlink{classCircuitfloor_ab4e898bab0866898997cebd2d40d3837}{right\_}}(0), \mbox{\hyperlink{classCircuitfloor_a707e756d1f7f4a42e61192a4e81a981c}{top\_}}(0), \mbox{\hyperlink{classCircuitfloor_a03f7a08a4eb2dc65f63b046d93b820d3}{bottom\_}}(0) \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCircuitfloor_a8a92a940212136cbece8fed87f2c1870}\label{classCircuitfloor_a8a92a940212136cbece8fed87f2c1870}} 
+\index{Circuitfloor@{Circuitfloor}!Circuitfloor@{Circuitfloor}}
+\index{Circuitfloor@{Circuitfloor}!Circuitfloor@{Circuitfloor}}
+\doxysubsubsection{\texorpdfstring{Circuitfloor()}{Circuitfloor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Circuitfloor\+::\+Circuitfloor (\begin{DoxyParamCaption}\item[{int}]{left,  }\item[{int}]{right,  }\item[{int}]{top,  }\item[{int}]{bottom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor de la classe \mbox{\hyperlink{classCircuitfloor}{Circuitfloor}} amb coordenades específiques. Inicialitza el terra amb les coordenades donades per als costats esquerre, dret, superior i inferior. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em left} & Coordenada X del costat esquerre del terra. \\
+\hline
+{\em right} & Coordenada X del costat dret del terra. \\
+\hline
+{\em top} & Coordenada Y del costat superior del terra. \\
+\hline
+{\em bottom} & Coordenada Y del costat inferior del terra. \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 44 del archivo Circuitfloor.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44                                                           \{}
+\DoxyCodeLine{45         \mbox{\hyperlink{classCircuitfloor_ac95600d16dc9007fadfef41446bc31f0}{left\_}} = left, \mbox{\hyperlink{classCircuitfloor_ab4e898bab0866898997cebd2d40d3837}{right\_}} = right, \mbox{\hyperlink{classCircuitfloor_a707e756d1f7f4a42e61192a4e81a981c}{top\_}} = \mbox{\hyperlink{classCircuitfloor_a4bfb204b83eedf20e48a086f5f766509}{top}}, \mbox{\hyperlink{classCircuitfloor_a03f7a08a4eb2dc65f63b046d93b820d3}{bottom\_}} = \mbox{\hyperlink{classCircuitfloor_a5c32364b78472231c882ea30a8ab6205}{bottom}};}
+\DoxyCodeLine{46     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classCircuitfloor_a5c32364b78472231c882ea30a8ab6205}\label{classCircuitfloor_a5c32364b78472231c882ea30a8ab6205}} 
+\index{Circuitfloor@{Circuitfloor}!bottom@{bottom}}
+\index{bottom@{bottom}!Circuitfloor@{Circuitfloor}}
+\doxysubsubsection{\texorpdfstring{bottom()}{bottom()}}
+{\footnotesize\ttfamily int Circuitfloor\+::bottom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 50 del archivo Circuitfloor.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50                        \{}
+\DoxyCodeLine{51         \textcolor{keywordflow}{return} \mbox{\hyperlink{classCircuitfloor_a03f7a08a4eb2dc65f63b046d93b820d3}{bottom\_}};}
+\DoxyCodeLine{52     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCircuitfloor_a8e69f00ca7cc1cd57370e898540efeac}\label{classCircuitfloor_a8e69f00ca7cc1cd57370e898540efeac}} 
+\index{Circuitfloor@{Circuitfloor}!get\_rect@{get\_rect}}
+\index{get\_rect@{get\_rect}!Circuitfloor@{Circuitfloor}}
+\doxysubsubsection{\texorpdfstring{get\_rect()}{get\_rect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} Circuitfloor\+::get\+\_\+rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 57 del archivo Circuitfloor.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{57                               \{}
+\DoxyCodeLine{58         \textcolor{keywordflow}{return} \{\mbox{\hyperlink{classCircuitfloor_ac95600d16dc9007fadfef41446bc31f0}{left\_}}, \mbox{\hyperlink{classCircuitfloor_a707e756d1f7f4a42e61192a4e81a981c}{top\_}}, \mbox{\hyperlink{classCircuitfloor_ab4e898bab0866898997cebd2d40d3837}{right\_}}, \mbox{\hyperlink{classCircuitfloor_a03f7a08a4eb2dc65f63b046d93b820d3}{bottom\_}}\};}
+\DoxyCodeLine{59     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCircuitfloor_acb92eda2bf24cc5395507a553338f51a}\label{classCircuitfloor_acb92eda2bf24cc5395507a553338f51a}} 
+\index{Circuitfloor@{Circuitfloor}!has\_crossed\_floor\_downwards@{has\_crossed\_floor\_downwards}}
+\index{has\_crossed\_floor\_downwards@{has\_crossed\_floor\_downwards}!Circuitfloor@{Circuitfloor}}
+\doxysubsubsection{\texorpdfstring{has\_crossed\_floor\_downwards()}{has\_crossed\_floor\_downwards()}}
+{\footnotesize\ttfamily bool Circuitfloor\+::has\+\_\+crossed\+\_\+floor\+\_\+downwards (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{plast,  }\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pcurr }\end{DoxyParamCaption}) const}
+
+
+
+Comprova si un objecte ha creuat per sota de \mbox{\hyperlink{classCircuitfloor}{Circuitfloor}}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em plast} & Posicio anterior de l\textquotesingle{}objecte. \\
+\hline
+{\em pcurr} & Posicio actual de l\textquotesingle{}objecte. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+\+: Cap 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+\+: Retorna true si l\textquotesingle{}objecte ha travessat el terra cap avall, false en cas contrari. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 64 del archivo Circuitfloor.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64                                                                               \{}
+\DoxyCodeLine{65     \textcolor{keywordflow}{return} (\mbox{\hyperlink{classCircuitfloor_ac95600d16dc9007fadfef41446bc31f0}{left\_}} <= plast.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} \&\& plast.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} <= \mbox{\hyperlink{classCircuitfloor_ab4e898bab0866898997cebd2d40d3837}{right\_}}) \&\& (\mbox{\hyperlink{classCircuitfloor_ac95600d16dc9007fadfef41446bc31f0}{left\_}} <= pcurr.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} \&\& pcurr.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} <= \mbox{\hyperlink{classCircuitfloor_ab4e898bab0866898997cebd2d40d3837}{right\_}}) \&\&}
+\DoxyCodeLine{66     (plast.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} <= \mbox{\hyperlink{classCircuitfloor_a707e756d1f7f4a42e61192a4e81a981c}{top\_}} \&\& pcurr.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} >= \mbox{\hyperlink{classCircuitfloor_a707e756d1f7f4a42e61192a4e81a981c}{top\_}});}
+\DoxyCodeLine{67 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCircuitfloor_a8fd696087e020db65309dd3ca074b26d}\label{classCircuitfloor_a8fd696087e020db65309dd3ca074b26d}} 
+\index{Circuitfloor@{Circuitfloor}!paint\_circuit\_f@{paint\_circuit\_f}}
+\index{paint\_circuit\_f@{paint\_circuit\_f}!Circuitfloor@{Circuitfloor}}
+\doxysubsubsection{\texorpdfstring{paint\_circuit\_f()}{paint\_circuit\_f()}}
+{\footnotesize\ttfamily void Circuitfloor\+::paint\+\_\+circuit\+\_\+f (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window }\end{DoxyParamCaption}) const}
+
+
+
+Pinta el sprite de circuit floor. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em window} & finestra on es pinta la plataforma \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 53 del archivo Circuitfloor.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53                                                            \{}
+\DoxyCodeLine{54     \textcolor{keyword}{const} \textcolor{keywordtype}{int} xsz = \mbox{\hyperlink{classCircuitfloor_a15bbd6fb1d36b3cda9a46d7c1beafcab}{circuit\_floor\_sprite\_}}.size();}
+\DoxyCodeLine{55     \textcolor{keyword}{const} \textcolor{keywordtype}{int} ysz = \mbox{\hyperlink{classCircuitfloor_a15bbd6fb1d36b3cda9a46d7c1beafcab}{circuit\_floor\_sprite\_}}[0].size();}
+\DoxyCodeLine{56     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = \mbox{\hyperlink{classCircuitfloor_a707e756d1f7f4a42e61192a4e81a981c}{top\_}} + 1; i <= \mbox{\hyperlink{classCircuitfloor_a03f7a08a4eb2dc65f63b046d93b820d3}{bottom\_}}; i++) \{}
+\DoxyCodeLine{57         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = \mbox{\hyperlink{classCircuitfloor_ac95600d16dc9007fadfef41446bc31f0}{left\_}}; j <= \mbox{\hyperlink{classCircuitfloor_ab4e898bab0866898997cebd2d40d3837}{right\_}}; j++) \{}
+\DoxyCodeLine{58             window.\mbox{\hyperlink{classpro2_1_1Window_af656aaa062615c33e183199ba2387cac}{set\_pixel}}(\{j, i\}, \mbox{\hyperlink{classCircuitfloor_a15bbd6fb1d36b3cda9a46d7c1beafcab}{circuit\_floor\_sprite\_}}[(i -\/ \mbox{\hyperlink{classCircuitfloor_a707e756d1f7f4a42e61192a4e81a981c}{top\_}} -\/ 1) \% xsz][(j -\/ \mbox{\hyperlink{classCircuitfloor_ac95600d16dc9007fadfef41446bc31f0}{left\_}}) \% ysz]);}
+\DoxyCodeLine{59         \}}
+\DoxyCodeLine{60     \}}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCircuitfloor_a4bfb204b83eedf20e48a086f5f766509}\label{classCircuitfloor_a4bfb204b83eedf20e48a086f5f766509}} 
+\index{Circuitfloor@{Circuitfloor}!top@{top}}
+\index{top@{top}!Circuitfloor@{Circuitfloor}}
+\doxysubsubsection{\texorpdfstring{top()}{top()}}
+{\footnotesize\ttfamily int Circuitfloor\+::top (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 53 del archivo Circuitfloor.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53                     \{}
+\DoxyCodeLine{54         \textcolor{keywordflow}{return} \mbox{\hyperlink{classCircuitfloor_a707e756d1f7f4a42e61192a4e81a981c}{top\_}};}
+\DoxyCodeLine{55     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classCircuitfloor_a03f7a08a4eb2dc65f63b046d93b820d3}\label{classCircuitfloor_a03f7a08a4eb2dc65f63b046d93b820d3}} 
+\index{Circuitfloor@{Circuitfloor}!bottom\_@{bottom\_}}
+\index{bottom\_@{bottom\_}!Circuitfloor@{Circuitfloor}}
+\doxysubsubsection{\texorpdfstring{bottom\_}{bottom\_}}
+{\footnotesize\ttfamily int Circuitfloor\+::bottom\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 22 del archivo Circuitfloor.\+hh.
+
+\mbox{\Hypertarget{classCircuitfloor_a15bbd6fb1d36b3cda9a46d7c1beafcab}\label{classCircuitfloor_a15bbd6fb1d36b3cda9a46d7c1beafcab}} 
+\index{Circuitfloor@{Circuitfloor}!circuit\_floor\_sprite\_@{circuit\_floor\_sprite\_}}
+\index{circuit\_floor\_sprite\_@{circuit\_floor\_sprite\_}!Circuitfloor@{Circuitfloor}}
+\doxysubsubsection{\texorpdfstring{circuit\_floor\_sprite\_}{circuit\_floor\_sprite\_}}
+{\footnotesize\ttfamily const vector$<$ vector$<$ int $>$ $>$ Circuitfloor\+::circuit\+\_\+floor\+\_\+sprite\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea 23 del archivo Circuitfloor.\+hh.
+
+\mbox{\Hypertarget{classCircuitfloor_ac95600d16dc9007fadfef41446bc31f0}\label{classCircuitfloor_ac95600d16dc9007fadfef41446bc31f0}} 
+\index{Circuitfloor@{Circuitfloor}!left\_@{left\_}}
+\index{left\_@{left\_}!Circuitfloor@{Circuitfloor}}
+\doxysubsubsection{\texorpdfstring{left\_}{left\_}}
+{\footnotesize\ttfamily int Circuitfloor\+::left\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 22 del archivo Circuitfloor.\+hh.
+
+\mbox{\Hypertarget{classCircuitfloor_ab4e898bab0866898997cebd2d40d3837}\label{classCircuitfloor_ab4e898bab0866898997cebd2d40d3837}} 
+\index{Circuitfloor@{Circuitfloor}!right\_@{right\_}}
+\index{right\_@{right\_}!Circuitfloor@{Circuitfloor}}
+\doxysubsubsection{\texorpdfstring{right\_}{right\_}}
+{\footnotesize\ttfamily int Circuitfloor\+::right\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 22 del archivo Circuitfloor.\+hh.
+
+\mbox{\Hypertarget{classCircuitfloor_a707e756d1f7f4a42e61192a4e81a981c}\label{classCircuitfloor_a707e756d1f7f4a42e61192a4e81a981c}} 
+\index{Circuitfloor@{Circuitfloor}!top\_@{top\_}}
+\index{top\_@{top\_}!Circuitfloor@{Circuitfloor}}
+\doxysubsubsection{\texorpdfstring{top\_}{top\_}}
+{\footnotesize\ttfamily int Circuitfloor\+::top\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 22 del archivo Circuitfloor.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Circuitfloor_8hh}{Circuitfloor.\+hh}}\item 
+\mbox{\hyperlink{Circuitfloor_8cc}{Circuitfloor.\+cc}}\end{DoxyCompactItemize}

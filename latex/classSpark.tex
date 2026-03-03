@@ -1,0 +1,466 @@
+\hypertarget{classSpark}{}\doxysection{Referencia de la Clase Spark}
+\label{classSpark}\index{Spark@{Spark}}
+
+
+Representa una espurna que \mbox{\hyperlink{classBowser}{Bowser}} llança com a atac.  
+
+
+
+
+{\ttfamily \#include $<$Bowser.\+hh$>$}
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSpark_a10bed73af728f3513c0fa137cb9005ef}{Spark}} (\mbox{\hyperlink{structpro2_1_1Ptd}{pro2\+::\+Ptd}} \mbox{\hyperlink{classSpark_aa14d826558a632d4a09d723f0ab23b82}{pos}}, \mbox{\hyperlink{structpro2_1_1Ptd}{pro2\+::\+Ptd}} pos\+\_\+fi)
+\begin{DoxyCompactList}\small\item\em Constructor de l\textquotesingle{}espurna que ja va en la ultima direcció de mario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSpark_ab24988dae710f25abd1e31f15e5a0836}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window) const
+\begin{DoxyCompactList}\small\item\em Pintar l\textquotesingle{}espurna a la finestra. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpro2_1_1Ptd}{pro2\+::\+Ptd}} \mbox{\hyperlink{classSpark_aa14d826558a632d4a09d723f0ab23b82}{pos}} () const
+\item 
+\mbox{\hyperlink{structpro2_1_1Ptd}{pro2\+::\+Ptd}} \mbox{\hyperlink{classSpark_a681e42aebf3cc77505b75172e8e3e165}{last\+\_\+pos}} () const
+\item 
+double \mbox{\hyperlink{classSpark_a733067874cfde171e95535c021fafa93}{speed\+\_\+y}} ()
+\item 
+\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \mbox{\hyperlink{classSpark_ab9de0f9257d8bd870fdbc9da901fe8d5}{get\+\_\+rect}} () const
+\item 
+void \mbox{\hyperlink{classSpark_ac2948a889033181680defb85035f73fb}{set\+\_\+y}} (double \mbox{\hyperlink{mario_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}})
+\item 
+void \mbox{\hyperlink{classSpark_a96a69ca9b5b7711f3b8e2766b63942a5}{set\+\_\+x}} (double \mbox{\hyperlink{Cd_8cc_aa5ed323274431e0aff568bb688f5f956}{x}})
+\item 
+void \mbox{\hyperlink{classSpark_a245eb67df8d738728b97f3caa86d6c5c}{update}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\begin{DoxyCompactList}\small\item\em Actualitza l\textquotesingle{}estat de l\textquotesingle{}objecte, aplicant física i moviment. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSpark_ab3b05f9c0fe76b4b230e2ccc7c34594b}{mario\+\_\+killed}} (const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&rmario)
+\begin{DoxyCompactList}\small\item\em Comprova si l\textquotesingle{}objecte ha matat a \mbox{\hyperlink{classMario}{Mario}} a partir del seu rectangle de col·lisió \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classSpark_ade11b76386c3ba9085731af2fd67080a}{apply\+\_\+physicis}} ()
+\begin{DoxyCompactList}\small\item\em Aplica la física (moviment, acceleració, gravetat) a l\textquotesingle{}espurna. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structpro2_1_1Ptd}{pro2\+::\+Ptd}} \mbox{\hyperlink{classSpark_af442a991b1cb0849bcef3a5352752dbb}{pos\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Ptd}{pro2\+::\+Ptd}} \mbox{\hyperlink{classSpark_a290f09984e210ac82268510aa8f9d8cf}{last\+\_\+pos\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Ptd}{pro2\+::\+Ptd}} \mbox{\hyperlink{classSpark_addaceada0bd36756183d3c0cffe36532}{pos\+\_\+ini\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Ptd}{pro2\+::\+Ptd}} \mbox{\hyperlink{classSpark_a30e931964f48c6a9b66e296859bd2782}{pos\+\_\+fi\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Ptd}{pro2\+::\+Ptd}} \mbox{\hyperlink{classSpark_a80e6052d0376d01cba98b6d1318b278d}{speed\+\_\+}} = \{0, 0\}
+\item 
+\mbox{\hyperlink{structpro2_1_1Ptd}{pro2\+::\+Ptd}} \mbox{\hyperlink{classSpark_a00782bc28d8684a781759921b24a4787}{accel\+\_\+}} = \{0, 0\}
+\item 
+int \mbox{\hyperlink{classSpark_adc326af3f268f975e1c278181ba728a2}{accel\+\_\+time\+\_\+}} = 0
+\item 
+std\+::list$<$ \mbox{\hyperlink{classSpark}{Spark}} $>$ \mbox{\hyperlink{classSpark_a28063e0350edeced96593ab55beef8ec}{sparks\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{classSpark_aad90052ec7ce7e83cec4003559ab0bda}{spark\+\_\+sprite\+\_\+normal\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Matriu de sprite de spark. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Representa una espurna que \mbox{\hyperlink{classBowser}{Bowser}} llança com a atac. 
+
+La classe \mbox{\hyperlink{classSpark}{Spark}} modela una petita partícula amb física simple que es mou cap a una posició final i pot causar danys a \mbox{\hyperlink{classMario}{Mario}} si el toca. 
+
+Definición en la línea 28 del archivo Bowser.\+hh.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classSpark_a10bed73af728f3513c0fa137cb9005ef}\label{classSpark_a10bed73af728f3513c0fa137cb9005ef}} 
+\index{Spark@{Spark}!Spark@{Spark}}
+\index{Spark@{Spark}!Spark@{Spark}}
+\doxysubsubsection{\texorpdfstring{Spark()}{Spark()}}
+{\footnotesize\ttfamily Spark\+::\+Spark (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Ptd}{pro2\+::\+Ptd}}}]{pos,  }\item[{\mbox{\hyperlink{structpro2_1_1Ptd}{pro2\+::\+Ptd}}}]{pos\+\_\+fi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor de l\textquotesingle{}espurna que ja va en la ultima direcció de mario. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pos} & Posició inicial \\
+\hline
+{\em pos\+\_\+fi} & Posició final a la que es dirigeix \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 56 del archivo Bowser.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56                                       : \mbox{\hyperlink{classSpark_af442a991b1cb0849bcef3a5352752dbb}{pos\_}}(\mbox{\hyperlink{classSpark_aa14d826558a632d4a09d723f0ab23b82}{pos}}),\mbox{\hyperlink{classSpark_addaceada0bd36756183d3c0cffe36532}{pos\_ini\_}}(\mbox{\hyperlink{classSpark_af442a991b1cb0849bcef3a5352752dbb}{pos\_}}),\mbox{\hyperlink{classSpark_a30e931964f48c6a9b66e296859bd2782}{pos\_fi\_}}(pos\_fi) \{}
+\DoxyCodeLine{57         }
+\DoxyCodeLine{58         \textcolor{comment}{//calcul de la direcio vectorial}}
+\DoxyCodeLine{59         \mbox{\hyperlink{structpro2_1_1Ptd}{pro2::Ptd}} dir = \{\mbox{\hyperlink{classSpark_a30e931964f48c6a9b66e296859bd2782}{pos\_fi\_}}.\mbox{\hyperlink{structpro2_1_1Ptd_aa37f6076859e926caa4d3b5dfe333a04}{x}} -\/ \mbox{\hyperlink{classSpark_addaceada0bd36756183d3c0cffe36532}{pos\_ini\_}}.\mbox{\hyperlink{structpro2_1_1Ptd_aa37f6076859e926caa4d3b5dfe333a04}{x}},\mbox{\hyperlink{classSpark_a30e931964f48c6a9b66e296859bd2782}{pos\_fi\_}}.\mbox{\hyperlink{structpro2_1_1Ptd_a617107258f4078dcaa49d9c31fdd3ba7}{y}} -\/ \mbox{\hyperlink{classSpark_addaceada0bd36756183d3c0cffe36532}{pos\_ini\_}}.\mbox{\hyperlink{structpro2_1_1Ptd_a617107258f4078dcaa49d9c31fdd3ba7}{y}}\};}
+\DoxyCodeLine{60         }
+\DoxyCodeLine{61         \textcolor{keywordtype}{double} mod = sqrt(dir.\mbox{\hyperlink{structpro2_1_1Ptd_aa37f6076859e926caa4d3b5dfe333a04}{x}}*dir.\mbox{\hyperlink{structpro2_1_1Ptd_aa37f6076859e926caa4d3b5dfe333a04}{x}} + dir.\mbox{\hyperlink{structpro2_1_1Ptd_a617107258f4078dcaa49d9c31fdd3ba7}{y}}*dir.\mbox{\hyperlink{structpro2_1_1Ptd_a617107258f4078dcaa49d9c31fdd3ba7}{y}});}
+\DoxyCodeLine{62         \textcolor{keywordflow}{if}(mod != 0)\{}
+\DoxyCodeLine{63             \mbox{\hyperlink{classSpark_a80e6052d0376d01cba98b6d1318b278d}{speed\_}}.\mbox{\hyperlink{structpro2_1_1Ptd_aa37f6076859e926caa4d3b5dfe333a04}{x}} = dir.\mbox{\hyperlink{structpro2_1_1Ptd_aa37f6076859e926caa4d3b5dfe333a04}{x}}  / mod *5;}
+\DoxyCodeLine{64             \mbox{\hyperlink{classSpark_a80e6052d0376d01cba98b6d1318b278d}{speed\_}}.\mbox{\hyperlink{structpro2_1_1Ptd_a617107258f4078dcaa49d9c31fdd3ba7}{y}} = dir.\mbox{\hyperlink{structpro2_1_1Ptd_a617107258f4078dcaa49d9c31fdd3ba7}{y}} / mod *5;}
+\DoxyCodeLine{65         \}}
+\DoxyCodeLine{66         \mbox{\hyperlink{classSpark_a00782bc28d8684a781759921b24a4787}{accel\_}} = \{0, 0.3\};}
+\DoxyCodeLine{67         }
+\DoxyCodeLine{68     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classSpark_ade11b76386c3ba9085731af2fd67080a}\label{classSpark_ade11b76386c3ba9085731af2fd67080a}} 
+\index{Spark@{Spark}!apply\_physicis@{apply\_physicis}}
+\index{apply\_physicis@{apply\_physicis}!Spark@{Spark}}
+\doxysubsubsection{\texorpdfstring{apply\_physicis()}{apply\_physicis()}}
+{\footnotesize\ttfamily void Spark\+::apply\+\_\+physicis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Aplica la física (moviment, acceleració, gravetat) a l\textquotesingle{}espurna. 
+
+\begin{DoxyPrecond}{Precondición}
+\+: Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+L’estat de posició i velocitat s’actualitzen segons les físiques. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 41 del archivo Bowser.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{41                           \{}
+\DoxyCodeLine{42     \textcolor{keyword}{const} \textcolor{keywordtype}{int} gravity = 1;}
+\DoxyCodeLine{43    \mbox{\hyperlink{classSpark_af442a991b1cb0849bcef3a5352752dbb}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Ptd_aa37f6076859e926caa4d3b5dfe333a04}{x}} += \mbox{\hyperlink{classSpark_a80e6052d0376d01cba98b6d1318b278d}{speed\_}}.\mbox{\hyperlink{structpro2_1_1Ptd_aa37f6076859e926caa4d3b5dfe333a04}{x}};}
+\DoxyCodeLine{44    \mbox{\hyperlink{classSpark_af442a991b1cb0849bcef3a5352752dbb}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Ptd_a617107258f4078dcaa49d9c31fdd3ba7}{y}} += \mbox{\hyperlink{classSpark_a80e6052d0376d01cba98b6d1318b278d}{speed\_}}.\mbox{\hyperlink{structpro2_1_1Ptd_a617107258f4078dcaa49d9c31fdd3ba7}{y}};}
+\DoxyCodeLine{45     }
+\DoxyCodeLine{46 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSpark_ab9de0f9257d8bd870fdbc9da901fe8d5}\label{classSpark_ab9de0f9257d8bd870fdbc9da901fe8d5}} 
+\index{Spark@{Spark}!get\_rect@{get\_rect}}
+\index{get\_rect@{get\_rect}!Spark@{Spark}}
+\doxysubsubsection{\texorpdfstring{get\_rect()}{get\_rect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} Spark\+::get\+\_\+rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 85 del archivo Bowser.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{85                               \{                       }
+\DoxyCodeLine{86         \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}} point = \mbox{\hyperlink{namespacepro2_a957281551fa385370d5df21ac7784ceb}{toPt}}(\mbox{\hyperlink{classSpark_af442a991b1cb0849bcef3a5352752dbb}{pos\_}});}
+\DoxyCodeLine{87         \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}} hitbox\_spark = \{point.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} -\/ 7, point.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} -\/ 9, point.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} + 7, point.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}}+9\};}
+\DoxyCodeLine{88         \textcolor{keywordflow}{return} hitbox\_spark;}
+\DoxyCodeLine{89     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSpark_a681e42aebf3cc77505b75172e8e3e165}\label{classSpark_a681e42aebf3cc77505b75172e8e3e165}} 
+\index{Spark@{Spark}!last\_pos@{last\_pos}}
+\index{last\_pos@{last\_pos}!Spark@{Spark}}
+\doxysubsubsection{\texorpdfstring{last\_pos()}{last\_pos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Ptd}{pro2\+::\+Ptd}} Spark\+::last\+\_\+pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 78 del archivo Bowser.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{78                             \{}
+\DoxyCodeLine{79         \textcolor{keywordflow}{return} \mbox{\hyperlink{classSpark_a290f09984e210ac82268510aa8f9d8cf}{last\_pos\_}};}
+\DoxyCodeLine{80     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSpark_ab3b05f9c0fe76b4b230e2ccc7c34594b}\label{classSpark_ab3b05f9c0fe76b4b230e2ccc7c34594b}} 
+\index{Spark@{Spark}!mario\_killed@{mario\_killed}}
+\index{mario\_killed@{mario\_killed}!Spark@{Spark}}
+\doxysubsubsection{\texorpdfstring{mario\_killed()}{mario\_killed()}}
+{\footnotesize\ttfamily bool Spark\+::mario\+\_\+killed (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \&}]{rmario }\end{DoxyParamCaption})}
+
+
+
+Comprova si l\textquotesingle{}objecte ha matat a \mbox{\hyperlink{classMario}{Mario}} a partir del seu rectangle de col·lisió 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em rmario} & rectangle de mario dins window \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+El rectangle rmario es troba dins els límits de la finestra window 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna cert si l\textquotesingle{}objecte ha col·lisionat amb \mbox{\hyperlink{classMario}{Mario}}, false en cas contrari 
+\end{DoxyPostcond}
+
+
+Definición en la línea 54 del archivo Bowser.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{54                                               \{}
+\DoxyCodeLine{55     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacepro2_a0949bec566043f033c7cc2e9d5ba2686}{rect\_touch}}(rmario,\mbox{\hyperlink{classSpark_ab9de0f9257d8bd870fdbc9da901fe8d5}{get\_rect}}());}
+\DoxyCodeLine{56 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSpark_ab24988dae710f25abd1e31f15e5a0836}\label{classSpark_ab24988dae710f25abd1e31f15e5a0836}} 
+\index{Spark@{Spark}!paint@{paint}}
+\index{paint@{paint}!Spark@{Spark}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Spark\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window }\end{DoxyParamCaption}) const}
+
+
+
+Pintar l\textquotesingle{}espurna a la finestra. 
+
+
+
+Definición en la línea 35 del archivo Bowser.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{35                                           \{}
+\DoxyCodeLine{36     \textcolor{keyword}{const} \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}} pt = \mbox{\hyperlink{namespacepro2_a957281551fa385370d5df21ac7784ceb}{toPt}}(\mbox{\hyperlink{classSpark_af442a991b1cb0849bcef3a5352752dbb}{pos\_}});}
+\DoxyCodeLine{37     \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}} topleft = \{pt.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} -\/ 7, pt.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} -\/ 9\};}
+\DoxyCodeLine{38     \mbox{\hyperlink{namespacepro2_a416c3e13d8244d9b102f7df30696c186}{paint\_sprite}}(window, topleft, \mbox{\hyperlink{classSpark_aad90052ec7ce7e83cec4003559ab0bda}{spark\_sprite\_normal\_}}, \textcolor{keyword}{true});}
+\DoxyCodeLine{39 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSpark_aa14d826558a632d4a09d723f0ab23b82}\label{classSpark_aa14d826558a632d4a09d723f0ab23b82}} 
+\index{Spark@{Spark}!pos@{pos}}
+\index{pos@{pos}!Spark@{Spark}}
+\doxysubsubsection{\texorpdfstring{pos()}{pos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Ptd}{pro2\+::\+Ptd}} Spark\+::pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Consultores 
+
+Definición en la línea 74 del archivo Bowser.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{74                         \{}
+\DoxyCodeLine{75         \textcolor{keywordflow}{return} \mbox{\hyperlink{classSpark_af442a991b1cb0849bcef3a5352752dbb}{pos\_}};}
+\DoxyCodeLine{76     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSpark_a96a69ca9b5b7711f3b8e2766b63942a5}\label{classSpark_a96a69ca9b5b7711f3b8e2766b63942a5}} 
+\index{Spark@{Spark}!set\_x@{set\_x}}
+\index{set\_x@{set\_x}!Spark@{Spark}}
+\doxysubsubsection{\texorpdfstring{set\_x()}{set\_x()}}
+{\footnotesize\ttfamily void Spark\+::set\+\_\+x (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 96 del archivo Bowser.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{96                         \{}
+\DoxyCodeLine{97         \mbox{\hyperlink{classSpark_af442a991b1cb0849bcef3a5352752dbb}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Ptd_aa37f6076859e926caa4d3b5dfe333a04}{x}} = \mbox{\hyperlink{Cd_8cc_aa5ed323274431e0aff568bb688f5f956}{x}};}
+\DoxyCodeLine{98     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSpark_ac2948a889033181680defb85035f73fb}\label{classSpark_ac2948a889033181680defb85035f73fb}} 
+\index{Spark@{Spark}!set\_y@{set\_y}}
+\index{set\_y@{set\_y}!Spark@{Spark}}
+\doxysubsubsection{\texorpdfstring{set\_y()}{set\_y()}}
+{\footnotesize\ttfamily void Spark\+::set\+\_\+y (\begin{DoxyParamCaption}\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Modificadores 
+
+Definición en la línea 92 del archivo Bowser.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{92                          \{}
+\DoxyCodeLine{93         \mbox{\hyperlink{classSpark_af442a991b1cb0849bcef3a5352752dbb}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Ptd_a617107258f4078dcaa49d9c31fdd3ba7}{y}} = \mbox{\hyperlink{Backround_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}};}
+\DoxyCodeLine{94     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSpark_a733067874cfde171e95535c021fafa93}\label{classSpark_a733067874cfde171e95535c021fafa93}} 
+\index{Spark@{Spark}!speed\_y@{speed\_y}}
+\index{speed\_y@{speed\_y}!Spark@{Spark}}
+\doxysubsubsection{\texorpdfstring{speed\_y()}{speed\_y()}}
+{\footnotesize\ttfamily double Spark\+::speed\+\_\+y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 81 del archivo Bowser.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{81                     \{}
+\DoxyCodeLine{82         \textcolor{keywordflow}{return} \mbox{\hyperlink{classSpark_a80e6052d0376d01cba98b6d1318b278d}{speed\_}}.\mbox{\hyperlink{structpro2_1_1Ptd_a617107258f4078dcaa49d9c31fdd3ba7}{y}};}
+\DoxyCodeLine{83     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSpark_a245eb67df8d738728b97f3caa86d6c5c}\label{classSpark_a245eb67df8d738728b97f3caa86d6c5c}} 
+\index{Spark@{Spark}!update@{update}}
+\index{update@{update}!Spark@{Spark}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Spark\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window }\end{DoxyParamCaption})}
+
+
+
+Actualitza l\textquotesingle{}estat de l\textquotesingle{}objecte, aplicant física i moviment. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em window} & Referència a la finestra on es dibuixa i on es processa l\textquotesingle{}estat. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+L\textquotesingle{}estat i la posició queden actualitzades. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 49 del archivo Bowser.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49                                     \{}
+\DoxyCodeLine{50     \mbox{\hyperlink{classSpark_a290f09984e210ac82268510aa8f9d8cf}{last\_pos\_}} = \mbox{\hyperlink{classSpark_af442a991b1cb0849bcef3a5352752dbb}{pos\_}};}
+\DoxyCodeLine{51     \mbox{\hyperlink{classSpark_ade11b76386c3ba9085731af2fd67080a}{apply\_physicis}}();    }
+\DoxyCodeLine{52 \}   }
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classSpark_a00782bc28d8684a781759921b24a4787}\label{classSpark_a00782bc28d8684a781759921b24a4787}} 
+\index{Spark@{Spark}!accel\_@{accel\_}}
+\index{accel\_@{accel\_}!Spark@{Spark}}
+\doxysubsubsection{\texorpdfstring{accel\_}{accel\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Ptd}{pro2\+::\+Ptd}} Spark\+::accel\+\_\+ = \{0, 0\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 33 del archivo Bowser.\+hh.
+
+\mbox{\Hypertarget{classSpark_adc326af3f268f975e1c278181ba728a2}\label{classSpark_adc326af3f268f975e1c278181ba728a2}} 
+\index{Spark@{Spark}!accel\_time\_@{accel\_time\_}}
+\index{accel\_time\_@{accel\_time\_}!Spark@{Spark}}
+\doxysubsubsection{\texorpdfstring{accel\_time\_}{accel\_time\_}}
+{\footnotesize\ttfamily int Spark\+::accel\+\_\+time\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 35 del archivo Bowser.\+hh.
+
+\mbox{\Hypertarget{classSpark_a290f09984e210ac82268510aa8f9d8cf}\label{classSpark_a290f09984e210ac82268510aa8f9d8cf}} 
+\index{Spark@{Spark}!last\_pos\_@{last\_pos\_}}
+\index{last\_pos\_@{last\_pos\_}!Spark@{Spark}}
+\doxysubsubsection{\texorpdfstring{last\_pos\_}{last\_pos\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Ptd}{pro2\+::\+Ptd}} Spark\+::last\+\_\+pos\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 31 del archivo Bowser.\+hh.
+
+\mbox{\Hypertarget{classSpark_af442a991b1cb0849bcef3a5352752dbb}\label{classSpark_af442a991b1cb0849bcef3a5352752dbb}} 
+\index{Spark@{Spark}!pos\_@{pos\_}}
+\index{pos\_@{pos\_}!Spark@{Spark}}
+\doxysubsubsection{\texorpdfstring{pos\_}{pos\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Ptd}{pro2\+::\+Ptd}} Spark\+::pos\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+Atributs privats 
+
+Definición en la línea 31 del archivo Bowser.\+hh.
+
+\mbox{\Hypertarget{classSpark_a30e931964f48c6a9b66e296859bd2782}\label{classSpark_a30e931964f48c6a9b66e296859bd2782}} 
+\index{Spark@{Spark}!pos\_fi\_@{pos\_fi\_}}
+\index{pos\_fi\_@{pos\_fi\_}!Spark@{Spark}}
+\doxysubsubsection{\texorpdfstring{pos\_fi\_}{pos\_fi\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Ptd}{pro2\+::\+Ptd}} Spark\+::pos\+\_\+fi\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 31 del archivo Bowser.\+hh.
+
+\mbox{\Hypertarget{classSpark_addaceada0bd36756183d3c0cffe36532}\label{classSpark_addaceada0bd36756183d3c0cffe36532}} 
+\index{Spark@{Spark}!pos\_ini\_@{pos\_ini\_}}
+\index{pos\_ini\_@{pos\_ini\_}!Spark@{Spark}}
+\doxysubsubsection{\texorpdfstring{pos\_ini\_}{pos\_ini\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Ptd}{pro2\+::\+Ptd}} Spark\+::pos\+\_\+ini\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 31 del archivo Bowser.\+hh.
+
+\mbox{\Hypertarget{classSpark_aad90052ec7ce7e83cec4003559ab0bda}\label{classSpark_aad90052ec7ce7e83cec4003559ab0bda}} 
+\index{Spark@{Spark}!spark\_sprite\_normal\_@{spark\_sprite\_normal\_}}
+\index{spark\_sprite\_normal\_@{spark\_sprite\_normal\_}!Spark@{Spark}}
+\doxysubsubsection{\texorpdfstring{spark\_sprite\_normal\_}{spark\_sprite\_normal\_}}
+{\footnotesize\ttfamily const vector$<$ vector$<$ int $>$ $>$ Spark\+::spark\+\_\+sprite\+\_\+normal\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Valor inicial\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, 0xc8dde5, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, 0x9fcde2, 0xa6cddd, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, 0x8bc6e2, 0xa1cee3, 0x4489a6, 0x1a6f96, 0x0f7099, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, 0x91cbe6, 0x6aafcd, 0x2f84ad, 0x4094bc, 0x1f78a1, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, 0x1d78a0, 0x439bc3, 0x65aed3, 0x3787ae, 0x00567c, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, 0x2582ac, 0x5db1d7, 0x78b8da, 0x5397bc, 0x1d779f, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, 0x086992, 0x3f9bc2, 0x71bddf, 0x72aacf, 0x5d98c1, 0x3287b1, 0x0b6991, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, 0x94cbe5, 0x8fc8e1, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, 0x0c688d, 0x247ba1, 0x3388b1, 0x5ca6ce, 0x6aa5cb, 0x3f7eb1, 0x518bba, 0x5ba5cd, 0x409bc1, 0x2783ac, 0x227aa2, 0x6aadcc, 0xa0cee2, 0xa1cee2, 0xfff4dd, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, 0x287ea3, 0x287da4, 0x3a88af, 0x5497bc, 0x5d98c1, 0x528cbb, 0x2c75ab, 0x1976aa, 0x2b74aa, 0x69a4cb, 0x75bddf, 0x5fb2d7, 0x449bc3, 0x3185ae, 0x4287a5, 0xa2cadb, 0xc4dde7, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, 0x000000, 0x20749a, 0x4396be, 0x66aed4, 0x79b8da, 0x72a9ce, 0x3d7db1, 0x1a77ab, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, 0x1a77ab, 0x3d7eb1, 0x72aace, 0x7ab9da, 0x66afd4, 0x4396be, 0x1d7398, 0x000000, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, 0xc5dde5, 0xa0c9d9, 0x3e85a3, 0x3286af, 0x459cc4, 0x5babd1, 0x75bdde, 0x69a3cb, 0x2b74aa, 0x1876a9, 0x2a74aa, 0x508aba, 0x5d98c1, 0x5598bd, 0x3b89af, 0x277da3, 0x1d789d, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, 0xffecd7, 0xa1cee1, 0x9fcee1, 0x65aac8, 0x2179a1, 0x247ea8, 0x419bc2, 0x5da6ce, 0x518bba, 0x3d7db1, 0x68a4cb, 0x5da6ce, 0x3489b2, 0x257ba2, 0x0c6b8e, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, 0x90c8e0, 0x94cce5, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, 0x116e96, 0x3388b2, 0x5d98c1, 0x72a9ce, 0x76bedf, 0x419cc3, 0x0a6b93, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, 0x2079a1, 0x5498bd, 0x79b8da, 0x5fb2d7, 0x2583ad, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, 0x005e87, 0x3888af, 0x64acd1, 0x3d92bc, 0x1d78a1, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, 0x217aa2, 0x4195bd, 0x2f84ad, 0x68aecc, 0x91cce6, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, 0x0f739b, 0x1b7197, 0x4187a6, 0xa0cee2, 0x8ac7e2, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, 0xa3cbdb, 0x9ecde1, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, 0xc4dde4, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Matriu de sprite de spark. 
+
+
+
+Definición en la línea 48 del archivo Bowser.\+hh.
+
+\mbox{\Hypertarget{classSpark_a28063e0350edeced96593ab55beef8ec}\label{classSpark_a28063e0350edeced96593ab55beef8ec}} 
+\index{Spark@{Spark}!sparks\_@{sparks\_}}
+\index{sparks\_@{sparks\_}!Spark@{Spark}}
+\doxysubsubsection{\texorpdfstring{sparks\_}{sparks\_}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{classSpark}{Spark}}$>$ Spark\+::sparks\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 39 del archivo Bowser.\+hh.
+
+\mbox{\Hypertarget{classSpark_a80e6052d0376d01cba98b6d1318b278d}\label{classSpark_a80e6052d0376d01cba98b6d1318b278d}} 
+\index{Spark@{Spark}!speed\_@{speed\_}}
+\index{speed\_@{speed\_}!Spark@{Spark}}
+\doxysubsubsection{\texorpdfstring{speed\_}{speed\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Ptd}{pro2\+::\+Ptd}} Spark\+::speed\+\_\+ = \{0, 0\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 32 del archivo Bowser.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Bowser_8hh}{Bowser.\+hh}}\item 
+\mbox{\hyperlink{Bowser_8cc}{Bowser.\+cc}}\end{DoxyCompactItemize}

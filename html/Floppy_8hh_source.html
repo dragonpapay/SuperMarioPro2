@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SUPER MARIO BROS PRO2: Fichero Fuente Floppy.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SUPER MARIO BROS PRO2
+   &#160;<span id="projectnumber">1</span>
+   </div>
+   <div id="projectbrief">Un juego basado en el primer super Mario Bros de la NES con tematica de componentes informaticos retro</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Floppy.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Floppy_8hh.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef Floppy_HH</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define Floppy_HH</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="window_8hh.html">window.hh</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mario_8hh.html">mario.hh</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="platform_8hh.html">platform.hh</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="utils_8hh.html">utils.hh</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="geometry_8hh.html">geometry.hh</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="Floppy_8hh.html#a26c2d6c8d52195a3053d25e6776705f3">   19</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="Floppy_8hh.html#a26c2d6c8d52195a3053d25e6776705f3">movement_t</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="Floppy_8hh.html#a26c2d6c8d52195a3053d25e6776705f3a4dd51ad73508d6fc83a502966779e48e">   20</a></span>&#160;    <a class="code" href="Floppy_8hh.html#a26c2d6c8d52195a3053d25e6776705f3ae55a36a850c67d46b3b3325de7fce0b8">STATIC</a>, <a class="code" href="Floppy_8hh.html#a26c2d6c8d52195a3053d25e6776705f3a1a88641fcd39f2ed3e58a18526e97138">VERTICAL</a>, <a class="code" href="Floppy_8hh.html#a26c2d6c8d52195a3053d25e6776705f3a4dd51ad73508d6fc83a502966779e48e">HORIZONTAL</a>, <a class="code" href="Floppy_8hh.html#a26c2d6c8d52195a3053d25e6776705f3a4025728e15f4cee76a85d2cc65ccb565">WAVE</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="Floppy_8hh.html#a26c2d6c8d52195a3053d25e6776705f3a4025728e15f4cee76a85d2cc65ccb565">   21</a></span>&#160;};</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classFloppy.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="classFloppy.html">Floppy</a> {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classFloppy.html#a1f82d60df007ff41e23474b3c449c511">   33</a></span>&#160;    <a class="code" href="structpro2_1_1Pt.html">pro2::Pt</a> <a class="code" href="classFloppy.html#a1f82d60df007ff41e23474b3c449c511">pos_</a> {0,0};</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classFloppy.html#a2b7d3e347de50c1919b9530738fc7f54">   34</a></span>&#160;    <a class="code" href="structpro2_1_1Pt.html">pro2::Pt</a> <a class="code" href="classFloppy.html#a2b7d3e347de50c1919b9530738fc7f54">posini_</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classFloppy.html#ab79ddd69d432df142f9d3adf7b33a560">   35</a></span>&#160;    <a class="code" href="structpro2_1_1Rect.html">pro2::Rect</a> <a class="code" href="classFloppy.html#ab79ddd69d432df142f9d3adf7b33a560">rect_f_</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classFloppy.html#a095a6a398658690f76613905f8445bdb">   37</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classFloppy.html#a095a6a398658690f76613905f8445bdb">height_</a> = <a class="code" href="classFloppy.html#a37011bb5b5a469df9d742a76f8ba7d5c">Floppy_sprite_</a>.size();</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classFloppy.html#a85f20f0e7653dbebce09dbf8eff4e6ae">   38</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classFloppy.html#a85f20f0e7653dbebce09dbf8eff4e6ae">widht_</a> = <a class="code" href="classFloppy.html#a37011bb5b5a469df9d742a76f8ba7d5c">Floppy_sprite_</a>[0].size();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classFloppy.html#a192862390dc7c83fdadfbcf2b9fe07d0">   40</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classFloppy.html#a192862390dc7c83fdadfbcf2b9fe07d0">val_</a> = 1;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classFloppy.html#aaeef600647ffb5cb3eeb78724436dca9">   42</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classFloppy.html#aaeef600647ffb5cb3eeb78724436dca9">movement</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFloppy.html#a4da8b9599336d559a2eba66a9a8a6f10">apply_physics_f</a>(<a class="code" href="classpro2_1_1Window.html">pro2::Window</a>&amp; window);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">//constructores    </span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classFloppy.html#ad4c59b7d94e5f4425a0ff6a8c738e39c">   63</a></span>&#160;<span class="comment"></span>    <a class="code" href="classFloppy.html#ad4c59b7d94e5f4425a0ff6a8c738e39c">Floppy</a>(<a class="code" href="structpro2_1_1Pt.html">pro2::Pt</a> <a class="code" href="classFloppy.html#ae94bf88750265e0f299ee0b7a2d664f2">pos</a>, <a class="code" href="Floppy_8hh.html#a26c2d6c8d52195a3053d25e6776705f3">movement_t</a> <a class="code" href="Circuitfloor_8cc.html#a0d2d8836216fc94b61aa0824eb239db2">m</a>){</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="classFloppy.html#a1f82d60df007ff41e23474b3c449c511">pos_</a> = <a class="code" href="classFloppy.html#ae94bf88750265e0f299ee0b7a2d664f2">pos</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="classFloppy.html#a2b7d3e347de50c1919b9530738fc7f54">posini_</a> = <a class="code" href="classFloppy.html#ae94bf88750265e0f299ee0b7a2d664f2">pos</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="classFloppy.html#aaeef600647ffb5cb3eeb78724436dca9">movement</a> = <a class="code" href="Circuitfloor_8cc.html#a0d2d8836216fc94b61aa0824eb239db2">m</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    } </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">//consultores</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classFloppy.html#ae94bf88750265e0f299ee0b7a2d664f2">   70</a></span>&#160;    <a class="code" href="structpro2_1_1Pt.html">pro2::Pt</a> <a class="code" href="classFloppy.html#ae94bf88750265e0f299ee0b7a2d664f2">pos</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classFloppy.html#a1f82d60df007ff41e23474b3c449c511">pos_</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classFloppy.html#afb5675ab273b822a43e4063404185b5b">   73</a></span>&#160;    <a class="code" href="structpro2_1_1Rect.html">pro2::Rect</a> <a class="code" href="classFloppy.html#afb5675ab273b822a43e4063404185b5b">get_rect</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="structpro2_1_1Rect.html">pro2::Rect</a> hitbox_floppy = {<a class="code" href="classFloppy.html#a1f82d60df007ff41e23474b3c449c511">pos_</a>.<a class="code" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> -7, <a class="code" href="classFloppy.html#a1f82d60df007ff41e23474b3c449c511">pos_</a>.<a class="code" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> - 15, <a class="code" href="classFloppy.html#a1f82d60df007ff41e23474b3c449c511">pos_</a>.<a class="code" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> + 7, <a class="code" href="classFloppy.html#a1f82d60df007ff41e23474b3c449c511">pos_</a>.<a class="code" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a>};</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">return</span> hitbox_floppy;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFloppy.html#a592f88175eb231ecd9a2872aee49cab7">update</a>(<a class="code" href="classpro2_1_1Window.html">pro2::Window</a>&amp; window);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFloppy.html#a5e0a9a6a9b9eee40dc7d80451ad40f6e">paint_f</a>(<a class="code" href="classpro2_1_1Window.html">pro2::Window</a>&amp; window) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">//Matrius que contenen els sprites del objecte</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classFloppy.html#a37011bb5b5a469df9d742a76f8ba7d5c">   94</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::vector&lt;std::vector&lt;int&gt;&gt; <a class="code" href="classFloppy.html#a37011bb5b5a469df9d742a76f8ba7d5c">Floppy_sprite_</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classFloppy.html#aea4c281e2ff9a29db4bac12a26ee33c1">   95</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::vector&lt;std::vector&lt;int&gt;&gt; <a class="code" href="classFloppy.html#aea4c281e2ff9a29db4bac12a26ee33c1">Floppy_sprite_2</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classFloppy.html#a54b26225cd238f4bd6a0cf80b56cc823">   96</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::vector&lt;std::vector&lt;int&gt;&gt; <a class="code" href="classFloppy.html#a54b26225cd238f4bd6a0cf80b56cc823">Floppy_sprite_3</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classFloppy.html#a6d29b4794bbb2a5a8a5b4f0f043a984b">   97</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::vector&lt;std::vector&lt;int&gt;&gt; <a class="code" href="classFloppy.html#a6d29b4794bbb2a5a8a5b4f0f043a984b">Floppy_sprite_4</a>; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;};</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aCircuitfloor_8cc_html_a0d2d8836216fc94b61aa0824eb239db2"><div class="ttname"><a href="Circuitfloor_8cc.html#a0d2d8836216fc94b61aa0824eb239db2">m</a></div><div class="ttdeci">const int m</div><div class="ttdef"><b>Definition:</b> <a href="Circuitfloor_8cc_source.html#l00014">Circuitfloor.cc:14</a></div></div>
+<div class="ttc" id="aFloppy_8hh_html_a26c2d6c8d52195a3053d25e6776705f3"><div class="ttname"><a href="Floppy_8hh.html#a26c2d6c8d52195a3053d25e6776705f3">movement_t</a></div><div class="ttdeci">movement_t</div><div class="ttdef"><b>Definition:</b> <a href="Floppy_8hh_source.html#l00019">Floppy.hh:19</a></div></div>
+<div class="ttc" id="aFloppy_8hh_html_a26c2d6c8d52195a3053d25e6776705f3a1a88641fcd39f2ed3e58a18526e97138"><div class="ttname"><a href="Floppy_8hh.html#a26c2d6c8d52195a3053d25e6776705f3a1a88641fcd39f2ed3e58a18526e97138">VERTICAL</a></div><div class="ttdeci">@ VERTICAL</div><div class="ttdef"><b>Definition:</b> <a href="Floppy_8hh_source.html#l00020">Floppy.hh:20</a></div></div>
+<div class="ttc" id="aFloppy_8hh_html_a26c2d6c8d52195a3053d25e6776705f3a4025728e15f4cee76a85d2cc65ccb565"><div class="ttname"><a href="Floppy_8hh.html#a26c2d6c8d52195a3053d25e6776705f3a4025728e15f4cee76a85d2cc65ccb565">WAVE</a></div><div class="ttdeci">@ WAVE</div><div class="ttdef"><b>Definition:</b> <a href="Floppy_8hh_source.html#l00021">Floppy.hh:20</a></div></div>
+<div class="ttc" id="aFloppy_8hh_html_a26c2d6c8d52195a3053d25e6776705f3a4dd51ad73508d6fc83a502966779e48e"><div class="ttname"><a href="Floppy_8hh.html#a26c2d6c8d52195a3053d25e6776705f3a4dd51ad73508d6fc83a502966779e48e">HORIZONTAL</a></div><div class="ttdeci">@ HORIZONTAL</div><div class="ttdef"><b>Definition:</b> <a href="Floppy_8hh_source.html#l00020">Floppy.hh:20</a></div></div>
+<div class="ttc" id="aFloppy_8hh_html_a26c2d6c8d52195a3053d25e6776705f3ae55a36a850c67d46b3b3325de7fce0b8"><div class="ttname"><a href="Floppy_8hh.html#a26c2d6c8d52195a3053d25e6776705f3ae55a36a850c67d46b3b3325de7fce0b8">STATIC</a></div><div class="ttdeci">@ STATIC</div><div class="ttdef"><b>Definition:</b> <a href="Floppy_8hh_source.html#l00020">Floppy.hh:20</a></div></div>
+<div class="ttc" id="aclassFloppy_html"><div class="ttname"><a href="classFloppy.html">Floppy</a></div><div class="ttdoc">Representa un floppy disk. Aquest pot fer moviments; Al llarg del window, verticals,...</div><div class="ttdef"><b>Definition:</b> <a href="Floppy_8hh_source.html#l00031">Floppy.hh:31</a></div></div>
+<div class="ttc" id="aclassFloppy_html_a095a6a398658690f76613905f8445bdb"><div class="ttname"><a href="classFloppy.html#a095a6a398658690f76613905f8445bdb">Floppy::height_</a></div><div class="ttdeci">int height_</div><div class="ttdef"><b>Definition:</b> <a href="Floppy_8hh_source.html#l00037">Floppy.hh:37</a></div></div>
+<div class="ttc" id="aclassFloppy_html_a192862390dc7c83fdadfbcf2b9fe07d0"><div class="ttname"><a href="classFloppy.html#a192862390dc7c83fdadfbcf2b9fe07d0">Floppy::val_</a></div><div class="ttdeci">int val_</div><div class="ttdef"><b>Definition:</b> <a href="Floppy_8hh_source.html#l00040">Floppy.hh:40</a></div></div>
+<div class="ttc" id="aclassFloppy_html_a1f82d60df007ff41e23474b3c449c511"><div class="ttname"><a href="classFloppy.html#a1f82d60df007ff41e23474b3c449c511">Floppy::pos_</a></div><div class="ttdeci">pro2::Pt pos_</div><div class="ttdef"><b>Definition:</b> <a href="Floppy_8hh_source.html#l00033">Floppy.hh:33</a></div></div>
+<div class="ttc" id="aclassFloppy_html_a2b7d3e347de50c1919b9530738fc7f54"><div class="ttname"><a href="classFloppy.html#a2b7d3e347de50c1919b9530738fc7f54">Floppy::posini_</a></div><div class="ttdeci">pro2::Pt posini_</div><div class="ttdef"><b>Definition:</b> <a href="Floppy_8hh_source.html#l00034">Floppy.hh:34</a></div></div>
+<div class="ttc" id="aclassFloppy_html_a37011bb5b5a469df9d742a76f8ba7d5c"><div class="ttname"><a href="classFloppy.html#a37011bb5b5a469df9d742a76f8ba7d5c">Floppy::Floppy_sprite_</a></div><div class="ttdeci">static const std::vector&lt; std::vector&lt; int &gt; &gt; Floppy_sprite_</div><div class="ttdef"><b>Definition:</b> <a href="Floppy_8hh_source.html#l00094">Floppy.hh:94</a></div></div>
+<div class="ttc" id="aclassFloppy_html_a4da8b9599336d559a2eba66a9a8a6f10"><div class="ttname"><a href="classFloppy.html#a4da8b9599336d559a2eba66a9a8a6f10">Floppy::apply_physics_f</a></div><div class="ttdeci">void apply_physics_f(pro2::Window &amp;window)</div><div class="ttdoc">Aplica a floppy un moviment segons el parametre implicit Aquesta funció actualitza la posició de l'ob...</div><div class="ttdef"><b>Definition:</b> <a href="Floppy_8cc_source.html#l00114">Floppy.cc:114</a></div></div>
+<div class="ttc" id="aclassFloppy_html_a54b26225cd238f4bd6a0cf80b56cc823"><div class="ttname"><a href="classFloppy.html#a54b26225cd238f4bd6a0cf80b56cc823">Floppy::Floppy_sprite_3</a></div><div class="ttdeci">static const std::vector&lt; std::vector&lt; int &gt; &gt; Floppy_sprite_3</div><div class="ttdef"><b>Definition:</b> <a href="Floppy_8hh_source.html#l00096">Floppy.hh:96</a></div></div>
+<div class="ttc" id="aclassFloppy_html_a592f88175eb231ecd9a2872aee49cab7"><div class="ttname"><a href="classFloppy.html#a592f88175eb231ecd9a2872aee49cab7">Floppy::update</a></div><div class="ttdeci">void update(pro2::Window &amp;window)</div><div class="ttdoc">Actualitza la posicio de l'objecte floppy segons el moviment.</div><div class="ttdef"><b>Definition:</b> <a href="Floppy_8cc_source.html#l00140">Floppy.cc:140</a></div></div>
+<div class="ttc" id="aclassFloppy_html_a5e0a9a6a9b9eee40dc7d80451ad40f6e"><div class="ttname"><a href="classFloppy.html#a5e0a9a6a9b9eee40dc7d80451ad40f6e">Floppy::paint_f</a></div><div class="ttdeci">void paint_f(pro2::Window &amp;window) const</div><div class="ttdoc">Dibuixa 4 sprites de l'objecte Floppy.</div><div class="ttdef"><b>Definition:</b> <a href="Floppy_8cc_source.html#l00100">Floppy.cc:100</a></div></div>
+<div class="ttc" id="aclassFloppy_html_a6d29b4794bbb2a5a8a5b4f0f043a984b"><div class="ttname"><a href="classFloppy.html#a6d29b4794bbb2a5a8a5b4f0f043a984b">Floppy::Floppy_sprite_4</a></div><div class="ttdeci">static const std::vector&lt; std::vector&lt; int &gt; &gt; Floppy_sprite_4</div><div class="ttdef"><b>Definition:</b> <a href="Floppy_8hh_source.html#l00097">Floppy.hh:97</a></div></div>
+<div class="ttc" id="aclassFloppy_html_a85f20f0e7653dbebce09dbf8eff4e6ae"><div class="ttname"><a href="classFloppy.html#a85f20f0e7653dbebce09dbf8eff4e6ae">Floppy::widht_</a></div><div class="ttdeci">int widht_</div><div class="ttdef"><b>Definition:</b> <a href="Floppy_8hh_source.html#l00038">Floppy.hh:38</a></div></div>
+<div class="ttc" id="aclassFloppy_html_aaeef600647ffb5cb3eeb78724436dca9"><div class="ttname"><a href="classFloppy.html#aaeef600647ffb5cb3eeb78724436dca9">Floppy::movement</a></div><div class="ttdeci">int movement</div><div class="ttdef"><b>Definition:</b> <a href="Floppy_8hh_source.html#l00042">Floppy.hh:42</a></div></div>
+<div class="ttc" id="aclassFloppy_html_ab79ddd69d432df142f9d3adf7b33a560"><div class="ttname"><a href="classFloppy.html#ab79ddd69d432df142f9d3adf7b33a560">Floppy::rect_f_</a></div><div class="ttdeci">pro2::Rect rect_f_</div><div class="ttdef"><b>Definition:</b> <a href="Floppy_8hh_source.html#l00035">Floppy.hh:35</a></div></div>
+<div class="ttc" id="aclassFloppy_html_ad4c59b7d94e5f4425a0ff6a8c738e39c"><div class="ttname"><a href="classFloppy.html#ad4c59b7d94e5f4425a0ff6a8c738e39c">Floppy::Floppy</a></div><div class="ttdeci">Floppy(pro2::Pt pos, movement_t m)</div><div class="ttdoc">Constructor de la classe Floppy.</div><div class="ttdef"><b>Definition:</b> <a href="Floppy_8hh_source.html#l00063">Floppy.hh:63</a></div></div>
+<div class="ttc" id="aclassFloppy_html_ae94bf88750265e0f299ee0b7a2d664f2"><div class="ttname"><a href="classFloppy.html#ae94bf88750265e0f299ee0b7a2d664f2">Floppy::pos</a></div><div class="ttdeci">pro2::Pt pos() const</div><div class="ttdef"><b>Definition:</b> <a href="Floppy_8hh_source.html#l00070">Floppy.hh:70</a></div></div>
+<div class="ttc" id="aclassFloppy_html_aea4c281e2ff9a29db4bac12a26ee33c1"><div class="ttname"><a href="classFloppy.html#aea4c281e2ff9a29db4bac12a26ee33c1">Floppy::Floppy_sprite_2</a></div><div class="ttdeci">static const std::vector&lt; std::vector&lt; int &gt; &gt; Floppy_sprite_2</div><div class="ttdef"><b>Definition:</b> <a href="Floppy_8hh_source.html#l00095">Floppy.hh:95</a></div></div>
+<div class="ttc" id="aclassFloppy_html_afb5675ab273b822a43e4063404185b5b"><div class="ttname"><a href="classFloppy.html#afb5675ab273b822a43e4063404185b5b">Floppy::get_rect</a></div><div class="ttdeci">pro2::Rect get_rect() const</div><div class="ttdef"><b>Definition:</b> <a href="Floppy_8hh_source.html#l00073">Floppy.hh:73</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html"><div class="ttname"><a href="classpro2_1_1Window.html">pro2::Window</a></div><div class="ttdef"><b>Definition:</b> <a href="window_8hh_source.html#l00071">window.hh:71</a></div></div>
+<div class="ttc" id="ageometry_8hh_html"><div class="ttname"><a href="geometry_8hh.html">geometry.hh</a></div></div>
+<div class="ttc" id="amario_8hh_html"><div class="ttname"><a href="mario_8hh.html">mario.hh</a></div><div class="ttdoc">especificacio de la classe mario</div></div>
+<div class="ttc" id="aplatform_8hh_html"><div class="ttname"><a href="platform_8hh.html">platform.hh</a></div><div class="ttdoc">Especificació de la classe platform.</div></div>
+<div class="ttc" id="astructpro2_1_1Pt_html"><div class="ttname"><a href="structpro2_1_1Pt.html">pro2::Pt</a></div><div class="ttdoc">Punt amb coordenades enters (x, y).</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hh_source.html#l00008">geometry.hh:8</a></div></div>
+<div class="ttc" id="astructpro2_1_1Pt_html_a66aed2131ecee1ac8d9b7a114beead56"><div class="ttname"><a href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">pro2::Pt::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hh_source.html#l00009">geometry.hh:9</a></div></div>
+<div class="ttc" id="astructpro2_1_1Pt_html_ac3bf243622bd81d35086e7adb53c9b74"><div class="ttname"><a href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">pro2::Pt::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hh_source.html#l00009">geometry.hh:9</a></div></div>
+<div class="ttc" id="astructpro2_1_1Rect_html"><div class="ttname"><a href="structpro2_1_1Rect.html">pro2::Rect</a></div><div class="ttdoc">Rectangle definit per coordenades esquerra, superior, dreta i inferior.</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hh_source.html#l00046">geometry.hh:46</a></div></div>
+<div class="ttc" id="autils_8hh_html"><div class="ttname"><a href="utils_8hh.html">utils.hh</a></div></div>
+<div class="ttc" id="awindow_8hh_html"><div class="ttname"><a href="window_8hh.html">window.hh</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

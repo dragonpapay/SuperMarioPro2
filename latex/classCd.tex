@@ -1,0 +1,303 @@
+\hypertarget{classCd}{}\doxysection{Referencia de la Clase Cd}
+\label{classCd}\index{Cd@{Cd}}
+
+
+Representa un \mbox{\hyperlink{classCd}{Cd}}, que es pot moure i ser recollit pel jugador els moviments de l\textquotesingle{}objecte son sinusoidal i estatic la seva funció en el joc es la mateixa que un \char`\"{}mushroom\char`\"{} original del mario.  
+
+
+
+
+{\ttfamily \#include $<$Cd.\+hh$>$}
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCd_a14abb0485e148f5ec6851ce432be6f0b}{Cd}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classCd_a099ada5dab5b15558d12011ff1ea0554}{pos}}, \mbox{\hyperlink{Cd_8hh_a01e308809b9d499b36da47ec4fb60420}{movement\+\_\+tc}} \mbox{\hyperlink{Circuitfloor_8cc_a0d2d8836216fc94b61aa0824eb239db2}{m}})
+\begin{DoxyCompactList}\small\item\em Constructor del \mbox{\hyperlink{classCd}{Cd}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classCd_a099ada5dab5b15558d12011ff1ea0554}{pos}} () const
+\item 
+\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \mbox{\hyperlink{classCd_af59225d6e0a3a33905697347efd8d1c0}{get\+\_\+rect}} () const
+\item 
+void \mbox{\hyperlink{classCd_a59224f9242493d5bb1e4d259526e038a}{update}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\begin{DoxyCompactList}\small\item\em Actualitza la posicio de l\textquotesingle{}objecte cd segons el moviment. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCd_afff3fcd9774d9ebc5e5690c35966a004}{paint\+\_\+cd}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window) const
+\begin{DoxyCompactList}\small\item\em Dibuixa el sprite de l\textquotesingle{}objecte \mbox{\hyperlink{classCd}{Cd}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classCd_aa2e573fd246fc645ea8e77c25b28255c}{apply\+\_\+physics\+\_\+cd}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\begin{DoxyCompactList}\small\item\em Aplica a \mbox{\hyperlink{classCd}{Cd}} un moviment segons el parametre implicit Aquesta funció actualitza la posició de l\textquotesingle{}objecte \mbox{\hyperlink{classCd}{Cd}} en funció del tipus de moviment\+: \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classCd_a52f2a44d0f932b4ffc1f47fe2ad2dd3f}{pos\+\_\+}} \{0,0\}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classCd_afa162a88c2ed4b1c2b44859e8d30b080}{posini\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \mbox{\hyperlink{classCd_aab6d028076b2c0c8f6d98e5f224046c4}{rect\+\_\+cd\+\_\+}}
+\item 
+int \mbox{\hyperlink{classCd_a2fd956e27308f898281555f05570be3e}{height\+\_\+}} = Cd\+\_\+sprite\+\_\+.\+size()
+\item 
+int \mbox{\hyperlink{classCd_ac629d99535bb6ec953192090ab4b7f3e}{widht\+\_\+}} = \mbox{\hyperlink{classCd_a6a0c36782441526b6bf89a8031d785e0}{Cd\+\_\+sprite\+\_\+}}\mbox{[}0\mbox{]}.size()
+\item 
+int \mbox{\hyperlink{classCd_a18bd21358329d8a72168523af7e6e7e1}{movement}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{classCd_a6a0c36782441526b6bf89a8031d785e0}{Cd\+\_\+sprite\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Representa un \mbox{\hyperlink{classCd}{Cd}}, que es pot moure i ser recollit pel jugador els moviments de l\textquotesingle{}objecte son sinusoidal i estatic la seva funció en el joc es la mateixa que un \char`\"{}mushroom\char`\"{} original del mario. 
+
+Definición en la línea 30 del archivo Cd.\+hh.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classCd_a14abb0485e148f5ec6851ce432be6f0b}\label{classCd_a14abb0485e148f5ec6851ce432be6f0b}} 
+\index{Cd@{Cd}!Cd@{Cd}}
+\index{Cd@{Cd}!Cd@{Cd}}
+\doxysubsubsection{\texorpdfstring{Cd()}{Cd()}}
+{\footnotesize\ttfamily Cd\+::\+Cd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pos,  }\item[{\mbox{\hyperlink{Cd_8hh_a01e308809b9d499b36da47ec4fb60420}{movement\+\_\+tc}}}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor del \mbox{\hyperlink{classCd}{Cd}}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pos} & Posició inicial del \mbox{\hyperlink{classCd}{Cd}}. \\
+\hline
+{\em posini} & Posició original per a càlculs de moviment. \\
+\hline
+{\em m} & Tipus de moviment \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 58 del archivo Cd.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58                                   \{}
+\DoxyCodeLine{59         \mbox{\hyperlink{classCd_a52f2a44d0f932b4ffc1f47fe2ad2dd3f}{pos\_}} = \mbox{\hyperlink{classCd_a099ada5dab5b15558d12011ff1ea0554}{pos}};}
+\DoxyCodeLine{60         \mbox{\hyperlink{classCd_afa162a88c2ed4b1c2b44859e8d30b080}{posini\_}} = \mbox{\hyperlink{classCd_a099ada5dab5b15558d12011ff1ea0554}{pos}};}
+\DoxyCodeLine{61         \mbox{\hyperlink{classCd_a18bd21358329d8a72168523af7e6e7e1}{movement}} = \mbox{\hyperlink{Circuitfloor_8cc_a0d2d8836216fc94b61aa0824eb239db2}{m}};}
+\DoxyCodeLine{62      \} }
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classCd_aa2e573fd246fc645ea8e77c25b28255c}\label{classCd_aa2e573fd246fc645ea8e77c25b28255c}} 
+\index{Cd@{Cd}!apply\_physics\_cd@{apply\_physics\_cd}}
+\index{apply\_physics\_cd@{apply\_physics\_cd}!Cd@{Cd}}
+\doxysubsubsection{\texorpdfstring{apply\_physics\_cd()}{apply\_physics\_cd()}}
+{\footnotesize\ttfamily void Cd\+::apply\+\_\+physics\+\_\+cd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Aplica a \mbox{\hyperlink{classCd}{Cd}} un moviment segons el parametre implicit Aquesta funció actualitza la posició de l\textquotesingle{}objecte \mbox{\hyperlink{classCd}{Cd}} en funció del tipus de moviment\+: 
+
+
+\begin{DoxyItemize}
+\item WAVE\+\_\+\+HORIZONTAL\+: Moviment sinusoidal horizontal constant 
+\begin{DoxyParams}{Parámetros}
+{\em window} & finestra on es dibuixa \mbox{\hyperlink{classCd}{Cd}} i obtenim el contador de frames \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
+
+Definición en la línea 60 del archivo Cd.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60                                             \{}
+\DoxyCodeLine{61     \textcolor{keywordflow}{if}(\mbox{\hyperlink{classCd_a18bd21358329d8a72168523af7e6e7e1}{movement}} == \mbox{\hyperlink{Cd_8hh_a01e308809b9d499b36da47ec4fb60420a722b827bbe3e2448558b06f2c5fbdda1}{WAVE\_HORIZONTAL}})\{}
+\DoxyCodeLine{62         \textcolor{keywordtype}{int} amplx = 10;}
+\DoxyCodeLine{63         \textcolor{keywordtype}{int} amply = 10;}
+\DoxyCodeLine{64         \textcolor{keywordtype}{int} f = window.\mbox{\hyperlink{classpro2_1_1Window_a36747221fc49f9b5dcf42d2d7bdf6964}{frame\_count}}();}
+\DoxyCodeLine{65         \mbox{\hyperlink{classCd_a52f2a44d0f932b4ffc1f47fe2ad2dd3f}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} = \mbox{\hyperlink{classCd_afa162a88c2ed4b1c2b44859e8d30b080}{posini\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} + f;       }
+\DoxyCodeLine{66         \mbox{\hyperlink{classCd_a52f2a44d0f932b4ffc1f47fe2ad2dd3f}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} = \mbox{\hyperlink{classCd_afa162a88c2ed4b1c2b44859e8d30b080}{posini\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} + sin((f / 2*M\_PI)/10) * amply;}
+\DoxyCodeLine{67    }
+\DoxyCodeLine{68     \}}
+\DoxyCodeLine{69     }
+\DoxyCodeLine{70 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCd_af59225d6e0a3a33905697347efd8d1c0}\label{classCd_af59225d6e0a3a33905697347efd8d1c0}} 
+\index{Cd@{Cd}!get\_rect@{get\_rect}}
+\index{get\_rect@{get\_rect}!Cd@{Cd}}
+\doxysubsubsection{\texorpdfstring{get\_rect()}{get\_rect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} Cd\+::get\+\_\+rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 68 del archivo Cd.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{68                               \{}
+\DoxyCodeLine{69         \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}} hitbox\_cd = \{\mbox{\hyperlink{classCd_a52f2a44d0f932b4ffc1f47fe2ad2dd3f}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} -\/ 14, \mbox{\hyperlink{classCd_a52f2a44d0f932b4ffc1f47fe2ad2dd3f}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} -\/ 27, \mbox{\hyperlink{classCd_a52f2a44d0f932b4ffc1f47fe2ad2dd3f}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} + 14, \mbox{\hyperlink{classCd_a52f2a44d0f932b4ffc1f47fe2ad2dd3f}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}}\};}
+\DoxyCodeLine{70         \textcolor{keywordflow}{return} hitbox\_cd;}
+\DoxyCodeLine{71      \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCd_afff3fcd9774d9ebc5e5690c35966a004}\label{classCd_afff3fcd9774d9ebc5e5690c35966a004}} 
+\index{Cd@{Cd}!paint\_cd@{paint\_cd}}
+\index{paint\_cd@{paint\_cd}!Cd@{Cd}}
+\doxysubsubsection{\texorpdfstring{paint\_cd()}{paint\_cd()}}
+{\footnotesize\ttfamily void Cd\+::paint\+\_\+cd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window }\end{DoxyParamCaption}) const}
+
+
+
+Dibuixa el sprite de l\textquotesingle{}objecte \mbox{\hyperlink{classCd}{Cd}}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em window} & Finestra en la que es dibuixa a cd \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 54 del archivo Cd.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{54                                           \{}
+\DoxyCodeLine{55     \textcolor{keyword}{const} \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} top\_left = \{\mbox{\hyperlink{classCd_a52f2a44d0f932b4ffc1f47fe2ad2dd3f}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} -\/ 14, \mbox{\hyperlink{classCd_a52f2a44d0f932b4ffc1f47fe2ad2dd3f}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} -\/28\}; }
+\DoxyCodeLine{56     \mbox{\hyperlink{namespacepro2_a416c3e13d8244d9b102f7df30696c186}{paint\_sprite}}(window, top\_left, \mbox{\hyperlink{classCd_a6a0c36782441526b6bf89a8031d785e0}{Cd\_sprite\_}}, \textcolor{keyword}{false});}
+\DoxyCodeLine{57   }
+\DoxyCodeLine{58 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCd_a099ada5dab5b15558d12011ff1ea0554}\label{classCd_a099ada5dab5b15558d12011ff1ea0554}} 
+\index{Cd@{Cd}!pos@{pos}}
+\index{pos@{pos}!Cd@{Cd}}
+\doxysubsubsection{\texorpdfstring{pos()}{pos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Cd\+::pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 65 del archivo Cd.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65                         \{}
+\DoxyCodeLine{66         \textcolor{keywordflow}{return} \mbox{\hyperlink{classCd_a52f2a44d0f932b4ffc1f47fe2ad2dd3f}{pos\_}};}
+\DoxyCodeLine{67      \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCd_a59224f9242493d5bb1e4d259526e038a}\label{classCd_a59224f9242493d5bb1e4d259526e038a}} 
+\index{Cd@{Cd}!update@{update}}
+\index{update@{update}!Cd@{Cd}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Cd\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window }\end{DoxyParamCaption})}
+
+
+
+Actualitza la posicio de l\textquotesingle{}objecte cd segons el moviment. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em window} & Finestra en la que es dibuixa a cd \\
+\hline
+{\em platforms} & Platformes en les que cd pot ser \\
+\hline
+{\em cfloor} & \mbox{\hyperlink{classCircuitfloor}{Circuitfloor}} en els que cd pot ser \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 72 del archivo Cd.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{72                                  \{   }
+\DoxyCodeLine{73     \mbox{\hyperlink{classCd_aa2e573fd246fc645ea8e77c25b28255c}{apply\_physics\_cd}}(window);}
+\DoxyCodeLine{74 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classCd_a6a0c36782441526b6bf89a8031d785e0}\label{classCd_a6a0c36782441526b6bf89a8031d785e0}} 
+\index{Cd@{Cd}!Cd\_sprite\_@{Cd\_sprite\_}}
+\index{Cd\_sprite\_@{Cd\_sprite\_}!Cd@{Cd}}
+\doxysubsubsection{\texorpdfstring{Cd\_sprite\_}{Cd\_sprite\_}}
+{\footnotesize\ttfamily const vector$<$ vector$<$ int $>$ $>$ Cd\+::\+Cd\+\_\+sprite\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea 90 del archivo Cd.\+hh.
+
+\mbox{\Hypertarget{classCd_a2fd956e27308f898281555f05570be3e}\label{classCd_a2fd956e27308f898281555f05570be3e}} 
+\index{Cd@{Cd}!height\_@{height\_}}
+\index{height\_@{height\_}!Cd@{Cd}}
+\doxysubsubsection{\texorpdfstring{height\_}{height\_}}
+{\footnotesize\ttfamily int Cd\+::height\+\_\+ = Cd\+\_\+sprite\+\_\+.\+size()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 37 del archivo Cd.\+hh.
+
+\mbox{\Hypertarget{classCd_a18bd21358329d8a72168523af7e6e7e1}\label{classCd_a18bd21358329d8a72168523af7e6e7e1}} 
+\index{Cd@{Cd}!movement@{movement}}
+\index{movement@{movement}!Cd@{Cd}}
+\doxysubsubsection{\texorpdfstring{movement}{movement}}
+{\footnotesize\ttfamily int Cd\+::movement\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 40 del archivo Cd.\+hh.
+
+\mbox{\Hypertarget{classCd_a52f2a44d0f932b4ffc1f47fe2ad2dd3f}\label{classCd_a52f2a44d0f932b4ffc1f47fe2ad2dd3f}} 
+\index{Cd@{Cd}!pos\_@{pos\_}}
+\index{pos\_@{pos\_}!Cd@{Cd}}
+\doxysubsubsection{\texorpdfstring{pos\_}{pos\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Cd\+::pos\+\_\+ \{0,0\}\hspace{0.3cm}{\ttfamily [private]}}
+
+Atributs privats 
+
+Definición en la línea 33 del archivo Cd.\+hh.
+
+\mbox{\Hypertarget{classCd_afa162a88c2ed4b1c2b44859e8d30b080}\label{classCd_afa162a88c2ed4b1c2b44859e8d30b080}} 
+\index{Cd@{Cd}!posini\_@{posini\_}}
+\index{posini\_@{posini\_}!Cd@{Cd}}
+\doxysubsubsection{\texorpdfstring{posini\_}{posini\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Cd\+::posini\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 34 del archivo Cd.\+hh.
+
+\mbox{\Hypertarget{classCd_aab6d028076b2c0c8f6d98e5f224046c4}\label{classCd_aab6d028076b2c0c8f6d98e5f224046c4}} 
+\index{Cd@{Cd}!rect\_cd\_@{rect\_cd\_}}
+\index{rect\_cd\_@{rect\_cd\_}!Cd@{Cd}}
+\doxysubsubsection{\texorpdfstring{rect\_cd\_}{rect\_cd\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} Cd\+::rect\+\_\+cd\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 35 del archivo Cd.\+hh.
+
+\mbox{\Hypertarget{classCd_ac629d99535bb6ec953192090ab4b7f3e}\label{classCd_ac629d99535bb6ec953192090ab4b7f3e}} 
+\index{Cd@{Cd}!widht\_@{widht\_}}
+\index{widht\_@{widht\_}!Cd@{Cd}}
+\doxysubsubsection{\texorpdfstring{widht\_}{widht\_}}
+{\footnotesize\ttfamily int Cd\+::widht\+\_\+ = \mbox{\hyperlink{classCd_a6a0c36782441526b6bf89a8031d785e0}{Cd\+\_\+sprite\+\_\+}}\mbox{[}0\mbox{]}.size()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 38 del archivo Cd.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Cd_8hh}{Cd.\+hh}}\item 
+\mbox{\hyperlink{Cd_8cc}{Cd.\+cc}}\end{DoxyCompactItemize}

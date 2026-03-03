@@ -1,0 +1,355 @@
+\hypertarget{classpro2_1_1Stack}{}\doxysection{Referencia de la plantilla de la Clase pro2\+::Stack$<$ T $>$}
+\label{classpro2_1_1Stack}\index{pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Stack.\+hh$>$}
+
+\doxysubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structpro2_1_1Stack_1_1Item}{Item}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpro2_1_1Stack_ac8177590ad689b65f9ab1f9fdef49422}{Stack}} ()
+\item 
+\mbox{\hyperlink{classpro2_1_1Stack_a1f0cd97bad7cd292a420932d873391b3}{Stack}} (const \mbox{\hyperlink{classpro2_1_1Stack}{Stack}}$<$ T $>$ \&\mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}})
+\item 
+\mbox{\hyperlink{classpro2_1_1Stack_a61cea0bf2159e83df24df11cd92c0433}{$\sim$\+Stack}} ()
+\item 
+\mbox{\hyperlink{classpro2_1_1Stack}{Stack}}$<$ T $>$ \& \mbox{\hyperlink{classpro2_1_1Stack_a6585c88f848e5d118fad513ba4a029af}{operator=}} (const \mbox{\hyperlink{classpro2_1_1Stack}{Stack}}$<$ T $>$ \&\mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}})
+\item 
+int \mbox{\hyperlink{classpro2_1_1Stack_a1b761de09a8514a69bbcd186e211b8cc}{size}} ()
+\item 
+bool \mbox{\hyperlink{classpro2_1_1Stack_aa5df380e38e0a732ccb7f78f0f598a84}{empty}} () const
+\item 
+void \mbox{\hyperlink{classpro2_1_1Stack_ad1df86661024ed3349ebe717729e52a1}{push}} (T value)
+\item 
+void \mbox{\hyperlink{classpro2_1_1Stack_ab4c606e185aaf7ef6fb05139f030cb7a}{pop}} ()
+\item 
+T \mbox{\hyperlink{classpro2_1_1Stack_a8deba03f4741da4cd85147fdd3a4ccc3}{top}} ()
+\item 
+const T \mbox{\hyperlink{classpro2_1_1Stack_a9d953de1561ab78b1bf3d74885bd2827}{top}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structpro2_1_1Stack_1_1Item}{Item}} $\ast$ \mbox{\hyperlink{classpro2_1_1Stack_a08b24455f127b5ff4d6782f54bdeb163}{copy\+Items}} (\mbox{\hyperlink{structpro2_1_1Stack_1_1Item}{Item}} $\ast$pitem)
+\item 
+void \mbox{\hyperlink{classpro2_1_1Stack_a54b6a56d625c3ec4ceccd074799ec8ad}{delete\+Items}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classpro2_1_1Stack_ac0108c0668d35c703e698e4436d07dda}{\+\_\+size}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Stack_1_1Item}{Item}} $\ast$ \mbox{\hyperlink{classpro2_1_1Stack_aa1cecf3dc50001bbc8edd2bb9140b4f1}{ptopitem}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+\subsubsection*{template$<$typename T$>$\newline
+class pro2\+::\+Stack$<$ T $>$}
+
+
+
+Definición en la línea 12 del archivo Stack.\+hh.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classpro2_1_1Stack_ac8177590ad689b65f9ab1f9fdef49422}\label{classpro2_1_1Stack_ac8177590ad689b65f9ab1f9fdef49422}} 
+\index{pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}!Stack@{Stack}}
+\index{Stack@{Stack}!pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Stack()}{Stack()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classpro2_1_1Stack}{pro2\+::\+Stack}}$<$ T $>$\+::\mbox{\hyperlink{classpro2_1_1Stack}{Stack}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 57 del archivo Stack.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{57           \{}
+\DoxyCodeLine{58     \mbox{\hyperlink{classpro2_1_1Stack_aa1cecf3dc50001bbc8edd2bb9140b4f1}{ptopitem}} = NULL;}
+\DoxyCodeLine{59     \mbox{\hyperlink{classpro2_1_1Stack_ac0108c0668d35c703e698e4436d07dda}{\_size}} = 0;}
+\DoxyCodeLine{60     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 300; ++i) \{}
+\DoxyCodeLine{61       \mbox{\hyperlink{classpro2_1_1Stack_ad1df86661024ed3349ebe717729e52a1}{push}}(1);  \textcolor{comment}{// inserta  1 300 veces para time;}}
+\DoxyCodeLine{62     \}}
+\DoxyCodeLine{63   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpro2_1_1Stack_a1f0cd97bad7cd292a420932d873391b3}\label{classpro2_1_1Stack_a1f0cd97bad7cd292a420932d873391b3}} 
+\index{pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}!Stack@{Stack}}
+\index{Stack@{Stack}!pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Stack()}{Stack()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classpro2_1_1Stack}{pro2\+::\+Stack}}$<$ T $>$\+::\mbox{\hyperlink{classpro2_1_1Stack}{Stack}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classpro2_1_1Stack}{Stack}}$<$ T $>$ \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 65 del archivo Stack.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65                            \{}
+\DoxyCodeLine{66     \mbox{\hyperlink{classpro2_1_1Stack_aa1cecf3dc50001bbc8edd2bb9140b4f1}{ptopitem}} = \mbox{\hyperlink{classpro2_1_1Stack_a08b24455f127b5ff4d6782f54bdeb163}{copyItems}}(\mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}}.ptopitem);}
+\DoxyCodeLine{67     \mbox{\hyperlink{classpro2_1_1Stack_ac0108c0668d35c703e698e4436d07dda}{\_size}} = \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}}.\_size;}
+\DoxyCodeLine{68   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpro2_1_1Stack_a61cea0bf2159e83df24df11cd92c0433}\label{classpro2_1_1Stack_a61cea0bf2159e83df24df11cd92c0433}} 
+\index{pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}!````~Stack@{$\sim$Stack}}
+\index{````~Stack@{$\sim$Stack}!pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$Stack()}{~Stack()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classpro2_1_1Stack}{pro2\+::\+Stack}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{classpro2_1_1Stack}{Stack}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 70 del archivo Stack.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{70            \{}
+\DoxyCodeLine{71     \mbox{\hyperlink{classpro2_1_1Stack_a54b6a56d625c3ec4ceccd074799ec8ad}{deleteItems}}();}
+\DoxyCodeLine{72   \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classpro2_1_1Stack_a08b24455f127b5ff4d6782f54bdeb163}\label{classpro2_1_1Stack_a08b24455f127b5ff4d6782f54bdeb163}} 
+\index{pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}!copyItems@{copyItems}}
+\index{copyItems@{copyItems}!pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{copyItems()}{copyItems()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{structpro2_1_1Stack_1_1Item}{Item}}$\ast$ \mbox{\hyperlink{classpro2_1_1Stack}{pro2\+::\+Stack}}$<$ T $>$\+::copy\+Items (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Stack_1_1Item}{Item}} $\ast$}]{pitem }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea 29 del archivo Stack.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{29                                \{}
+\DoxyCodeLine{30     \textcolor{keywordflow}{if} (pitem == NULL) \textcolor{keywordflow}{return} NULL;}
+\DoxyCodeLine{31     Item *pfirstitem = \textcolor{keyword}{new} Item();}
+\DoxyCodeLine{32     Item *pcurrentitem = pfirstitem;}
+\DoxyCodeLine{33     \textcolor{keywordflow}{while} (pitem != NULL) \{}
+\DoxyCodeLine{34       pcurrentitem-\/>value = pitem-\/>value;}
+\DoxyCodeLine{35       \textcolor{keywordflow}{if} (pitem-\/>next != NULL) pcurrentitem-\/>next = \textcolor{keyword}{new} Item();}
+\DoxyCodeLine{36       \textcolor{keywordflow}{else} pcurrentitem-\/>next = NULL;}
+\DoxyCodeLine{37       pcurrentitem = pcurrentitem-\/>next;}
+\DoxyCodeLine{38       pitem = pitem-\/>next;}
+\DoxyCodeLine{39     \}}
+\DoxyCodeLine{40     \textcolor{keywordflow}{return} pfirstitem;}
+\DoxyCodeLine{41   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpro2_1_1Stack_a54b6a56d625c3ec4ceccd074799ec8ad}\label{classpro2_1_1Stack_a54b6a56d625c3ec4ceccd074799ec8ad}} 
+\index{pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}!deleteItems@{deleteItems}}
+\index{deleteItems@{deleteItems}!pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{deleteItems()}{deleteItems()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classpro2_1_1Stack}{pro2\+::\+Stack}}$<$ T $>$\+::delete\+Items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea 43 del archivo Stack.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44   \{}
+\DoxyCodeLine{45     Item *pitem = \mbox{\hyperlink{classpro2_1_1Stack_aa1cecf3dc50001bbc8edd2bb9140b4f1}{ptopitem}};}
+\DoxyCodeLine{46     \textcolor{keywordflow}{while} (pitem != NULL) \{}
+\DoxyCodeLine{47       Item *pitemaux = pitem;}
+\DoxyCodeLine{48       pitem = pitem-\/>\mbox{\hyperlink{structpro2_1_1Stack_1_1Item_a296ab4e86ec48b463adaa35fa8837443}{next}};}
+\DoxyCodeLine{49       \textcolor{keyword}{delete} pitemaux;}
+\DoxyCodeLine{50     \}}
+\DoxyCodeLine{51     \mbox{\hyperlink{classpro2_1_1Stack_ac0108c0668d35c703e698e4436d07dda}{\_size}} = 0;}
+\DoxyCodeLine{52   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpro2_1_1Stack_aa5df380e38e0a732ccb7f78f0f598a84}\label{classpro2_1_1Stack_aa5df380e38e0a732ccb7f78f0f598a84}} 
+\index{pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}!empty@{empty}}
+\index{empty@{empty}!pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{classpro2_1_1Stack}{pro2\+::\+Stack}}$<$ T $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 91 del archivo Stack.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{91                      \{}
+\DoxyCodeLine{92     \textcolor{keywordflow}{return} \mbox{\hyperlink{classpro2_1_1Stack_aa1cecf3dc50001bbc8edd2bb9140b4f1}{ptopitem}} == NULL;}
+\DoxyCodeLine{93   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpro2_1_1Stack_a6585c88f848e5d118fad513ba4a029af}\label{classpro2_1_1Stack_a6585c88f848e5d118fad513ba4a029af}} 
+\index{pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classpro2_1_1Stack}{Stack}}$<$T$>$\& \mbox{\hyperlink{classpro2_1_1Stack}{pro2\+::\+Stack}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classpro2_1_1Stack}{Stack}}$<$ T $>$ \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 76 del archivo Stack.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{76                                          \{}
+\DoxyCodeLine{77     \textcolor{keywordflow}{if} (\textcolor{keyword}{this} != \&\mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}}) \{}
+\DoxyCodeLine{78       \mbox{\hyperlink{classpro2_1_1Stack_a54b6a56d625c3ec4ceccd074799ec8ad}{deleteItems}}();}
+\DoxyCodeLine{79       \mbox{\hyperlink{classpro2_1_1Stack_aa1cecf3dc50001bbc8edd2bb9140b4f1}{ptopitem}} = \mbox{\hyperlink{classpro2_1_1Stack_a08b24455f127b5ff4d6782f54bdeb163}{copyItems}}(\mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}}.ptopitem);}
+\DoxyCodeLine{80       \mbox{\hyperlink{classpro2_1_1Stack_ac0108c0668d35c703e698e4436d07dda}{\_size}} = \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}}.\_size;}
+\DoxyCodeLine{81     \}}
+\DoxyCodeLine{82     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{83   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpro2_1_1Stack_ab4c606e185aaf7ef6fb05139f030cb7a}\label{classpro2_1_1Stack_ab4c606e185aaf7ef6fb05139f030cb7a}} 
+\index{pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}!pop@{pop}}
+\index{pop@{pop}!pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classpro2_1_1Stack}{pro2\+::\+Stack}}$<$ T $>$\+::pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 103 del archivo Stack.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{103              \{}
+\DoxyCodeLine{104     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classpro2_1_1Stack_aa1cecf3dc50001bbc8edd2bb9140b4f1}{ptopitem}} == NULL) \{}
+\DoxyCodeLine{105       cerr << \textcolor{stringliteral}{"{}Error: pop on empty stack"{}} << endl;}
+\DoxyCodeLine{106       exit(1);}
+\DoxyCodeLine{107     \}}
+\DoxyCodeLine{108     Item *paux = \mbox{\hyperlink{classpro2_1_1Stack_aa1cecf3dc50001bbc8edd2bb9140b4f1}{ptopitem}};}
+\DoxyCodeLine{109     \mbox{\hyperlink{classpro2_1_1Stack_aa1cecf3dc50001bbc8edd2bb9140b4f1}{ptopitem}} = \mbox{\hyperlink{classpro2_1_1Stack_aa1cecf3dc50001bbc8edd2bb9140b4f1}{ptopitem}}-\/>\mbox{\hyperlink{structpro2_1_1Stack_1_1Item_a296ab4e86ec48b463adaa35fa8837443}{next}};}
+\DoxyCodeLine{110     \textcolor{keyword}{delete} paux;}
+\DoxyCodeLine{111     \mbox{\hyperlink{classpro2_1_1Stack_ac0108c0668d35c703e698e4436d07dda}{\_size}}-\/-\/;}
+\DoxyCodeLine{112   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpro2_1_1Stack_ad1df86661024ed3349ebe717729e52a1}\label{classpro2_1_1Stack_ad1df86661024ed3349ebe717729e52a1}} 
+\index{pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}!push@{push}}
+\index{push@{push}!pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classpro2_1_1Stack}{pro2\+::\+Stack}}$<$ T $>$\+::push (\begin{DoxyParamCaption}\item[{T}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 95 del archivo Stack.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{95                      \{}
+\DoxyCodeLine{96     Item *pnewitem = \textcolor{keyword}{new} Item();}
+\DoxyCodeLine{97     pnewitem-\/>value = value;}
+\DoxyCodeLine{98     pnewitem-\/>next = \mbox{\hyperlink{classpro2_1_1Stack_aa1cecf3dc50001bbc8edd2bb9140b4f1}{ptopitem}};}
+\DoxyCodeLine{99     \mbox{\hyperlink{classpro2_1_1Stack_aa1cecf3dc50001bbc8edd2bb9140b4f1}{ptopitem}} = pnewitem;}
+\DoxyCodeLine{100     \mbox{\hyperlink{classpro2_1_1Stack_ac0108c0668d35c703e698e4436d07dda}{\_size}}++;}
+\DoxyCodeLine{101   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpro2_1_1Stack_a1b761de09a8514a69bbcd186e211b8cc}\label{classpro2_1_1Stack_a1b761de09a8514a69bbcd186e211b8cc}} 
+\index{pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}!size@{size}}
+\index{size@{size}!pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{classpro2_1_1Stack}{pro2\+::\+Stack}}$<$ T $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 87 del archivo Stack.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{87              \{}
+\DoxyCodeLine{88     \textcolor{keywordflow}{return} \mbox{\hyperlink{classpro2_1_1Stack_ac0108c0668d35c703e698e4436d07dda}{\_size}};}
+\DoxyCodeLine{89   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpro2_1_1Stack_a8deba03f4741da4cd85147fdd3a4ccc3}\label{classpro2_1_1Stack_a8deba03f4741da4cd85147fdd3a4ccc3}} 
+\index{pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}!top@{top}}
+\index{top@{top}!pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{top()}{top()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{classpro2_1_1Stack}{pro2\+::\+Stack}}$<$ T $>$\+::top (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 114 del archivo Stack.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{114           \{}
+\DoxyCodeLine{115     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classpro2_1_1Stack_aa1cecf3dc50001bbc8edd2bb9140b4f1}{ptopitem}} == NULL) \{}
+\DoxyCodeLine{116       cerr << \textcolor{stringliteral}{"{}Error: accessing top of empty stack"{}} << endl;}
+\DoxyCodeLine{117       exit(1);}
+\DoxyCodeLine{118     \}}
+\DoxyCodeLine{119     \textcolor{keywordflow}{return} \mbox{\hyperlink{classpro2_1_1Stack_aa1cecf3dc50001bbc8edd2bb9140b4f1}{ptopitem}}-\/>\mbox{\hyperlink{structpro2_1_1Stack_1_1Item_a7a920f6e81027a2f5128f10fe4e832dd}{value}};}
+\DoxyCodeLine{120   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpro2_1_1Stack_a9d953de1561ab78b1bf3d74885bd2827}\label{classpro2_1_1Stack_a9d953de1561ab78b1bf3d74885bd2827}} 
+\index{pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}!top@{top}}
+\index{top@{top}!pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{top()}{top()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T \mbox{\hyperlink{classpro2_1_1Stack}{pro2\+::\+Stack}}$<$ T $>$\+::top (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 122 del archivo Stack.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{122                       \{}
+\DoxyCodeLine{123     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classpro2_1_1Stack_aa1cecf3dc50001bbc8edd2bb9140b4f1}{ptopitem}} == NULL) \{}
+\DoxyCodeLine{124       cerr << \textcolor{stringliteral}{"{}Error: accessing top of empty stack"{}} << endl;}
+\DoxyCodeLine{125       exit(1);}
+\DoxyCodeLine{126     \}}
+\DoxyCodeLine{127     \textcolor{keywordflow}{return} \mbox{\hyperlink{classpro2_1_1Stack_aa1cecf3dc50001bbc8edd2bb9140b4f1}{ptopitem}}-\/>\mbox{\hyperlink{structpro2_1_1Stack_1_1Item_a7a920f6e81027a2f5128f10fe4e832dd}{value}};}
+\DoxyCodeLine{128   \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classpro2_1_1Stack_ac0108c0668d35c703e698e4436d07dda}\label{classpro2_1_1Stack_ac0108c0668d35c703e698e4436d07dda}} 
+\index{pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}!\_size@{\_size}}
+\index{\_size@{\_size}!pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\_size}{\_size}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{classpro2_1_1Stack}{pro2\+::\+Stack}}$<$ T $>$\+::\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 24 del archivo Stack.\+hh.
+
+\mbox{\Hypertarget{classpro2_1_1Stack_aa1cecf3dc50001bbc8edd2bb9140b4f1}\label{classpro2_1_1Stack_aa1cecf3dc50001bbc8edd2bb9140b4f1}} 
+\index{pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}!ptopitem@{ptopitem}}
+\index{ptopitem@{ptopitem}!pro2::Stack$<$ T $>$@{pro2::Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ptopitem}{ptopitem}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{structpro2_1_1Stack_1_1Item}{Item}}$\ast$ \mbox{\hyperlink{classpro2_1_1Stack}{pro2\+::\+Stack}}$<$ T $>$\+::ptopitem\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 25 del archivo Stack.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Stack_8hh}{Stack.\+hh}}\end{DoxyCompactItemize}

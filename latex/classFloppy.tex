@@ -1,0 +1,463 @@
+\hypertarget{classFloppy}{}\doxysection{Referencia de la Clase Floppy}
+\label{classFloppy}\index{Floppy@{Floppy}}
+
+
+Representa un floppy disk. Aquest pot fer moviments; Al llarg del window, verticals, horizontals, ondulatoris o be estatic, en el joc equival a una moneda un objecte amb un valor, tal que al fer tocar-\/lo desapareix i incrementa el contador de objectes recollits pel jugador.  
+
+
+
+
+{\ttfamily \#include $<$Floppy.\+hh$>$}
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFloppy_ad4c59b7d94e5f4425a0ff6a8c738e39c}{Floppy}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classFloppy_ae94bf88750265e0f299ee0b7a2d664f2}{pos}}, \mbox{\hyperlink{Floppy_8hh_a26c2d6c8d52195a3053d25e6776705f3}{movement\+\_\+t}} \mbox{\hyperlink{Circuitfloor_8cc_a0d2d8836216fc94b61aa0824eb239db2}{m}})
+\begin{DoxyCompactList}\small\item\em Constructor de la classe \mbox{\hyperlink{classFloppy}{Floppy}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classFloppy_ae94bf88750265e0f299ee0b7a2d664f2}{pos}} () const
+\item 
+\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \mbox{\hyperlink{classFloppy_afb5675ab273b822a43e4063404185b5b}{get\+\_\+rect}} () const
+\item 
+void \mbox{\hyperlink{classFloppy_a592f88175eb231ecd9a2872aee49cab7}{update}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\begin{DoxyCompactList}\small\item\em Actualitza la posicio de l\textquotesingle{}objecte floppy segons el moviment. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFloppy_a5e0a9a6a9b9eee40dc7d80451ad40f6e}{paint\+\_\+f}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window) const
+\begin{DoxyCompactList}\small\item\em Dibuixa 4 sprites de l\textquotesingle{}objecte \mbox{\hyperlink{classFloppy}{Floppy}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classFloppy_a4da8b9599336d559a2eba66a9a8a6f10}{apply\+\_\+physics\+\_\+f}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\begin{DoxyCompactList}\small\item\em Aplica a floppy un moviment segons el parametre implicit Aquesta funció actualitza la posició de l\textquotesingle{}objecte \mbox{\hyperlink{classFloppy}{Floppy}} en funció del tipus de moviment\+: \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classFloppy_a1f82d60df007ff41e23474b3c449c511}{pos\+\_\+}} \{0,0\}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classFloppy_a2b7d3e347de50c1919b9530738fc7f54}{posini\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \mbox{\hyperlink{classFloppy_ab79ddd69d432df142f9d3adf7b33a560}{rect\+\_\+f\+\_\+}}
+\item 
+int \mbox{\hyperlink{classFloppy_a095a6a398658690f76613905f8445bdb}{height\+\_\+}} = Floppy\+\_\+sprite\+\_\+.\+size()
+\item 
+int \mbox{\hyperlink{classFloppy_a85f20f0e7653dbebce09dbf8eff4e6ae}{widht\+\_\+}} = \mbox{\hyperlink{classFloppy_a37011bb5b5a469df9d742a76f8ba7d5c}{Floppy\+\_\+sprite\+\_\+}}\mbox{[}0\mbox{]}.size()
+\item 
+int \mbox{\hyperlink{classFloppy_a192862390dc7c83fdadfbcf2b9fe07d0}{val\+\_\+}} = 1
+\item 
+int \mbox{\hyperlink{classFloppy_aaeef600647ffb5cb3eeb78724436dca9}{movement}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{classFloppy_a37011bb5b5a469df9d742a76f8ba7d5c}{Floppy\+\_\+sprite\+\_\+}}
+\item 
+static const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{classFloppy_aea4c281e2ff9a29db4bac12a26ee33c1}{Floppy\+\_\+sprite\+\_\+2}}
+\item 
+static const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{classFloppy_a54b26225cd238f4bd6a0cf80b56cc823}{Floppy\+\_\+sprite\+\_\+3}}
+\item 
+static const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{classFloppy_a6d29b4794bbb2a5a8a5b4f0f043a984b}{Floppy\+\_\+sprite\+\_\+4}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Representa un floppy disk. Aquest pot fer moviments; Al llarg del window, verticals, horizontals, ondulatoris o be estatic, en el joc equival a una moneda un objecte amb un valor, tal que al fer tocar-\/lo desapareix i incrementa el contador de objectes recollits pel jugador. 
+
+Definición en la línea 31 del archivo Floppy.\+hh.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classFloppy_ad4c59b7d94e5f4425a0ff6a8c738e39c}\label{classFloppy_ad4c59b7d94e5f4425a0ff6a8c738e39c}} 
+\index{Floppy@{Floppy}!Floppy@{Floppy}}
+\index{Floppy@{Floppy}!Floppy@{Floppy}}
+\doxysubsubsection{\texorpdfstring{Floppy()}{Floppy()}}
+{\footnotesize\ttfamily Floppy\+::\+Floppy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pos,  }\item[{\mbox{\hyperlink{Floppy_8hh_a26c2d6c8d52195a3053d25e6776705f3}{movement\+\_\+t}}}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor de la classe \mbox{\hyperlink{classFloppy}{Floppy}}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pos} & Posició inicial del \mbox{\hyperlink{classFloppy}{Floppy}} en el joc. \\
+\hline
+{\em posini} & Posició original o de referència per al moviment. \\
+\hline
+{\em m} & Tipus de moviment que seguirà el \mbox{\hyperlink{classFloppy}{Floppy}} (especificat per l\textquotesingle{}enumeració movement\+\_\+t). \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 63 del archivo Floppy.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{63                                     \{}
+\DoxyCodeLine{64         \mbox{\hyperlink{classFloppy_a1f82d60df007ff41e23474b3c449c511}{pos\_}} = \mbox{\hyperlink{classFloppy_ae94bf88750265e0f299ee0b7a2d664f2}{pos}};}
+\DoxyCodeLine{65         \mbox{\hyperlink{classFloppy_a2b7d3e347de50c1919b9530738fc7f54}{posini\_}} = \mbox{\hyperlink{classFloppy_ae94bf88750265e0f299ee0b7a2d664f2}{pos}};}
+\DoxyCodeLine{66         \mbox{\hyperlink{classFloppy_aaeef600647ffb5cb3eeb78724436dca9}{movement}} = \mbox{\hyperlink{Circuitfloor_8cc_a0d2d8836216fc94b61aa0824eb239db2}{m}};}
+\DoxyCodeLine{67     \} }
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classFloppy_a4da8b9599336d559a2eba66a9a8a6f10}\label{classFloppy_a4da8b9599336d559a2eba66a9a8a6f10}} 
+\index{Floppy@{Floppy}!apply\_physics\_f@{apply\_physics\_f}}
+\index{apply\_physics\_f@{apply\_physics\_f}!Floppy@{Floppy}}
+\doxysubsubsection{\texorpdfstring{apply\_physics\_f()}{apply\_physics\_f()}}
+{\footnotesize\ttfamily void Floppy\+::apply\+\_\+physics\+\_\+f (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Aplica a floppy un moviment segons el parametre implicit Aquesta funció actualitza la posició de l\textquotesingle{}objecte \mbox{\hyperlink{classFloppy}{Floppy}} en funció del tipus de moviment\+: 
+
+
+\begin{DoxyItemize}
+\item VERTICAL\+: moviment sinusoidal vertical respecte a la posició inicial.
+\item HORIZONTAL\+: moviment sinusoidal horitzontal respecte a la posició inicial.
+\item WAVE\+: moviment lineal horitzontal combinat amb moviment sinusoidal vertical. 
+\begin{DoxyParams}{Parámetros}
+{\em window} & finestra on es dibuixa \mbox{\hyperlink{classFloppy}{Floppy}} i obtenim el contador de frames \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
+
+Definición en la línea 114 del archivo Floppy.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{114                                                \{}
+\DoxyCodeLine{115     }
+\DoxyCodeLine{116     \textcolor{keywordflow}{if}(\mbox{\hyperlink{classFloppy_aaeef600647ffb5cb3eeb78724436dca9}{movement}} == \mbox{\hyperlink{Floppy_8hh_a26c2d6c8d52195a3053d25e6776705f3a1a88641fcd39f2ed3e58a18526e97138}{VERTICAL}})\{        }
+\DoxyCodeLine{117         \textcolor{keywordtype}{int} ampl = 6;}
+\DoxyCodeLine{118         \textcolor{keywordtype}{int} f = window.\mbox{\hyperlink{classpro2_1_1Window_a36747221fc49f9b5dcf42d2d7bdf6964}{frame\_count}}();}
+\DoxyCodeLine{119         \mbox{\hyperlink{classFloppy_a1f82d60df007ff41e23474b3c449c511}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} = \mbox{\hyperlink{classFloppy_a2b7d3e347de50c1919b9530738fc7f54}{posini\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} + sin((f / 2*M\_PI)/10) * ampl;}
+\DoxyCodeLine{120     \}   }
+\DoxyCodeLine{121     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\mbox{\hyperlink{classFloppy_aaeef600647ffb5cb3eeb78724436dca9}{movement}} == \mbox{\hyperlink{Floppy_8hh_a26c2d6c8d52195a3053d25e6776705f3a4dd51ad73508d6fc83a502966779e48e}{HORIZONTAL}})\{}
+\DoxyCodeLine{122         \textcolor{keywordtype}{int} ampl = 10;}
+\DoxyCodeLine{123         \textcolor{keywordtype}{int} f = window.\mbox{\hyperlink{classpro2_1_1Window_a36747221fc49f9b5dcf42d2d7bdf6964}{frame\_count}}();}
+\DoxyCodeLine{124         \mbox{\hyperlink{classFloppy_a1f82d60df007ff41e23474b3c449c511}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} = \mbox{\hyperlink{classFloppy_a2b7d3e347de50c1919b9530738fc7f54}{posini\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} + sin((f / 2*M\_PI)/ 10) * ampl;}
+\DoxyCodeLine{125     \}}
+\DoxyCodeLine{126     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\mbox{\hyperlink{classFloppy_aaeef600647ffb5cb3eeb78724436dca9}{movement}} == \mbox{\hyperlink{Floppy_8hh_a26c2d6c8d52195a3053d25e6776705f3a4025728e15f4cee76a85d2cc65ccb565}{WAVE}})\{}
+\DoxyCodeLine{127         \textcolor{keywordtype}{int} amplx = 6;}
+\DoxyCodeLine{128         \textcolor{keywordtype}{int} amply = 10;}
+\DoxyCodeLine{129         \textcolor{keywordtype}{int} f = window.\mbox{\hyperlink{classpro2_1_1Window_a36747221fc49f9b5dcf42d2d7bdf6964}{frame\_count}}();}
+\DoxyCodeLine{130    }
+\DoxyCodeLine{131         \mbox{\hyperlink{classFloppy_a1f82d60df007ff41e23474b3c449c511}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} = \mbox{\hyperlink{classFloppy_a2b7d3e347de50c1919b9530738fc7f54}{posini\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} + f;       }
+\DoxyCodeLine{132         \mbox{\hyperlink{classFloppy_a1f82d60df007ff41e23474b3c449c511}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} = \mbox{\hyperlink{classFloppy_a2b7d3e347de50c1919b9530738fc7f54}{posini\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} + sin((f / 2*M\_PI)/10) * amply;}
+\DoxyCodeLine{133    }
+\DoxyCodeLine{134     \}}
+\DoxyCodeLine{135     }
+\DoxyCodeLine{136 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classFloppy_afb5675ab273b822a43e4063404185b5b}\label{classFloppy_afb5675ab273b822a43e4063404185b5b}} 
+\index{Floppy@{Floppy}!get\_rect@{get\_rect}}
+\index{get\_rect@{get\_rect}!Floppy@{Floppy}}
+\doxysubsubsection{\texorpdfstring{get\_rect()}{get\_rect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} Floppy\+::get\+\_\+rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 73 del archivo Floppy.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{73                              \{}
+\DoxyCodeLine{74         \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}} hitbox\_floppy = \{\mbox{\hyperlink{classFloppy_a1f82d60df007ff41e23474b3c449c511}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} -\/7, \mbox{\hyperlink{classFloppy_a1f82d60df007ff41e23474b3c449c511}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} -\/ 15, \mbox{\hyperlink{classFloppy_a1f82d60df007ff41e23474b3c449c511}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} + 7, \mbox{\hyperlink{classFloppy_a1f82d60df007ff41e23474b3c449c511}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}}\};}
+\DoxyCodeLine{75         \textcolor{keywordflow}{return} hitbox\_floppy;}
+\DoxyCodeLine{76     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classFloppy_a5e0a9a6a9b9eee40dc7d80451ad40f6e}\label{classFloppy_a5e0a9a6a9b9eee40dc7d80451ad40f6e}} 
+\index{Floppy@{Floppy}!paint\_f@{paint\_f}}
+\index{paint\_f@{paint\_f}!Floppy@{Floppy}}
+\doxysubsubsection{\texorpdfstring{paint\_f()}{paint\_f()}}
+{\footnotesize\ttfamily void Floppy\+::paint\+\_\+f (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window }\end{DoxyParamCaption}) const}
+
+
+
+Dibuixa 4 sprites de l\textquotesingle{}objecte \mbox{\hyperlink{classFloppy}{Floppy}}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em window} & Finestra en la que es dibuixa a floppy \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 100 del archivo Floppy.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{100                                              \{}
+\DoxyCodeLine{101     \textcolor{keyword}{const} \mbox{\hyperlink{structpro2_1_1Pt}{Pt}} top\_left = \{\mbox{\hyperlink{classFloppy_a1f82d60df007ff41e23474b3c449c511}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} -\/ 7, \mbox{\hyperlink{classFloppy_a1f82d60df007ff41e23474b3c449c511}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} -\/15\}; }
+\DoxyCodeLine{102     \mbox{\hyperlink{namespacepro2_a416c3e13d8244d9b102f7df30696c186}{paint\_sprite}}(window, top\_left, \mbox{\hyperlink{classFloppy_a37011bb5b5a469df9d742a76f8ba7d5c}{Floppy\_sprite\_}}, \textcolor{keyword}{false});}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104     }
+\DoxyCodeLine{105     \textcolor{keywordtype}{int} f = window.\mbox{\hyperlink{classpro2_1_1Window_a36747221fc49f9b5dcf42d2d7bdf6964}{frame\_count}}();}
+\DoxyCodeLine{106     \textcolor{keywordflow}{if}(f / 7 \% 4 == 0) \mbox{\hyperlink{namespacepro2_a416c3e13d8244d9b102f7df30696c186}{paint\_sprite}}(window, top\_left, \mbox{\hyperlink{classFloppy_a37011bb5b5a469df9d742a76f8ba7d5c}{Floppy\_sprite\_}}, \textcolor{keyword}{false});}
+\DoxyCodeLine{107     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}( f / 7 \% 4 == 1)\mbox{\hyperlink{namespacepro2_a416c3e13d8244d9b102f7df30696c186}{paint\_sprite}}(window, top\_left, \mbox{\hyperlink{classFloppy_aea4c281e2ff9a29db4bac12a26ee33c1}{Floppy\_sprite\_2}}, \textcolor{keyword}{false});}
+\DoxyCodeLine{108     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}( f / 7 \% 4 == 2) \mbox{\hyperlink{namespacepro2_a416c3e13d8244d9b102f7df30696c186}{paint\_sprite}}(window, top\_left, \mbox{\hyperlink{classFloppy_a54b26225cd238f4bd6a0cf80b56cc823}{Floppy\_sprite\_3}}, \textcolor{keyword}{false});}
+\DoxyCodeLine{109     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}( f / 7 \% 4 == 3) \mbox{\hyperlink{namespacepro2_a416c3e13d8244d9b102f7df30696c186}{paint\_sprite}}(window, top\_left, \mbox{\hyperlink{classFloppy_a6d29b4794bbb2a5a8a5b4f0f043a984b}{Floppy\_sprite\_4}}, \textcolor{keyword}{false});}
+\DoxyCodeLine{110 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classFloppy_ae94bf88750265e0f299ee0b7a2d664f2}\label{classFloppy_ae94bf88750265e0f299ee0b7a2d664f2}} 
+\index{Floppy@{Floppy}!pos@{pos}}
+\index{pos@{pos}!Floppy@{Floppy}}
+\doxysubsubsection{\texorpdfstring{pos()}{pos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Floppy\+::pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 70 del archivo Floppy.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{70                        \{}
+\DoxyCodeLine{71         \textcolor{keywordflow}{return} \mbox{\hyperlink{classFloppy_a1f82d60df007ff41e23474b3c449c511}{pos\_}};}
+\DoxyCodeLine{72     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classFloppy_a592f88175eb231ecd9a2872aee49cab7}\label{classFloppy_a592f88175eb231ecd9a2872aee49cab7}} 
+\index{Floppy@{Floppy}!update@{update}}
+\index{update@{update}!Floppy@{Floppy}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Floppy\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window }\end{DoxyParamCaption})}
+
+
+
+Actualitza la posicio de l\textquotesingle{}objecte floppy segons el moviment. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em window} & Finestra en la que es dibuixa a floppy \\
+\hline
+{\em platforms} & Platformes en les que floppy pot ser \\
+\hline
+{\em cfloor} & \mbox{\hyperlink{classCircuitfloor}{Circuitfloor}} en els que floppy pot ser \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 140 del archivo Floppy.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{140                                      \{   }
+\DoxyCodeLine{141     \mbox{\hyperlink{classFloppy_a4da8b9599336d559a2eba66a9a8a6f10}{apply\_physics\_f}}(window);}
+\DoxyCodeLine{142 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classFloppy_a37011bb5b5a469df9d742a76f8ba7d5c}\label{classFloppy_a37011bb5b5a469df9d742a76f8ba7d5c}} 
+\index{Floppy@{Floppy}!Floppy\_sprite\_@{Floppy\_sprite\_}}
+\index{Floppy\_sprite\_@{Floppy\_sprite\_}!Floppy@{Floppy}}
+\doxysubsubsection{\texorpdfstring{Floppy\_sprite\_}{Floppy\_sprite\_}}
+{\footnotesize\ttfamily const vector$<$ vector$<$ int $>$ $>$ Floppy\+::\+Floppy\+\_\+sprite\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Valor inicial\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Floppy_8cc_a64bb567d49400a935844ee48962d08a8}{gg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Floppy_8cc_a64bb567d49400a935844ee48962d08a8}{gg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Floppy_8cc_a64bb567d49400a935844ee48962d08a8}{gg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a64bb567d49400a935844ee48962d08a8}{gg}}, \mbox{\hyperlink{Floppy_8cc_a64bb567d49400a935844ee48962d08a8}{gg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Floppy_8cc_a64bb567d49400a935844ee48962d08a8}{gg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a64bb567d49400a935844ee48962d08a8}{gg}}, \mbox{\hyperlink{Floppy_8cc_a64bb567d49400a935844ee48962d08a8}{gg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Floppy_8cc_a64bb567d49400a935844ee48962d08a8}{gg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Floppy_8cc_a2087c5ab27f8fa6c1e3c799a0d877a9e}{lg}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_a66326676d44c838441a4dc39c85f599b}{w}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_aece2eeedca2f58e31a680503a9b7e972}{g}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_a68ebe1bbeda1aa2968b5053d1a205219}{b}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definición en la línea 94 del archivo Floppy.\+hh.
+
+\mbox{\Hypertarget{classFloppy_aea4c281e2ff9a29db4bac12a26ee33c1}\label{classFloppy_aea4c281e2ff9a29db4bac12a26ee33c1}} 
+\index{Floppy@{Floppy}!Floppy\_sprite\_2@{Floppy\_sprite\_2}}
+\index{Floppy\_sprite\_2@{Floppy\_sprite\_2}!Floppy@{Floppy}}
+\doxysubsubsection{\texorpdfstring{Floppy\_sprite\_2}{Floppy\_sprite\_2}}
+{\footnotesize\ttfamily const vector$<$ vector$<$ int $>$ $>$ Floppy\+::\+Floppy\+\_\+sprite\+\_\+2\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Valor inicial\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_afeb013779385f57ca10bbce433716696}{gg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_afeb013779385f57ca10bbce433716696}{gg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_afeb013779385f57ca10bbce433716696}{gg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_afeb013779385f57ca10bbce433716696}{gg1}}, \mbox{\hyperlink{Floppy_8cc_afeb013779385f57ca10bbce433716696}{gg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_afeb013779385f57ca10bbce433716696}{gg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_afeb013779385f57ca10bbce433716696}{gg1}}, \mbox{\hyperlink{Floppy_8cc_afeb013779385f57ca10bbce433716696}{gg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_afeb013779385f57ca10bbce433716696}{gg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_aaeba4b950e02b28eb91512229e619214}{lg1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a99ab9693388206e2857c36b5cab77d36}{w1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a1d3f901ee171ec10c7c87bae840dd078}{g1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Floppy_8cc_a4b1e91b211f7f5712ccfe0fae5fae45b}{b1}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definición en la línea 95 del archivo Floppy.\+hh.
+
+\mbox{\Hypertarget{classFloppy_a54b26225cd238f4bd6a0cf80b56cc823}\label{classFloppy_a54b26225cd238f4bd6a0cf80b56cc823}} 
+\index{Floppy@{Floppy}!Floppy\_sprite\_3@{Floppy\_sprite\_3}}
+\index{Floppy\_sprite\_3@{Floppy\_sprite\_3}!Floppy@{Floppy}}
+\doxysubsubsection{\texorpdfstring{Floppy\_sprite\_3}{Floppy\_sprite\_3}}
+{\footnotesize\ttfamily const vector$<$ vector$<$ int $>$ $>$ Floppy\+::\+Floppy\+\_\+sprite\+\_\+3\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Valor inicial\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a24ada918e94dbbfca3091d425849cbf8}{gg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a24ada918e94dbbfca3091d425849cbf8}{gg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a24ada918e94dbbfca3091d425849cbf8}{gg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a24ada918e94dbbfca3091d425849cbf8}{gg2}}, \mbox{\hyperlink{Floppy_8cc_a24ada918e94dbbfca3091d425849cbf8}{gg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a24ada918e94dbbfca3091d425849cbf8}{gg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a24ada918e94dbbfca3091d425849cbf8}{gg2}}, \mbox{\hyperlink{Floppy_8cc_a24ada918e94dbbfca3091d425849cbf8}{gg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a24ada918e94dbbfca3091d425849cbf8}{gg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a1e14c0b8ed51980767fc4257b287aeea}{lg2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_aa796747dd4a5d2929547c2168f502581}{w2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a7f112d6c148a575eb3e35fa3b7283e14}{g2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Floppy_8cc_a8c043d3b222289817580247dddc54388}{b2}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definición en la línea 96 del archivo Floppy.\+hh.
+
+\mbox{\Hypertarget{classFloppy_a6d29b4794bbb2a5a8a5b4f0f043a984b}\label{classFloppy_a6d29b4794bbb2a5a8a5b4f0f043a984b}} 
+\index{Floppy@{Floppy}!Floppy\_sprite\_4@{Floppy\_sprite\_4}}
+\index{Floppy\_sprite\_4@{Floppy\_sprite\_4}!Floppy@{Floppy}}
+\doxysubsubsection{\texorpdfstring{Floppy\_sprite\_4}{Floppy\_sprite\_4}}
+{\footnotesize\ttfamily const vector$<$ vector$<$ int $>$ $>$ Floppy\+::\+Floppy\+\_\+sprite\+\_\+4\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Valor inicial\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a00c3f0171efbe6a260a29d4afbb29440}{gg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a00c3f0171efbe6a260a29d4afbb29440}{gg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a00c3f0171efbe6a260a29d4afbb29440}{gg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_a00c3f0171efbe6a260a29d4afbb29440}{gg3}}, \mbox{\hyperlink{Floppy_8cc_a00c3f0171efbe6a260a29d4afbb29440}{gg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a00c3f0171efbe6a260a29d4afbb29440}{gg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_a00c3f0171efbe6a260a29d4afbb29440}{gg3}}, \mbox{\hyperlink{Floppy_8cc_a00c3f0171efbe6a260a29d4afbb29440}{gg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a00c3f0171efbe6a260a29d4afbb29440}{gg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_acbcc5ff8548fe556860ecb169c70febb}{lg3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a83a902ac64d582d531a827edeb934bc4}{w3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_a888251799ce5c417f06aa2216eec1335}{g3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}\},}
+\DoxyCodeLine{    \{\mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Floppy_8cc_af41083048b53e9e709fd9b039f7a98fa}{b3}}, \mbox{\hyperlink{Android_8cc_a4d82239905175fe792bc2c8faf35bd1b}{\_}}\},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definición en la línea 97 del archivo Floppy.\+hh.
+
+\mbox{\Hypertarget{classFloppy_a095a6a398658690f76613905f8445bdb}\label{classFloppy_a095a6a398658690f76613905f8445bdb}} 
+\index{Floppy@{Floppy}!height\_@{height\_}}
+\index{height\_@{height\_}!Floppy@{Floppy}}
+\doxysubsubsection{\texorpdfstring{height\_}{height\_}}
+{\footnotesize\ttfamily int Floppy\+::height\+\_\+ = Floppy\+\_\+sprite\+\_\+.\+size()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 37 del archivo Floppy.\+hh.
+
+\mbox{\Hypertarget{classFloppy_aaeef600647ffb5cb3eeb78724436dca9}\label{classFloppy_aaeef600647ffb5cb3eeb78724436dca9}} 
+\index{Floppy@{Floppy}!movement@{movement}}
+\index{movement@{movement}!Floppy@{Floppy}}
+\doxysubsubsection{\texorpdfstring{movement}{movement}}
+{\footnotesize\ttfamily int Floppy\+::movement\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 42 del archivo Floppy.\+hh.
+
+\mbox{\Hypertarget{classFloppy_a1f82d60df007ff41e23474b3c449c511}\label{classFloppy_a1f82d60df007ff41e23474b3c449c511}} 
+\index{Floppy@{Floppy}!pos\_@{pos\_}}
+\index{pos\_@{pos\_}!Floppy@{Floppy}}
+\doxysubsubsection{\texorpdfstring{pos\_}{pos\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Floppy\+::pos\+\_\+ \{0,0\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 33 del archivo Floppy.\+hh.
+
+\mbox{\Hypertarget{classFloppy_a2b7d3e347de50c1919b9530738fc7f54}\label{classFloppy_a2b7d3e347de50c1919b9530738fc7f54}} 
+\index{Floppy@{Floppy}!posini\_@{posini\_}}
+\index{posini\_@{posini\_}!Floppy@{Floppy}}
+\doxysubsubsection{\texorpdfstring{posini\_}{posini\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Floppy\+::posini\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 34 del archivo Floppy.\+hh.
+
+\mbox{\Hypertarget{classFloppy_ab79ddd69d432df142f9d3adf7b33a560}\label{classFloppy_ab79ddd69d432df142f9d3adf7b33a560}} 
+\index{Floppy@{Floppy}!rect\_f\_@{rect\_f\_}}
+\index{rect\_f\_@{rect\_f\_}!Floppy@{Floppy}}
+\doxysubsubsection{\texorpdfstring{rect\_f\_}{rect\_f\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} Floppy\+::rect\+\_\+f\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 35 del archivo Floppy.\+hh.
+
+\mbox{\Hypertarget{classFloppy_a192862390dc7c83fdadfbcf2b9fe07d0}\label{classFloppy_a192862390dc7c83fdadfbcf2b9fe07d0}} 
+\index{Floppy@{Floppy}!val\_@{val\_}}
+\index{val\_@{val\_}!Floppy@{Floppy}}
+\doxysubsubsection{\texorpdfstring{val\_}{val\_}}
+{\footnotesize\ttfamily int Floppy\+::val\+\_\+ = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 40 del archivo Floppy.\+hh.
+
+\mbox{\Hypertarget{classFloppy_a85f20f0e7653dbebce09dbf8eff4e6ae}\label{classFloppy_a85f20f0e7653dbebce09dbf8eff4e6ae}} 
+\index{Floppy@{Floppy}!widht\_@{widht\_}}
+\index{widht\_@{widht\_}!Floppy@{Floppy}}
+\doxysubsubsection{\texorpdfstring{widht\_}{widht\_}}
+{\footnotesize\ttfamily int Floppy\+::widht\+\_\+ = \mbox{\hyperlink{classFloppy_a37011bb5b5a469df9d742a76f8ba7d5c}{Floppy\+\_\+sprite\+\_\+}}\mbox{[}0\mbox{]}.size()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 38 del archivo Floppy.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Floppy_8hh}{Floppy.\+hh}}\item 
+\mbox{\hyperlink{Floppy_8cc}{Floppy.\+cc}}\end{DoxyCompactItemize}

@@ -1,0 +1,631 @@
+\hypertarget{classAndroid}{}\doxysection{Referencia de la Clase Android}
+\label{classAndroid}\index{Android@{Android}}
+
+
+Representa un enemic \mbox{\hyperlink{classAndroid}{Android}} amb moviment, fisiques i interaccions amb el joc.  
+
+
+
+
+{\ttfamily \#include $<$Android.\+hh$>$}
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAndroid_a70a199d0c9e1ffa43d51dec3f8ae0717}{Android}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classAndroid_a8f557e055e69c076a4f2b4c705e98b60}{pos}})
+\begin{DoxyCompactList}\small\item\em Constructora per defecte amb posició inicial. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAndroid_a21a943320ec3ab1401bf8160fcef8fd9}{paint}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window) const
+\begin{DoxyCompactList}\small\item\em Dibuixa l\textquotesingle{}\mbox{\hyperlink{classAndroid}{Android}} a la finestra de joc. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classAndroid_a8f557e055e69c076a4f2b4c705e98b60}{pos}} () const
+\item 
+\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \mbox{\hyperlink{classAndroid_aa7c604d7bdf67c4014843cdc8b22b7f2}{get\+\_\+rect}} () const
+\item 
+void \mbox{\hyperlink{classAndroid_a28265823ef309e8d6aabdac5b4540a4b}{set\+\_\+y}} (int \mbox{\hyperlink{mario_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}})
+\item 
+void \mbox{\hyperlink{classAndroid_ac084d3a87aa1fe7655c6b0877a50ed8b}{set\+\_\+x}} (int \mbox{\hyperlink{Cd_8cc_aa5ed323274431e0aff568bb688f5f956}{x}})
+\item 
+void \mbox{\hyperlink{classAndroid_a7647d4acb3d61a1dc77f1cffa5074628}{set\+\_\+killed}} (bool \mbox{\hyperlink{Cd_8cc_aa5ed323274431e0aff568bb688f5f956}{x}})
+\item 
+bool \mbox{\hyperlink{classAndroid_a44f352749f01285edaecca2607b85def}{is\+\_\+grounded}} () const
+\item 
+void \mbox{\hyperlink{classAndroid_aace9355b8e20feaecc9d6e74fd3067c7}{set\+\_\+grounded}} (bool grounded)
+\item 
+void \mbox{\hyperlink{classAndroid_a5cac966a93c0d0442f9976441967c395}{toggle\+\_\+grounded}} ()
+\item 
+void \mbox{\hyperlink{classAndroid_afca2d177f925f25f23cb9722edef7160}{update}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, std\+::set$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ platforms, std\+::set$<$ \mbox{\hyperlink{classCircuitfloor}{Circuitfloor}} $\ast$ $>$ cfloor)
+\begin{DoxyCompactList}\small\item\em Actualitza l\textquotesingle{}estat de \mbox{\hyperlink{classAndroid}{Android}} segons les colisions i les fisiques. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAndroid_abb2dd3fa97f04785631f7afc61117fcb}{update\+\_\+platforms}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, std\+::set$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$ platforms)
+\begin{DoxyCompactList}\small\item\em Actualitza a \mbox{\hyperlink{classAndroid}{Android}} segons les platforms visibles funcio auxiliar de update. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAndroid_a4d194a4ce01bfa4f4f9f7965cd10fad3}{update\+\_\+clfoor}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, std\+::set$<$ \mbox{\hyperlink{classCircuitfloor}{Circuitfloor}} $\ast$ $>$ clfoor)
+\begin{DoxyCompactList}\small\item\em Actualitza a \mbox{\hyperlink{classAndroid}{Android}} segons els \mbox{\hyperlink{classCircuitfloor}{Circuitfloor}} visibles funcio auxiliar de update. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classAndroid_af5c713dbbed0e1f661af236e59a15dcc}{mario\+\_\+has\+\_\+crossed\+\_\+downwards}} (\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} plast, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} pcurr)
+\begin{DoxyCompactList}\small\item\em Comprova si \mbox{\hyperlink{classMario}{Mario}} ha creuat l\textquotesingle{}android cap avall entre dues posicions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classAndroid_a5069131a95daa35f76579b43a0420a5a}{apply\+\_\+physics\+\_\+a}} ()
+\begin{DoxyCompactList}\small\item\em Aplica la física (moviment, acceleració, gravetat) a l\textquotesingle{}\mbox{\hyperlink{classAndroid}{Android}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classAndroid_abe7cc4603999c893900831f1881c1da2}{pos\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classAndroid_ac0edfe987aaca233928bb1f73be4dd08}{pos\+\_\+ini\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classAndroid_a49e98b14e7f750197fdee4e80bd4ccc0}{last\+\_\+pos\+\_\+}}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classAndroid_a7f70190614bb4d0d407cff3f796ccc80}{speed\+\_\+}} = \{-\/2, 0\}
+\item 
+\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} \mbox{\hyperlink{classAndroid_a162e7654910cfef8b31ce54a5303a356}{accel\+\_\+}} = \{0, 0\}
+\item 
+\mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} \mbox{\hyperlink{classAndroid_a6da118aeb1a819d6b53bf951b9b19a61}{rect\+\_\+\+Android\+\_\+}}
+\item 
+int \mbox{\hyperlink{classAndroid_a08e01527266799181c0087cf541a6aed}{accel\+\_\+time\+\_\+}} = 0
+\item 
+bool \mbox{\hyperlink{classAndroid_aa170a068f7a02fdf8d040a7873f84245}{killed\+\_\+}} = false
+\item 
+bool \mbox{\hyperlink{classAndroid_aef4f7e7b4927298ef97f201ba758d801}{grounded\+\_\+}} = false
+\item 
+bool \mbox{\hyperlink{classAndroid_a99b7f47aed4627e63edf67a062c68032}{looking\+\_\+left\+\_\+}} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{classAndroid_a55d2128ab0bc8f4aa5816a14140a883d}{Android\+\_\+sprite\+\_\+normal\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Conte el sprite de android. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Representa un enemic \mbox{\hyperlink{classAndroid}{Android}} amb moviment, fisiques i interaccions amb el joc. 
+
+Aquesta classe gestiona la posició, velocitat, estat i comportament de l’enemic \mbox{\hyperlink{classAndroid}{Android}}, incloent detecció de col·lisions amb plataformes i circuit floors. 
+
+Definición en la línea 21 del archivo Android.\+hh.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classAndroid_a70a199d0c9e1ffa43d51dec3f8ae0717}\label{classAndroid_a70a199d0c9e1ffa43d51dec3f8ae0717}} 
+\index{Android@{Android}!Android@{Android}}
+\index{Android@{Android}!Android@{Android}}
+\doxysubsubsection{\texorpdfstring{Android()}{Android()}}
+{\footnotesize\ttfamily Android\+::\+Android (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructora per defecte amb posició inicial. 
+
+\begin{DoxyPrecond}{Precondición}
+pos es valid en el rang del mapa 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Crea un \mbox{\hyperlink{classAndroid}{Android}} a la posició indicada i amb velocitat; 
+\end{DoxyPostcond}
+
+
+Definición en la línea 52 del archivo Android.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{52                        \{}
+\DoxyCodeLine{53         \mbox{\hyperlink{classAndroid_abe7cc4603999c893900831f1881c1da2}{pos\_}} = \mbox{\hyperlink{classAndroid_a8f557e055e69c076a4f2b4c705e98b60}{pos}};}
+\DoxyCodeLine{54         \mbox{\hyperlink{classAndroid_ac0edfe987aaca233928bb1f73be4dd08}{pos\_ini\_}} = \mbox{\hyperlink{classAndroid_a8f557e055e69c076a4f2b4c705e98b60}{pos}};}
+\DoxyCodeLine{55         \mbox{\hyperlink{classAndroid_a49e98b14e7f750197fdee4e80bd4ccc0}{last\_pos\_}} = \mbox{\hyperlink{classAndroid_a8f557e055e69c076a4f2b4c705e98b60}{pos}};}
+\DoxyCodeLine{56     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classAndroid_a5069131a95daa35f76579b43a0420a5a}\label{classAndroid_a5069131a95daa35f76579b43a0420a5a}} 
+\index{Android@{Android}!apply\_physics\_a@{apply\_physics\_a}}
+\index{apply\_physics\_a@{apply\_physics\_a}!Android@{Android}}
+\doxysubsubsection{\texorpdfstring{apply\_physics\_a()}{apply\_physics\_a()}}
+{\footnotesize\ttfamily void Android\+::apply\+\_\+physics\+\_\+a (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Aplica la física (moviment, acceleració, gravetat) a l\textquotesingle{}\mbox{\hyperlink{classAndroid}{Android}}. 
+
+\begin{DoxyPrecond}{Precondición}
+\+: Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+L’estat de posició i velocitat s’actualitzen segons les físiques. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 54 del archivo Android.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{54                              \{}
+\DoxyCodeLine{55     \textcolor{keywordflow}{if}(\mbox{\hyperlink{classAndroid_aef4f7e7b4927298ef97f201ba758d801}{grounded\_}})\{}
+\DoxyCodeLine{56         \mbox{\hyperlink{classAndroid_a7f70190614bb4d0d407cff3f796ccc80}{speed\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} = 0;}
+\DoxyCodeLine{57         \mbox{\hyperlink{classAndroid_a162e7654910cfef8b31ce54a5303a356}{accel\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} = 0;}
+\DoxyCodeLine{58     \}}
+\DoxyCodeLine{59     \textcolor{keyword}{const} \textcolor{keywordtype}{int} gravity = 1;}
+\DoxyCodeLine{60     }
+\DoxyCodeLine{61     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classAndroid_a08e01527266799181c0087cf541a6aed}{accel\_time\_}} > 0) \{}
+\DoxyCodeLine{62         \mbox{\hyperlink{classAndroid_a7f70190614bb4d0d407cff3f796ccc80}{speed\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} += \mbox{\hyperlink{classAndroid_a162e7654910cfef8b31ce54a5303a356}{accel\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}};}
+\DoxyCodeLine{63         \mbox{\hyperlink{classAndroid_a08e01527266799181c0087cf541a6aed}{accel\_time\_}}-\/-\/;}
+\DoxyCodeLine{64     \}}
+\DoxyCodeLine{65     \mbox{\hyperlink{classAndroid_abe7cc4603999c893900831f1881c1da2}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} += \mbox{\hyperlink{classAndroid_a7f70190614bb4d0d407cff3f796ccc80}{speed\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}};}
+\DoxyCodeLine{66     \mbox{\hyperlink{classAndroid_abe7cc4603999c893900831f1881c1da2}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} += \mbox{\hyperlink{classAndroid_a7f70190614bb4d0d407cff3f796ccc80}{speed\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}};}
+\DoxyCodeLine{67     }
+\DoxyCodeLine{68     }
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAndroid_aa7c604d7bdf67c4014843cdc8b22b7f2}\label{classAndroid_aa7c604d7bdf67c4014843cdc8b22b7f2}} 
+\index{Android@{Android}!get\_rect@{get\_rect}}
+\index{get\_rect@{get\_rect}!Android@{Android}}
+\doxysubsubsection{\texorpdfstring{get\_rect()}{get\_rect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} Android\+::get\+\_\+rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 69 del archivo Android.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69                               \{}
+\DoxyCodeLine{70         \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}} hitbox\_android = \{\mbox{\hyperlink{classAndroid_abe7cc4603999c893900831f1881c1da2}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} -\/ 14, \mbox{\hyperlink{classAndroid_abe7cc4603999c893900831f1881c1da2}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} -\/28, \mbox{\hyperlink{classAndroid_abe7cc4603999c893900831f1881c1da2}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} + 14, \mbox{\hyperlink{classAndroid_abe7cc4603999c893900831f1881c1da2}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}}\};}
+\DoxyCodeLine{71         \textcolor{keywordflow}{return} hitbox\_android;}
+\DoxyCodeLine{72     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAndroid_a44f352749f01285edaecca2607b85def}\label{classAndroid_a44f352749f01285edaecca2607b85def}} 
+\index{Android@{Android}!is\_grounded@{is\_grounded}}
+\index{is\_grounded@{is\_grounded}!Android@{Android}}
+\doxysubsubsection{\texorpdfstring{is\_grounded()}{is\_grounded()}}
+{\footnotesize\ttfamily bool Android\+::is\+\_\+grounded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 87 del archivo Android.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{87                              \{}
+\DoxyCodeLine{88         \textcolor{keywordflow}{return} \mbox{\hyperlink{classAndroid_aef4f7e7b4927298ef97f201ba758d801}{grounded\_}};}
+\DoxyCodeLine{89     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAndroid_af5c713dbbed0e1f661af236e59a15dcc}\label{classAndroid_af5c713dbbed0e1f661af236e59a15dcc}} 
+\index{Android@{Android}!mario\_has\_crossed\_downwards@{mario\_has\_crossed\_downwards}}
+\index{mario\_has\_crossed\_downwards@{mario\_has\_crossed\_downwards}!Android@{Android}}
+\doxysubsubsection{\texorpdfstring{mario\_has\_crossed\_downwards()}{mario\_has\_crossed\_downwards()}}
+{\footnotesize\ttfamily bool Android\+::mario\+\_\+has\+\_\+crossed\+\_\+downwards (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{plast,  }\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pcurr }\end{DoxyParamCaption})}
+
+
+
+Comprova si \mbox{\hyperlink{classMario}{Mario}} ha creuat l\textquotesingle{}android cap avall entre dues posicions. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em plast} & posicio anterior de mario \\
+\hline
+{\em pcurr} & posicio actual de mario \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+Les posicions anteriors i actuals de \mbox{\hyperlink{classMario}{Mario}} són valides 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna cert si \mbox{\hyperlink{classMario}{Mario}} ha creuat l\textquotesingle{}android cap avall 
+\end{DoxyPostcond}
+
+
+Definición en la línea 118 del archivo Android.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{118                                                                    \{}
+\DoxyCodeLine{119     \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}} androidhb = \mbox{\hyperlink{classAndroid_aa7c604d7bdf67c4014843cdc8b22b7f2}{get\_rect}}();}
+\DoxyCodeLine{120     \textcolor{keywordflow}{return} (androidhb.\mbox{\hyperlink{structpro2_1_1Rect_a68877597032a2bb4630f37e44b885e81}{left}} <= plast.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} \&\& plast.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} <= androidhb.\mbox{\hyperlink{structpro2_1_1Rect_aae04a074de42a64bff8e9781b8e2af2b}{right}}) \&\& (androidhb.\mbox{\hyperlink{structpro2_1_1Rect_a68877597032a2bb4630f37e44b885e81}{left}} <= pcurr.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} \&\& pcurr.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} <= androidhb.\mbox{\hyperlink{structpro2_1_1Rect_aae04a074de42a64bff8e9781b8e2af2b}{right}}) \&\&}
+\DoxyCodeLine{121     (plast.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} <= androidhb.\mbox{\hyperlink{structpro2_1_1Rect_abea25fc7da9516fc9e1e88fb54e49737}{top}} \&\& pcurr.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} >= androidhb.\mbox{\hyperlink{structpro2_1_1Rect_abea25fc7da9516fc9e1e88fb54e49737}{top}});}
+\DoxyCodeLine{122 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAndroid_a21a943320ec3ab1401bf8160fcef8fd9}\label{classAndroid_a21a943320ec3ab1401bf8160fcef8fd9}} 
+\index{Android@{Android}!paint@{paint}}
+\index{paint@{paint}!Android@{Android}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Android\+::paint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window }\end{DoxyParamCaption}) const}
+
+
+
+Dibuixa l\textquotesingle{}\mbox{\hyperlink{classAndroid}{Android}} a la finestra de joc. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em window} & finestra on es dibuixa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+La finestra està inicialitzada i activa 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Es representa l\textquotesingle{}\mbox{\hyperlink{classAndroid}{Android}} en la seva posició actual 
+\end{DoxyPostcond}
+
+
+Definición en la línea 47 del archivo Android.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47                                            \{}
+\DoxyCodeLine{48     \textcolor{keyword}{const} \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}} topleft = \{\mbox{\hyperlink{classAndroid_abe7cc4603999c893900831f1881c1da2}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} -\/ 14, \mbox{\hyperlink{classAndroid_abe7cc4603999c893900831f1881c1da2}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} -\/27\};}
+\DoxyCodeLine{49     \mbox{\hyperlink{namespacepro2_a416c3e13d8244d9b102f7df30696c186}{paint\_sprite}}(window, topleft, \mbox{\hyperlink{classAndroid_a55d2128ab0bc8f4aa5816a14140a883d}{Android\_sprite\_normal\_}}, \mbox{\hyperlink{classAndroid_a99b7f47aed4627e63edf67a062c68032}{looking\_left\_}});}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAndroid_a8f557e055e69c076a4f2b4c705e98b60}\label{classAndroid_a8f557e055e69c076a4f2b4c705e98b60}} 
+\index{Android@{Android}!pos@{pos}}
+\index{pos@{pos}!Android@{Android}}
+\doxysubsubsection{\texorpdfstring{pos()}{pos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Android\+::pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+CONSULTORES DELS ATRIBUTS 
+
+Definición en la línea 65 del archivo Android.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65                        \{}
+\DoxyCodeLine{66         \textcolor{keywordflow}{return} \mbox{\hyperlink{classAndroid_abe7cc4603999c893900831f1881c1da2}{pos\_}};}
+\DoxyCodeLine{67     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAndroid_aace9355b8e20feaecc9d6e74fd3067c7}\label{classAndroid_aace9355b8e20feaecc9d6e74fd3067c7}} 
+\index{Android@{Android}!set\_grounded@{set\_grounded}}
+\index{set\_grounded@{set\_grounded}!Android@{Android}}
+\doxysubsubsection{\texorpdfstring{set\_grounded()}{set\_grounded()}}
+{\footnotesize\ttfamily void Android\+::set\+\_\+grounded (\begin{DoxyParamCaption}\item[{bool}]{grounded }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 91 del archivo Android.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{91                                      \{}
+\DoxyCodeLine{92         \mbox{\hyperlink{classAndroid_aef4f7e7b4927298ef97f201ba758d801}{grounded\_}} = grounded;}
+\DoxyCodeLine{93         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classAndroid_aef4f7e7b4927298ef97f201ba758d801}{grounded\_}}) \{}
+\DoxyCodeLine{94             \mbox{\hyperlink{classAndroid_a7f70190614bb4d0d407cff3f796ccc80}{speed\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} = 0;}
+\DoxyCodeLine{95         \}}
+\DoxyCodeLine{96     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAndroid_a7647d4acb3d61a1dc77f1cffa5074628}\label{classAndroid_a7647d4acb3d61a1dc77f1cffa5074628}} 
+\index{Android@{Android}!set\_killed@{set\_killed}}
+\index{set\_killed@{set\_killed}!Android@{Android}}
+\doxysubsubsection{\texorpdfstring{set\_killed()}{set\_killed()}}
+{\footnotesize\ttfamily void Android\+::set\+\_\+killed (\begin{DoxyParamCaption}\item[{bool}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+MODIFICADORES 
+
+Definición en la línea 83 del archivo Android.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83                            \{}
+\DoxyCodeLine{84         \mbox{\hyperlink{classAndroid_aa170a068f7a02fdf8d040a7873f84245}{killed\_}} = \mbox{\hyperlink{Cd_8cc_aa5ed323274431e0aff568bb688f5f956}{x}};}
+\DoxyCodeLine{85     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAndroid_ac084d3a87aa1fe7655c6b0877a50ed8b}\label{classAndroid_ac084d3a87aa1fe7655c6b0877a50ed8b}} 
+\index{Android@{Android}!set\_x@{set\_x}}
+\index{set\_x@{set\_x}!Android@{Android}}
+\doxysubsubsection{\texorpdfstring{set\_x()}{set\_x()}}
+{\footnotesize\ttfamily void Android\+::set\+\_\+x (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 78 del archivo Android.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{78                      \{}
+\DoxyCodeLine{79         \mbox{\hyperlink{classAndroid_abe7cc4603999c893900831f1881c1da2}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} = \mbox{\hyperlink{Cd_8cc_aa5ed323274431e0aff568bb688f5f956}{x}};}
+\DoxyCodeLine{80     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAndroid_a28265823ef309e8d6aabdac5b4540a4b}\label{classAndroid_a28265823ef309e8d6aabdac5b4540a4b}} 
+\index{Android@{Android}!set\_y@{set\_y}}
+\index{set\_y@{set\_y}!Android@{Android}}
+\doxysubsubsection{\texorpdfstring{set\_y()}{set\_y()}}
+{\footnotesize\ttfamily void Android\+::set\+\_\+y (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 74 del archivo Android.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{74                       \{}
+\DoxyCodeLine{75         \mbox{\hyperlink{classAndroid_abe7cc4603999c893900831f1881c1da2}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} = \mbox{\hyperlink{Backround_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}};}
+\DoxyCodeLine{76     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAndroid_a5cac966a93c0d0442f9976441967c395}\label{classAndroid_a5cac966a93c0d0442f9976441967c395}} 
+\index{Android@{Android}!toggle\_grounded@{toggle\_grounded}}
+\index{toggle\_grounded@{toggle\_grounded}!Android@{Android}}
+\doxysubsubsection{\texorpdfstring{toggle\_grounded()}{toggle\_grounded()}}
+{\footnotesize\ttfamily void Android\+::toggle\+\_\+grounded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 98 del archivo Android.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{98                            \{}
+\DoxyCodeLine{99         \mbox{\hyperlink{classAndroid_aace9355b8e20feaecc9d6e74fd3067c7}{set\_grounded}}(!\mbox{\hyperlink{classAndroid_aef4f7e7b4927298ef97f201ba758d801}{grounded\_}});}
+\DoxyCodeLine{100     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAndroid_afca2d177f925f25f23cb9722edef7160}\label{classAndroid_afca2d177f925f25f23cb9722edef7160}} 
+\index{Android@{Android}!update@{update}}
+\index{update@{update}!Android@{Android}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Android\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{std\+::set$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$}]{platforms,  }\item[{std\+::set$<$ \mbox{\hyperlink{classCircuitfloor}{Circuitfloor}} $\ast$ $>$}]{cfloor }\end{DoxyParamCaption})}
+
+
+
+Actualitza l\textquotesingle{}estat de \mbox{\hyperlink{classAndroid}{Android}} segons les colisions i les fisiques. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em window} & Finestra en la que es dibuixa a android \\
+\hline
+{\em platforms} & Platformes en les que android pot colisionar \\
+\hline
+{\em cfloor} & \mbox{\hyperlink{classCircuitfloor}{Circuitfloor}} en els que android pot colisionar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Andorid actualitza la seva posicio i estat 
+\end{DoxyPostcond}
+
+
+Definición en la línea 111 del archivo Android.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{111                                                                                                  \{    }
+\DoxyCodeLine{112     \mbox{\hyperlink{classAndroid_a5069131a95daa35f76579b43a0420a5a}{apply\_physics\_a}}();}
+\DoxyCodeLine{113     \mbox{\hyperlink{classAndroid_abb2dd3fa97f04785631f7afc61117fcb}{update\_platforms}}(window, platforms);}
+\DoxyCodeLine{114     \mbox{\hyperlink{classAndroid_a4d194a4ce01bfa4f4f9f7965cd10fad3}{update\_clfoor}}(window, cfloor);}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{116 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAndroid_a4d194a4ce01bfa4f4f9f7965cd10fad3}\label{classAndroid_a4d194a4ce01bfa4f4f9f7965cd10fad3}} 
+\index{Android@{Android}!update\_clfoor@{update\_clfoor}}
+\index{update\_clfoor@{update\_clfoor}!Android@{Android}}
+\doxysubsubsection{\texorpdfstring{update\_clfoor()}{update\_clfoor()}}
+{\footnotesize\ttfamily void Android\+::update\+\_\+clfoor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{std\+::set$<$ \mbox{\hyperlink{classCircuitfloor}{Circuitfloor}} $\ast$ $>$}]{clfoor }\end{DoxyParamCaption})}
+
+
+
+Actualitza a \mbox{\hyperlink{classAndroid}{Android}} segons els \mbox{\hyperlink{classCircuitfloor}{Circuitfloor}} visibles funcio auxiliar de update. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em window} & Finestra en la que es dibuixa a android \\
+\hline
+{\em cfloor} & \mbox{\hyperlink{classCircuitfloor}{Circuitfloor}} en les que android pot colisio \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+La posicio d\textquotesingle{}android s\textquotesingle{}actualitza amb pos 
+\end{DoxyPostcond}
+
+
+Definición en la línea 99 del archivo Android.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{99                                                                            \{}
+\DoxyCodeLine{100     \textcolor{keywordflow}{for}(\mbox{\hyperlink{classCircuitfloor}{Circuitfloor}}* cf : clfoor)\{}
+\DoxyCodeLine{101         \textcolor{comment}{//para cada cfloor coloca a android encima si cruza}}
+\DoxyCodeLine{102         \textcolor{keywordflow}{if}((*cf).has\_crossed\_floor\_downwards(\mbox{\hyperlink{classAndroid_a49e98b14e7f750197fdee4e80bd4ccc0}{last\_pos\_}}, \mbox{\hyperlink{classAndroid_abe7cc4603999c893900831f1881c1da2}{pos\_}}))\{}
+\DoxyCodeLine{103             \mbox{\hyperlink{classAndroid_aace9355b8e20feaecc9d6e74fd3067c7}{set\_grounded}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{104             \mbox{\hyperlink{classAndroid_a28265823ef309e8d6aabdac5b4540a4b}{set\_y}}((*cf).top());}
+\DoxyCodeLine{105         \}}
+\DoxyCodeLine{106         }
+\DoxyCodeLine{107     \}}
+\DoxyCodeLine{108 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAndroid_abb2dd3fa97f04785631f7afc61117fcb}\label{classAndroid_abb2dd3fa97f04785631f7afc61117fcb}} 
+\index{Android@{Android}!update\_platforms@{update\_platforms}}
+\index{update\_platforms@{update\_platforms}!Android@{Android}}
+\doxysubsubsection{\texorpdfstring{update\_platforms()}{update\_platforms()}}
+{\footnotesize\ttfamily void Android\+::update\+\_\+platforms (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{std\+::set$<$ \mbox{\hyperlink{classPlatform}{Platform}} $\ast$ $>$}]{platforms }\end{DoxyParamCaption})}
+
+
+
+Actualitza a \mbox{\hyperlink{classAndroid}{Android}} segons les platforms visibles funcio auxiliar de update. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em window} & Finestra en la que es dibuixa a android \\
+\hline
+{\em platforms} & Platformes en les que android pot colisionar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+La posicio d\textquotesingle{}android s\textquotesingle{}actualitza amb pos 
+\end{DoxyPostcond}
+
+
+Definición en la línea 72 del archivo Android.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{72                                                                              \{}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74     \textcolor{keywordflow}{for} (\mbox{\hyperlink{classPlatform}{Platform}}* platform : platforms) \{}
+\DoxyCodeLine{75         \textcolor{comment}{//para cada platform coloca a android encima si cruza}}
+\DoxyCodeLine{76         \textcolor{keywordflow}{if} ((*platform).has\_crossed\_floor\_downwards(\mbox{\hyperlink{classAndroid_a49e98b14e7f750197fdee4e80bd4ccc0}{last\_pos\_}}, \mbox{\hyperlink{classAndroid_abe7cc4603999c893900831f1881c1da2}{pos\_}})) \{}
+\DoxyCodeLine{77             \mbox{\hyperlink{classAndroid_aace9355b8e20feaecc9d6e74fd3067c7}{set\_grounded}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{78             \mbox{\hyperlink{classAndroid_a28265823ef309e8d6aabdac5b4540a4b}{set\_y}}((*platform).top());}
+\DoxyCodeLine{79         \}}
+\DoxyCodeLine{80         }
+\DoxyCodeLine{81         \textcolor{keywordflow}{if}((*platform).has\_crossed\_floor\_horizontall(\mbox{\hyperlink{classAndroid_a49e98b14e7f750197fdee4e80bd4ccc0}{last\_pos\_}}, \mbox{\hyperlink{classAndroid_abe7cc4603999c893900831f1881c1da2}{pos\_}})) \{}
+\DoxyCodeLine{82             \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}} prect = platform-\/>get\_rect();}
+\DoxyCodeLine{83             \textcolor{comment}{//hascrossed left}}
+\DoxyCodeLine{84             \textcolor{keywordflow}{if}(\mbox{\hyperlink{namespacepro2_a0949bec566043f033c7cc2e9d5ba2686}{rect\_touch}}(\mbox{\hyperlink{classAndroid_aa7c604d7bdf67c4014843cdc8b22b7f2}{get\_rect}}(), prect))\{}
+\DoxyCodeLine{85                 \textcolor{comment}{//colision izquierda}}
+\DoxyCodeLine{86                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classAndroid_a49e98b14e7f750197fdee4e80bd4ccc0}{last\_pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} <= prect.\mbox{\hyperlink{structpro2_1_1Rect_a68877597032a2bb4630f37e44b885e81}{left}} and \mbox{\hyperlink{classAndroid_abe7cc4603999c893900831f1881c1da2}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} <= prect.\mbox{\hyperlink{structpro2_1_1Rect_aae04a074de42a64bff8e9781b8e2af2b}{right}})\{}
+\DoxyCodeLine{87                     \mbox{\hyperlink{classAndroid_a7f70190614bb4d0d407cff3f796ccc80}{speed\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} = -\/\mbox{\hyperlink{classAndroid_a7f70190614bb4d0d407cff3f796ccc80}{speed\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}};}
+\DoxyCodeLine{88                     }
+\DoxyCodeLine{89                 \}}
+\DoxyCodeLine{90                 \textcolor{comment}{//colision derecha}}
+\DoxyCodeLine{91                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\mbox{\hyperlink{classAndroid_a49e98b14e7f750197fdee4e80bd4ccc0}{last\_pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} >= prect.\mbox{\hyperlink{structpro2_1_1Rect_aae04a074de42a64bff8e9781b8e2af2b}{right}} and  \mbox{\hyperlink{classAndroid_abe7cc4603999c893900831f1881c1da2}{pos\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} >= prect.\mbox{\hyperlink{structpro2_1_1Rect_a68877597032a2bb4630f37e44b885e81}{left}})\{}
+\DoxyCodeLine{92                     \mbox{\hyperlink{classAndroid_a7f70190614bb4d0d407cff3f796ccc80}{speed\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} = -\/\mbox{\hyperlink{classAndroid_a7f70190614bb4d0d407cff3f796ccc80}{speed\_}}.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}};}
+\DoxyCodeLine{93                 \}}
+\DoxyCodeLine{94             \}}
+\DoxyCodeLine{95         \}}
+\DoxyCodeLine{96         }
+\DoxyCodeLine{97     \}}
+\DoxyCodeLine{98 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classAndroid_a162e7654910cfef8b31ce54a5303a356}\label{classAndroid_a162e7654910cfef8b31ce54a5303a356}} 
+\index{Android@{Android}!accel\_@{accel\_}}
+\index{accel\_@{accel\_}!Android@{Android}}
+\doxysubsubsection{\texorpdfstring{accel\_}{accel\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Android\+::accel\+\_\+ = \{0, 0\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 26 del archivo Android.\+hh.
+
+\mbox{\Hypertarget{classAndroid_a08e01527266799181c0087cf541a6aed}\label{classAndroid_a08e01527266799181c0087cf541a6aed}} 
+\index{Android@{Android}!accel\_time\_@{accel\_time\_}}
+\index{accel\_time\_@{accel\_time\_}!Android@{Android}}
+\doxysubsubsection{\texorpdfstring{accel\_time\_}{accel\_time\_}}
+{\footnotesize\ttfamily int Android\+::accel\+\_\+time\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 30 del archivo Android.\+hh.
+
+\mbox{\Hypertarget{classAndroid_a55d2128ab0bc8f4aa5816a14140a883d}\label{classAndroid_a55d2128ab0bc8f4aa5816a14140a883d}} 
+\index{Android@{Android}!Android\_sprite\_normal\_@{Android\_sprite\_normal\_}}
+\index{Android\_sprite\_normal\_@{Android\_sprite\_normal\_}!Android@{Android}}
+\doxysubsubsection{\texorpdfstring{Android\_sprite\_normal\_}{Android\_sprite\_normal\_}}
+{\footnotesize\ttfamily const vector$<$ vector$<$ int $>$ $>$ Android\+::\+Android\+\_\+sprite\+\_\+normal\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Conte el sprite de android. 
+
+
+
+Definición en la línea 44 del archivo Android.\+hh.
+
+\mbox{\Hypertarget{classAndroid_aef4f7e7b4927298ef97f201ba758d801}\label{classAndroid_aef4f7e7b4927298ef97f201ba758d801}} 
+\index{Android@{Android}!grounded\_@{grounded\_}}
+\index{grounded\_@{grounded\_}!Android@{Android}}
+\doxysubsubsection{\texorpdfstring{grounded\_}{grounded\_}}
+{\footnotesize\ttfamily bool Android\+::grounded\+\_\+ = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 34 del archivo Android.\+hh.
+
+\mbox{\Hypertarget{classAndroid_aa170a068f7a02fdf8d040a7873f84245}\label{classAndroid_aa170a068f7a02fdf8d040a7873f84245}} 
+\index{Android@{Android}!killed\_@{killed\_}}
+\index{killed\_@{killed\_}!Android@{Android}}
+\doxysubsubsection{\texorpdfstring{killed\_}{killed\_}}
+{\footnotesize\ttfamily bool Android\+::killed\+\_\+ = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 32 del archivo Android.\+hh.
+
+\mbox{\Hypertarget{classAndroid_a49e98b14e7f750197fdee4e80bd4ccc0}\label{classAndroid_a49e98b14e7f750197fdee4e80bd4ccc0}} 
+\index{Android@{Android}!last\_pos\_@{last\_pos\_}}
+\index{last\_pos\_@{last\_pos\_}!Android@{Android}}
+\doxysubsubsection{\texorpdfstring{last\_pos\_}{last\_pos\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Android\+::last\+\_\+pos\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 24 del archivo Android.\+hh.
+
+\mbox{\Hypertarget{classAndroid_a99b7f47aed4627e63edf67a062c68032}\label{classAndroid_a99b7f47aed4627e63edf67a062c68032}} 
+\index{Android@{Android}!looking\_left\_@{looking\_left\_}}
+\index{looking\_left\_@{looking\_left\_}!Android@{Android}}
+\doxysubsubsection{\texorpdfstring{looking\_left\_}{looking\_left\_}}
+{\footnotesize\ttfamily bool Android\+::looking\+\_\+left\+\_\+ = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 36 del archivo Android.\+hh.
+
+\mbox{\Hypertarget{classAndroid_abe7cc4603999c893900831f1881c1da2}\label{classAndroid_abe7cc4603999c893900831f1881c1da2}} 
+\index{Android@{Android}!pos\_@{pos\_}}
+\index{pos\_@{pos\_}!Android@{Android}}
+\doxysubsubsection{\texorpdfstring{pos\_}{pos\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Android\+::pos\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+Atributs privats de la classe 
+
+Definición en la línea 24 del archivo Android.\+hh.
+
+\mbox{\Hypertarget{classAndroid_ac0edfe987aaca233928bb1f73be4dd08}\label{classAndroid_ac0edfe987aaca233928bb1f73be4dd08}} 
+\index{Android@{Android}!pos\_ini\_@{pos\_ini\_}}
+\index{pos\_ini\_@{pos\_ini\_}!Android@{Android}}
+\doxysubsubsection{\texorpdfstring{pos\_ini\_}{pos\_ini\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Android\+::pos\+\_\+ini\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 24 del archivo Android.\+hh.
+
+\mbox{\Hypertarget{classAndroid_a6da118aeb1a819d6b53bf951b9b19a61}\label{classAndroid_a6da118aeb1a819d6b53bf951b9b19a61}} 
+\index{Android@{Android}!rect\_Android\_@{rect\_Android\_}}
+\index{rect\_Android\_@{rect\_Android\_}!Android@{Android}}
+\doxysubsubsection{\texorpdfstring{rect\_Android\_}{rect\_Android\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Rect}{pro2\+::\+Rect}} Android\+::rect\+\_\+\+Android\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 28 del archivo Android.\+hh.
+
+\mbox{\Hypertarget{classAndroid_a7f70190614bb4d0d407cff3f796ccc80}\label{classAndroid_a7f70190614bb4d0d407cff3f796ccc80}} 
+\index{Android@{Android}!speed\_@{speed\_}}
+\index{speed\_@{speed\_}!Android@{Android}}
+\doxysubsubsection{\texorpdfstring{speed\_}{speed\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} Android\+::speed\+\_\+ = \{-\/2, 0\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 25 del archivo Android.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Android_8hh}{Android.\+hh}}\item 
+\mbox{\hyperlink{Android_8cc}{Android.\+cc}}\end{DoxyCompactItemize}

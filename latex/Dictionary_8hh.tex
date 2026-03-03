@@ -1,0 +1,236 @@
+\hypertarget{Dictionary_8hh}{}\doxysection{Referencia del Archivo Dictionary.\+hh}
+\label{Dictionary_8hh}\index{Dictionary.hh@{Dictionary.hh}}
+
+
+Sprites de L\textquotesingle{}alphabet i dels digits numerics.  
+
+
+{\ttfamily \#include \char`\"{}window.\+hh\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utils.\+hh\char`\"{}}\newline
+Dependencia gráfica adjunta para Dictionary.\+hh\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Dictionary_8hh__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{Dictionary_8hh_ac37a327ac8a42072bf164ed0a4e29af5}{paint\+\_\+digits}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} pos, int num)
+\begin{DoxyCompactList}\small\item\em Dibuixa a la finestra els digits \{0, ... ,9\} d\textquotesingle{}un numero. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Dictionary_8hh_a5fe3e40f3e6c982d380f878f0bd1dba3}{paint\+\_\+letters}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window, \mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}} pos, std\+::string \mbox{\hyperlink{mario_8cc_af8696c95f62af6274dc8b026e8cad660}{s}})
+\begin{DoxyCompactList}\small\item\em Dibuixa a la finestra els caracters entre \{A, ... ,Z\}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Dictionary_8hh_aaaedb10bc5608a49e1e570f31679f7dc}{paint\+\_\+wasted}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\begin{DoxyCompactList}\small\item\em Dibuixa el estat de game \char`\"{}\+WASTED\char`\"{} a la finestra. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Dictionary_8hh_a98e18d6edde2b41b3a457f549309648c}{paint\+\_\+wined}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\begin{DoxyCompactList}\small\item\em Dibuixa el estat de \char`\"{}\+WINED\char`\"{} a la finestra. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Dictionary_8hh_a951aad82d2e1fcdbfc0b7802d90c9158}{paint\+\_\+paused}} (\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&window)
+\begin{DoxyCompactList}\small\item\em Dibuixa el estat de \char`\"{}\+PAUSED\char`\"{} a la finestra. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Sprites de L\textquotesingle{}alphabet i dels digits numerics. 
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{Dictionary_8hh_ac37a327ac8a42072bf164ed0a4e29af5}\label{Dictionary_8hh_ac37a327ac8a42072bf164ed0a4e29af5}} 
+\index{Dictionary.hh@{Dictionary.hh}!paint\_digits@{paint\_digits}}
+\index{paint\_digits@{paint\_digits}!Dictionary.hh@{Dictionary.hh}}
+\doxysubsubsection{\texorpdfstring{paint\_digits()}{paint\_digits()}}
+{\footnotesize\ttfamily void paint\+\_\+digits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pos,  }\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Dibuixa a la finestra els digits \{0, ... ,9\} d\textquotesingle{}un numero. 
+
+\begin{DoxyPrecond}{Precondición}
+\+: Cap 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+\+: S\`{}ha dibuixat a la finestra el numero \char`\"{}num\char`\"{} 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parámetros}
+{\em window} & finestra en la que es dibuixa \\
+\hline
+{\em pos} & Punt de la finestra on es dibuixa \\
+\hline
+{\em num} & Numero a dibuixar \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 340 del archivo Dictionary.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{340                                                           \{}
+\DoxyCodeLine{341     \textcolor{keywordflow}{if}(num < 10)\{}
+\DoxyCodeLine{342         \mbox{\hyperlink{namespacepro2_a416c3e13d8244d9b102f7df30696c186}{paint\_sprite}}(window, pos, \mbox{\hyperlink{Dictionary_8cc_a8e27a995f0ee19f63ae04b9b4960685a}{numsprites}}[num], \textcolor{keyword}{false});}
+\DoxyCodeLine{343     \}}
+\DoxyCodeLine{344     \textcolor{comment}{//Si num >10 pintem a la seva esquerra els digits que queden}}
+\DoxyCodeLine{345     \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{346         \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{347         \textcolor{keywordflow}{while}(num > 0)\{}
+\DoxyCodeLine{348             \textcolor{keywordtype}{int}  digit  = num \% 10;}
+\DoxyCodeLine{349             \mbox{\hyperlink{namespacepro2_a416c3e13d8244d9b102f7df30696c186}{paint\_sprite}}(window, \{pos.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} -\/ i, pos.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}}\}, \mbox{\hyperlink{Dictionary_8cc_a8e27a995f0ee19f63ae04b9b4960685a}{numsprites}}[digit], \textcolor{keyword}{false});}
+\DoxyCodeLine{350             i += 8;}
+\DoxyCodeLine{351             num/=10;}
+\DoxyCodeLine{352         \}}
+\DoxyCodeLine{353     \}}
+\DoxyCodeLine{354 }
+\DoxyCodeLine{355 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{Dictionary_8hh_a5fe3e40f3e6c982d380f878f0bd1dba3}\label{Dictionary_8hh_a5fe3e40f3e6c982d380f878f0bd1dba3}} 
+\index{Dictionary.hh@{Dictionary.hh}!paint\_letters@{paint\_letters}}
+\index{paint\_letters@{paint\_letters}!Dictionary.hh@{Dictionary.hh}}
+\doxysubsubsection{\texorpdfstring{paint\_letters()}{paint\_letters()}}
+{\footnotesize\ttfamily void paint\+\_\+letters (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window,  }\item[{\mbox{\hyperlink{structpro2_1_1Pt}{pro2\+::\+Pt}}}]{pos,  }\item[{std\+::string}]{s }\end{DoxyParamCaption})}
+
+
+
+Dibuixa a la finestra els caracters entre \{A, ... ,Z\}. 
+
+\begin{DoxyPrecond}{Precondición}
+\+: La string s conte caracters entre \{A, ... ,Z\}; 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+\+: S\textquotesingle{}ha dibuixat a la finestra la string s 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parámetros}
+{\em window} & finestra en la que es dibuixa \\
+\hline
+{\em pos} & Punt de la finestra on es dibuixa \\
+\hline
+{\em s} & string \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Dictionary_8hh_a951aad82d2e1fcdbfc0b7802d90c9158}\label{Dictionary_8hh_a951aad82d2e1fcdbfc0b7802d90c9158}} 
+\index{Dictionary.hh@{Dictionary.hh}!paint\_paused@{paint\_paused}}
+\index{paint\_paused@{paint\_paused}!Dictionary.hh@{Dictionary.hh}}
+\doxysubsubsection{\texorpdfstring{paint\_paused()}{paint\_paused()}}
+{\footnotesize\ttfamily void paint\+\_\+paused (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window }\end{DoxyParamCaption})}
+
+
+
+Dibuixa el estat de \char`\"{}\+PAUSED\char`\"{} a la finestra. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em window} & Finestra en la qual es dibuixa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El estat \char`\"{}\+PAUSED\char`\"{} s’ha dibuixat a la finestra 
+\end{DoxyPostcond}
+
+
+Definición en la línea 402 del archivo Dictionary.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{402                                      \{}
+\DoxyCodeLine{403     \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}} pause = \{window.\mbox{\hyperlink{classpro2_1_1Window_ada2e1a70077ac2011bd5e2c3716dd96c}{topleft}}().\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} + window.\mbox{\hyperlink{classpro2_1_1Window_a2dae6ae56e14dbec41f724866e1cd898}{width}}()/2, window.\mbox{\hyperlink{classpro2_1_1Window_ada2e1a70077ac2011bd5e2c3716dd96c}{topleft}}().\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} + window.\mbox{\hyperlink{classpro2_1_1Window_a3a9de727550a76cd1b33d470f79db00d}{height}}()/2 -\/20\};}
+\DoxyCodeLine{404     \mbox{\hyperlink{Dictionary_8cc_a8767050bf84b3e4fd1135ac46c24f150}{paint\_letters}}(window, pause, \textcolor{stringliteral}{"{}PAUSE"{}});}
+\DoxyCodeLine{405 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{Dictionary_8hh_aaaedb10bc5608a49e1e570f31679f7dc}\label{Dictionary_8hh_aaaedb10bc5608a49e1e570f31679f7dc}} 
+\index{Dictionary.hh@{Dictionary.hh}!paint\_wasted@{paint\_wasted}}
+\index{paint\_wasted@{paint\_wasted}!Dictionary.hh@{Dictionary.hh}}
+\doxysubsubsection{\texorpdfstring{paint\_wasted()}{paint\_wasted()}}
+{\footnotesize\ttfamily void paint\+\_\+wasted (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window }\end{DoxyParamCaption})}
+
+
+
+Dibuixa el estat de game \char`\"{}\+WASTED\char`\"{} a la finestra. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em window} & Finestra en la qual es dibuixa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El estat \char`\"{}\+WASTED\char`\"{} s’ha dibuixat a la finestra 
+\end{DoxyPostcond}
+
+
+Definición en la línea 367 del archivo Dictionary.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{367                                      \{}
+\DoxyCodeLine{368     \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}} wrect = window.\mbox{\hyperlink{classpro2_1_1Window_a7fa5335bc584ac503f6ad336314773c3}{camera\_rect}}();}
+\DoxyCodeLine{369     \textcolor{comment}{//Posicio text}}
+\DoxyCodeLine{370     \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}} wpos = \{window.\mbox{\hyperlink{classpro2_1_1Window_aba9caf9f926e540c6697f690ae6d3c68}{camera\_center}}().\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} -\/ 30, window.\mbox{\hyperlink{classpro2_1_1Window_aba9caf9f926e540c6697f690ae6d3c68}{camera\_center}}().\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}}-\/ 20\};}
+\DoxyCodeLine{371     \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}} restart\_pos = \{wpos.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} -\/ 50, wpos.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} + 25\};}
+\DoxyCodeLine{372     \mbox{\hyperlink{namespacepro2_a982fe1dca9b9960209c0129dd56379c5}{paint\_rect}}(window, wrect, \mbox{\hyperlink{namespacepro2_ad75418ec194604dc97f1efe077788d53}{pro2::black}});}
+\DoxyCodeLine{373     \mbox{\hyperlink{Dictionary_8cc_a8767050bf84b3e4fd1135ac46c24f150}{paint\_letters}}(window, wpos, \textcolor{stringliteral}{"{}WASTED"{}});}
+\DoxyCodeLine{374     \mbox{\hyperlink{Dictionary_8cc_a8767050bf84b3e4fd1135ac46c24f150}{paint\_letters}}(window,restart\_pos , \textcolor{stringliteral}{"{}PRESS R TO RESTART"{}});}
+\DoxyCodeLine{375 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{Dictionary_8hh_a98e18d6edde2b41b3a457f549309648c}\label{Dictionary_8hh_a98e18d6edde2b41b3a457f549309648c}} 
+\index{Dictionary.hh@{Dictionary.hh}!paint\_wined@{paint\_wined}}
+\index{paint\_wined@{paint\_wined}!Dictionary.hh@{Dictionary.hh}}
+\doxysubsubsection{\texorpdfstring{paint\_wined()}{paint\_wined()}}
+{\footnotesize\ttfamily void paint\+\_\+wined (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpro2_1_1Window}{pro2\+::\+Window}} \&}]{window }\end{DoxyParamCaption})}
+
+
+
+Dibuixa el estat de \char`\"{}\+WINED\char`\"{} a la finestra. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em window} & Finestra en la qual es dibuixa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+Cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El estat \char`\"{}\+WASTED\char`\"{} s’ha dibuixat a la finestra 
+\end{DoxyPostcond}
+
+
+Definición en la línea 377 del archivo Dictionary.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{377                                     \{}
+\DoxyCodeLine{378     \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}} wrect = window.\mbox{\hyperlink{classpro2_1_1Window_a7fa5335bc584ac503f6ad336314773c3}{camera\_rect}}();}
+\DoxyCodeLine{379     \mbox{\hyperlink{namespacepro2_a982fe1dca9b9960209c0129dd56379c5}{paint\_rect}}(window, wrect, \mbox{\hyperlink{namespacepro2_af823adda09bc7bb87b179e24b2e61d39}{pro2::wined}});}
+\DoxyCodeLine{380 }
+\DoxyCodeLine{381     \textcolor{comment}{//Text wined i restart}}
+\DoxyCodeLine{382     \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}} wpos = \{window.\mbox{\hyperlink{classpro2_1_1Window_aba9caf9f926e540c6697f690ae6d3c68}{camera\_center}}().\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} -\/ 30, window.\mbox{\hyperlink{classpro2_1_1Window_aba9caf9f926e540c6697f690ae6d3c68}{camera\_center}}().\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} -\/ 20\};}
+\DoxyCodeLine{383     \mbox{\hyperlink{structpro2_1_1Pt}{pro2::Pt}} restart\_pos = \{wpos.\mbox{\hyperlink{structpro2_1_1Pt_ac3bf243622bd81d35086e7adb53c9b74}{x}} -\/ 50, wpos.\mbox{\hyperlink{structpro2_1_1Pt_a66aed2131ecee1ac8d9b7a114beead56}{y}} + 25\};}
+\DoxyCodeLine{384     \mbox{\hyperlink{Dictionary_8cc_a8767050bf84b3e4fd1135ac46c24f150}{paint\_letters}}(window, wpos, \textcolor{stringliteral}{"{}WINED"{}});}
+\DoxyCodeLine{385     \mbox{\hyperlink{Dictionary_8cc_a8767050bf84b3e4fd1135ac46c24f150}{paint\_letters}}(window, restart\_pos, \textcolor{stringliteral}{"{}PRESS R TO RESTART"{}});}
+\DoxyCodeLine{386 }
+\DoxyCodeLine{387     \textcolor{comment}{//Dibuixar confetis}}
+\DoxyCodeLine{388     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 100; i++) \{}
+\DoxyCodeLine{389         \textcolor{comment}{// pos aleatories}}
+\DoxyCodeLine{390         \textcolor{keywordtype}{int} \mbox{\hyperlink{Cd_8cc_aa5ed323274431e0aff568bb688f5f956}{x}} = rand() \% window.\mbox{\hyperlink{classpro2_1_1Window_a2dae6ae56e14dbec41f724866e1cd898}{width}}() + window.\mbox{\hyperlink{classpro2_1_1Window_a7fa5335bc584ac503f6ad336314773c3}{camera\_rect}}().\mbox{\hyperlink{structpro2_1_1Rect_a68877597032a2bb4630f37e44b885e81}{left}};}
+\DoxyCodeLine{391         \textcolor{keywordtype}{int} \mbox{\hyperlink{Backround_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}} = rand() \% window.\mbox{\hyperlink{classpro2_1_1Window_a3a9de727550a76cd1b33d470f79db00d}{height}}() + window.\mbox{\hyperlink{classpro2_1_1Window_a7fa5335bc584ac503f6ad336314773c3}{camera\_rect}}().\mbox{\hyperlink{structpro2_1_1Rect_abea25fc7da9516fc9e1e88fb54e49737}{top}};}
+\DoxyCodeLine{392 }
+\DoxyCodeLine{393         \textcolor{comment}{//colors random}}
+\DoxyCodeLine{394         \textcolor{keywordtype}{int} color = rand() \% 0xffffff;}
+\DoxyCodeLine{395         \textcolor{comment}{//rectangles simulant confeti}}
+\DoxyCodeLine{396         \mbox{\hyperlink{structpro2_1_1Rect}{pro2::Rect}} confeti\_rect = \{\mbox{\hyperlink{Cd_8cc_aa5ed323274431e0aff568bb688f5f956}{x}}, \mbox{\hyperlink{Backround_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}}, \mbox{\hyperlink{Cd_8cc_aa5ed323274431e0aff568bb688f5f956}{x}} + 2, \mbox{\hyperlink{Backround_8cc_a536c339057ad4fa1840581ffde1bec6b}{y}} + 2\};}
+\DoxyCodeLine{397         \mbox{\hyperlink{namespacepro2_a982fe1dca9b9960209c0129dd56379c5}{paint\_rect}}(window, confeti\_rect, color);}
+\DoxyCodeLine{398     \}}
+\DoxyCodeLine{399 }
+\DoxyCodeLine{400 \}}
+
+\end{DoxyCode}

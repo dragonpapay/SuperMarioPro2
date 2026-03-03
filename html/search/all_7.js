@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['g_106',['g',['../mario_8cc.html#aece2eeedca2f58e31a680503a9b7e972',1,'g():&#160;mario.cc'],['../Floppy_8cc.html#aece2eeedca2f58e31a680503a9b7e972',1,'g():&#160;Floppy.cc'],['../Circuitfloor_8cc.html#aece2eeedca2f58e31a680503a9b7e972',1,'g():&#160;Circuitfloor.cc'],['../Cd_8cc.html#aece2eeedca2f58e31a680503a9b7e972',1,'g():&#160;Cd.cc'],['../Backround_8cc.html#aece2eeedca2f58e31a680503a9b7e972',1,'g():&#160;Backround.cc'],['../Android_8cc.html#aece2eeedca2f58e31a680503a9b7e972',1,'g():&#160;Android.cc']]],
+  ['g1_107',['g1',['../Floppy_8cc.html#a1d3f901ee171ec10c7c87bae840dd078',1,'Floppy.cc']]],
+  ['g2_108',['g2',['../Floppy_8cc.html#a7f112d6c148a575eb3e35fa3b7283e14',1,'Floppy.cc']]],
+  ['g3_109',['g3',['../Floppy_8cc.html#a888251799ce5c417f06aa2216eec1335',1,'Floppy.cc']]],
+  ['game_110',['Game',['../classGame.html#a5bc07cf8947858f32637943836cc6f8e',1,'Game::Game()'],['../classGame.html',1,'Game']]],
+  ['game_2ecc_111',['game.cc',['../game_8cc.html',1,'']]],
+  ['game_2ehh_112',['game.hh',['../game_8hh.html',1,'']]],
+  ['game_5fstate_5fs_113',['game_state_s',['../game_8hh.html#ac5ce22c8b6620f1717edb145826177e4',1,'game.hh']]],
+  ['geometry_2ehh_114',['geometry.hh',['../geometry_8hh.html',1,'']]],
+  ['get_5fpixel_115',['get_pixel',['../classpro2_1_1Window.html#a964b632d53a61b7602dfb909e9b7457f',1,'pro2::Window']]],
+  ['get_5frect_116',['get_rect',['../classPlatform.html#a16a47c819406b8b30b8c28d63f272447',1,'Platform::get_rect()'],['../classAndroid.html#aa7c604d7bdf67c4014843cdc8b22b7f2',1,'Android::get_rect()'],['../classSpark.html#ab9de0f9257d8bd870fdbc9da901fe8d5',1,'Spark::get_rect()'],['../classBowser.html#a734a30ef6b25e8b502d24051bdc070de',1,'Bowser::get_rect()'],['../classCd.html#af59225d6e0a3a33905697347efd8d1c0',1,'Cd::get_rect()'],['../classCircuitfloor.html#a8e69f00ca7cc1cd57370e898540efeac',1,'Circuitfloor::get_rect()'],['../classFloppy.html#afb5675ab273b822a43e4063404185b5b',1,'Floppy::get_rect()'],['../classMario.html#acc0a64d028654c6bddca364379147bb4',1,'Mario::get_rect()']]],
+  ['get_5fsparks_117',['get_sparks',['../classBowser.html#a179a3fa198743aad3846c80796369fa3',1,'Bowser']]],
+  ['get_5ftl_5fof_5fintersections_5fwith_5fobj_118',['get_tl_of_intersections_with_obj',['../classFinder.html#a5a3c7e910955a669a040759e8427d694',1,'Finder']]],
+  ['gg_119',['gg',['../Floppy_8cc.html#a64bb567d49400a935844ee48962d08a8',1,'Floppy.cc']]],
+  ['gg1_120',['gg1',['../Floppy_8cc.html#afeb013779385f57ca10bbce433716696',1,'Floppy.cc']]],
+  ['gg2_121',['gg2',['../Floppy_8cc.html#a24ada918e94dbbfca3091d425849cbf8',1,'Floppy.cc']]],
+  ['gg3_122',['gg3',['../Floppy_8cc.html#a00c3f0171efbe6a260a29d4afbb29440',1,'Floppy.cc']]],
+  ['gr_123',['gr',['../Floppy_8cc.html#a05a20f3e533db229ae09ede4ff8139c3',1,'Floppy.cc']]],
+  ['green_124',['green',['../namespacepro2.html#a316de377ea278a05420f85b64f4349bb',1,'pro2']]],
+  ['grounded_5f_125',['grounded_',['../classMario.html#a9a5079abae4f376e690bdb2d69c16217',1,'Mario::grounded_()'],['../classBowser.html#a4b4f1b371c62f29ac855be4760f651ba',1,'Bowser::grounded_()'],['../classAndroid.html#aef4f7e7b4927298ef97f201ba758d801',1,'Android::grounded_()']]]
+];

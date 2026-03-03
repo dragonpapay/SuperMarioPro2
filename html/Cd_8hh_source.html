@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SUPER MARIO BROS PRO2: Fichero Fuente Cd.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SUPER MARIO BROS PRO2
+   &#160;<span id="projectnumber">1</span>
+   </div>
+   <div id="projectbrief">Un juego basado en el primer super Mario Bros de la NES con tematica de componentes informaticos retro</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Cd.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Cd_8hh.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor"> #ifndef Cd_HH</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"> #define Cd_HH</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"> #include &quot;<a class="code" href="window_8hh.html">window.hh</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"> #include &quot;<a class="code" href="mario_8hh.html">mario.hh</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"> #include &quot;<a class="code" href="platform_8hh.html">platform.hh</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"> #include &quot;<a class="code" href="utils_8hh.html">utils.hh</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"> #include &quot;<a class="code" href="geometry_8hh.html">geometry.hh</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"> #ifndef NO_DIAGRAM</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"> #include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"> #include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor"> #endif</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="Cd_8hh.html#a01e308809b9d499b36da47ec4fb60420">   20</a></span>&#160; <span class="keyword">enum</span> <a class="code" href="Cd_8hh.html#a01e308809b9d499b36da47ec4fb60420">movement_tc</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">//se pueden hacer mas tipos de movimineto;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="Cd_8hh.html#a01e308809b9d499b36da47ec4fb60420a722b827bbe3e2448558b06f2c5fbdda1">   22</a></span>&#160;    <a class="code" href="Cd_8hh.html#a01e308809b9d499b36da47ec4fb60420a722b827bbe3e2448558b06f2c5fbdda1">WAVE_HORIZONTAL</a>, <a class="code" href="Cd_8hh.html#a01e308809b9d499b36da47ec4fb60420ad7adba128f40c4ed087273798c717477">STATIC_C</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="Cd_8hh.html#a01e308809b9d499b36da47ec4fb60420ad7adba128f40c4ed087273798c717477">   23</a></span>&#160; };</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classCd.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCd.html">Cd</a> {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classCd.html#a52f2a44d0f932b4ffc1f47fe2ad2dd3f">   33</a></span>&#160;   <a class="code" href="structpro2_1_1Pt.html">pro2::Pt</a> <a class="code" href="classCd.html#a52f2a44d0f932b4ffc1f47fe2ad2dd3f">pos_</a> {0,0};</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classCd.html#afa162a88c2ed4b1c2b44859e8d30b080">   34</a></span>&#160;   <a class="code" href="structpro2_1_1Pt.html">pro2::Pt</a> <a class="code" href="classCd.html#afa162a88c2ed4b1c2b44859e8d30b080">posini_</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classCd.html#aab6d028076b2c0c8f6d98e5f224046c4">   35</a></span>&#160;   <a class="code" href="structpro2_1_1Rect.html">pro2::Rect</a> <a class="code" href="classCd.html#aab6d028076b2c0c8f6d98e5f224046c4">rect_cd_</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classCd.html#a2fd956e27308f898281555f05570be3e">   37</a></span>&#160;   <span class="keywordtype">int</span> <a class="code" href="classCd.html#a2fd956e27308f898281555f05570be3e">height_</a> = <a class="code" href="classCd.html#a6a0c36782441526b6bf89a8031d785e0">Cd_sprite_</a>.size();</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classCd.html#ac629d99535bb6ec953192090ab4b7f3e">   38</a></span>&#160;   <span class="keywordtype">int</span> <a class="code" href="classCd.html#ac629d99535bb6ec953192090ab4b7f3e">widht_</a> = <a class="code" href="classCd.html#a6a0c36782441526b6bf89a8031d785e0">Cd_sprite_</a>[0].size();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classCd.html#a18bd21358329d8a72168523af7e6e7e1">   40</a></span>&#160;   <span class="keywordtype">int</span> <a class="code" href="classCd.html#a18bd21358329d8a72168523af7e6e7e1">movement</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classCd.html#aa2e573fd246fc645ea8e77c25b28255c">apply_physics_cd</a>(<a class="code" href="classpro2_1_1Window.html">pro2::Window</a>&amp; window);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//constructores</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classCd.html#a14abb0485e148f5ec6851ce432be6f0b">   58</a></span>&#160;<span class="comment"></span>     <a class="code" href="classCd.html#a14abb0485e148f5ec6851ce432be6f0b">Cd</a>(<a class="code" href="structpro2_1_1Pt.html">pro2::Pt</a> <a class="code" href="classCd.html#a099ada5dab5b15558d12011ff1ea0554">pos</a>, <a class="code" href="Cd_8hh.html#a01e308809b9d499b36da47ec4fb60420">movement_tc</a> <a class="code" href="Circuitfloor_8cc.html#a0d2d8836216fc94b61aa0824eb239db2">m</a>){</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="classCd.html#a52f2a44d0f932b4ffc1f47fe2ad2dd3f">pos_</a> = <a class="code" href="classCd.html#a099ada5dab5b15558d12011ff1ea0554">pos</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="classCd.html#afa162a88c2ed4b1c2b44859e8d30b080">posini_</a> = <a class="code" href="classCd.html#a099ada5dab5b15558d12011ff1ea0554">pos</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="classCd.html#a18bd21358329d8a72168523af7e6e7e1">movement</a> = <a class="code" href="Circuitfloor_8cc.html#a0d2d8836216fc94b61aa0824eb239db2">m</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;     } </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;     </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;     <span class="comment">//consultores</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classCd.html#a099ada5dab5b15558d12011ff1ea0554">   65</a></span>&#160;     <a class="code" href="structpro2_1_1Pt.html">pro2::Pt</a> <a class="code" href="classCd.html#a099ada5dab5b15558d12011ff1ea0554">pos</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classCd.html#a52f2a44d0f932b4ffc1f47fe2ad2dd3f">pos_</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;     }</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classCd.html#af59225d6e0a3a33905697347efd8d1c0">   68</a></span>&#160;     <a class="code" href="structpro2_1_1Rect.html">pro2::Rect</a> <a class="code" href="classCd.html#af59225d6e0a3a33905697347efd8d1c0">get_rect</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="structpro2_1_1Rect.html">pro2::Rect</a> hitbox_cd = {<a class="code" href="classCd.html#a52f2a44d0f932b4ffc1f47fe2ad2dd3f">pos_</a>.<a class="code" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> - 14, <a class="code" href="classCd.html#a52f2a44d0f932b4ffc1f47fe2ad2dd3f">pos_</a>.<a class="code" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a> - 27, <a class="code" href="classCd.html#a52f2a44d0f932b4ffc1f47fe2ad2dd3f">pos_</a>.<a class="code" href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">x</a> + 14, <a class="code" href="classCd.html#a52f2a44d0f932b4ffc1f47fe2ad2dd3f">pos_</a>.<a class="code" href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">y</a>};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">return</span> hitbox_cd;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;     }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;     </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;     <span class="keywordtype">void</span> <a class="code" href="classCd.html#a59224f9242493d5bb1e4d259526e038a">update</a>(<a class="code" href="classpro2_1_1Window.html">pro2::Window</a>&amp; window);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;     </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;     <span class="keywordtype">void</span> <a class="code" href="classCd.html#afff3fcd9774d9ebc5e5690c35966a004">paint_cd</a>(<a class="code" href="classpro2_1_1Window.html">pro2::Window</a>&amp; window) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;     </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;     <span class="comment">//Matriu que contenen els sprites del objecte</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classCd.html#a6a0c36782441526b6bf89a8031d785e0">   90</a></span>&#160;     <span class="keyword">static</span> <span class="keyword">const</span> std::vector&lt;std::vector&lt;int&gt;&gt; <a class="code" href="classCd.html#a6a0c36782441526b6bf89a8031d785e0">Cd_sprite_</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; };</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor"> #endif</span></div>
+<div class="ttc" id="aCd_8hh_html_a01e308809b9d499b36da47ec4fb60420"><div class="ttname"><a href="Cd_8hh.html#a01e308809b9d499b36da47ec4fb60420">movement_tc</a></div><div class="ttdeci">movement_tc</div><div class="ttdef"><b>Definition:</b> <a href="Cd_8hh_source.html#l00020">Cd.hh:20</a></div></div>
+<div class="ttc" id="aCd_8hh_html_a01e308809b9d499b36da47ec4fb60420a722b827bbe3e2448558b06f2c5fbdda1"><div class="ttname"><a href="Cd_8hh.html#a01e308809b9d499b36da47ec4fb60420a722b827bbe3e2448558b06f2c5fbdda1">WAVE_HORIZONTAL</a></div><div class="ttdeci">@ WAVE_HORIZONTAL</div><div class="ttdef"><b>Definition:</b> <a href="Cd_8hh_source.html#l00022">Cd.hh:22</a></div></div>
+<div class="ttc" id="aCd_8hh_html_a01e308809b9d499b36da47ec4fb60420ad7adba128f40c4ed087273798c717477"><div class="ttname"><a href="Cd_8hh.html#a01e308809b9d499b36da47ec4fb60420ad7adba128f40c4ed087273798c717477">STATIC_C</a></div><div class="ttdeci">@ STATIC_C</div><div class="ttdef"><b>Definition:</b> <a href="Cd_8hh_source.html#l00023">Cd.hh:22</a></div></div>
+<div class="ttc" id="aCircuitfloor_8cc_html_a0d2d8836216fc94b61aa0824eb239db2"><div class="ttname"><a href="Circuitfloor_8cc.html#a0d2d8836216fc94b61aa0824eb239db2">m</a></div><div class="ttdeci">const int m</div><div class="ttdef"><b>Definition:</b> <a href="Circuitfloor_8cc_source.html#l00014">Circuitfloor.cc:14</a></div></div>
+<div class="ttc" id="aclassCd_html"><div class="ttname"><a href="classCd.html">Cd</a></div><div class="ttdoc">Representa un Cd, que es pot moure i ser recollit pel jugador els moviments de l'objecte son sinusoid...</div><div class="ttdef"><b>Definition:</b> <a href="Cd_8hh_source.html#l00030">Cd.hh:30</a></div></div>
+<div class="ttc" id="aclassCd_html_a099ada5dab5b15558d12011ff1ea0554"><div class="ttname"><a href="classCd.html#a099ada5dab5b15558d12011ff1ea0554">Cd::pos</a></div><div class="ttdeci">pro2::Pt pos() const</div><div class="ttdef"><b>Definition:</b> <a href="Cd_8hh_source.html#l00065">Cd.hh:65</a></div></div>
+<div class="ttc" id="aclassCd_html_a14abb0485e148f5ec6851ce432be6f0b"><div class="ttname"><a href="classCd.html#a14abb0485e148f5ec6851ce432be6f0b">Cd::Cd</a></div><div class="ttdeci">Cd(pro2::Pt pos, movement_tc m)</div><div class="ttdoc">Constructor del Cd.</div><div class="ttdef"><b>Definition:</b> <a href="Cd_8hh_source.html#l00058">Cd.hh:58</a></div></div>
+<div class="ttc" id="aclassCd_html_a18bd21358329d8a72168523af7e6e7e1"><div class="ttname"><a href="classCd.html#a18bd21358329d8a72168523af7e6e7e1">Cd::movement</a></div><div class="ttdeci">int movement</div><div class="ttdef"><b>Definition:</b> <a href="Cd_8hh_source.html#l00040">Cd.hh:40</a></div></div>
+<div class="ttc" id="aclassCd_html_a2fd956e27308f898281555f05570be3e"><div class="ttname"><a href="classCd.html#a2fd956e27308f898281555f05570be3e">Cd::height_</a></div><div class="ttdeci">int height_</div><div class="ttdef"><b>Definition:</b> <a href="Cd_8hh_source.html#l00037">Cd.hh:37</a></div></div>
+<div class="ttc" id="aclassCd_html_a52f2a44d0f932b4ffc1f47fe2ad2dd3f"><div class="ttname"><a href="classCd.html#a52f2a44d0f932b4ffc1f47fe2ad2dd3f">Cd::pos_</a></div><div class="ttdeci">pro2::Pt pos_</div><div class="ttdef"><b>Definition:</b> <a href="Cd_8hh_source.html#l00033">Cd.hh:33</a></div></div>
+<div class="ttc" id="aclassCd_html_a59224f9242493d5bb1e4d259526e038a"><div class="ttname"><a href="classCd.html#a59224f9242493d5bb1e4d259526e038a">Cd::update</a></div><div class="ttdeci">void update(pro2::Window &amp;window)</div><div class="ttdoc">Actualitza la posicio de l'objecte cd segons el moviment.</div><div class="ttdef"><b>Definition:</b> <a href="Cd_8cc_source.html#l00072">Cd.cc:72</a></div></div>
+<div class="ttc" id="aclassCd_html_a6a0c36782441526b6bf89a8031d785e0"><div class="ttname"><a href="classCd.html#a6a0c36782441526b6bf89a8031d785e0">Cd::Cd_sprite_</a></div><div class="ttdeci">static const std::vector&lt; std::vector&lt; int &gt; &gt; Cd_sprite_</div><div class="ttdef"><b>Definition:</b> <a href="Cd_8hh_source.html#l00090">Cd.hh:90</a></div></div>
+<div class="ttc" id="aclassCd_html_aa2e573fd246fc645ea8e77c25b28255c"><div class="ttname"><a href="classCd.html#aa2e573fd246fc645ea8e77c25b28255c">Cd::apply_physics_cd</a></div><div class="ttdeci">void apply_physics_cd(pro2::Window &amp;window)</div><div class="ttdoc">Aplica a Cd un moviment segons el parametre implicit Aquesta funció actualitza la posició de l'object...</div><div class="ttdef"><b>Definition:</b> <a href="Cd_8cc_source.html#l00060">Cd.cc:60</a></div></div>
+<div class="ttc" id="aclassCd_html_aab6d028076b2c0c8f6d98e5f224046c4"><div class="ttname"><a href="classCd.html#aab6d028076b2c0c8f6d98e5f224046c4">Cd::rect_cd_</a></div><div class="ttdeci">pro2::Rect rect_cd_</div><div class="ttdef"><b>Definition:</b> <a href="Cd_8hh_source.html#l00035">Cd.hh:35</a></div></div>
+<div class="ttc" id="aclassCd_html_ac629d99535bb6ec953192090ab4b7f3e"><div class="ttname"><a href="classCd.html#ac629d99535bb6ec953192090ab4b7f3e">Cd::widht_</a></div><div class="ttdeci">int widht_</div><div class="ttdef"><b>Definition:</b> <a href="Cd_8hh_source.html#l00038">Cd.hh:38</a></div></div>
+<div class="ttc" id="aclassCd_html_af59225d6e0a3a33905697347efd8d1c0"><div class="ttname"><a href="classCd.html#af59225d6e0a3a33905697347efd8d1c0">Cd::get_rect</a></div><div class="ttdeci">pro2::Rect get_rect() const</div><div class="ttdef"><b>Definition:</b> <a href="Cd_8hh_source.html#l00068">Cd.hh:68</a></div></div>
+<div class="ttc" id="aclassCd_html_afa162a88c2ed4b1c2b44859e8d30b080"><div class="ttname"><a href="classCd.html#afa162a88c2ed4b1c2b44859e8d30b080">Cd::posini_</a></div><div class="ttdeci">pro2::Pt posini_</div><div class="ttdef"><b>Definition:</b> <a href="Cd_8hh_source.html#l00034">Cd.hh:34</a></div></div>
+<div class="ttc" id="aclassCd_html_afff3fcd9774d9ebc5e5690c35966a004"><div class="ttname"><a href="classCd.html#afff3fcd9774d9ebc5e5690c35966a004">Cd::paint_cd</a></div><div class="ttdeci">void paint_cd(pro2::Window &amp;window) const</div><div class="ttdoc">Dibuixa el sprite de l'objecte Cd.</div><div class="ttdef"><b>Definition:</b> <a href="Cd_8cc_source.html#l00054">Cd.cc:54</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html"><div class="ttname"><a href="classpro2_1_1Window.html">pro2::Window</a></div><div class="ttdef"><b>Definition:</b> <a href="window_8hh_source.html#l00071">window.hh:71</a></div></div>
+<div class="ttc" id="ageometry_8hh_html"><div class="ttname"><a href="geometry_8hh.html">geometry.hh</a></div></div>
+<div class="ttc" id="amario_8hh_html"><div class="ttname"><a href="mario_8hh.html">mario.hh</a></div><div class="ttdoc">especificacio de la classe mario</div></div>
+<div class="ttc" id="aplatform_8hh_html"><div class="ttname"><a href="platform_8hh.html">platform.hh</a></div><div class="ttdoc">Especificació de la classe platform.</div></div>
+<div class="ttc" id="astructpro2_1_1Pt_html"><div class="ttname"><a href="structpro2_1_1Pt.html">pro2::Pt</a></div><div class="ttdoc">Punt amb coordenades enters (x, y).</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hh_source.html#l00008">geometry.hh:8</a></div></div>
+<div class="ttc" id="astructpro2_1_1Pt_html_a66aed2131ecee1ac8d9b7a114beead56"><div class="ttname"><a href="structpro2_1_1Pt.html#a66aed2131ecee1ac8d9b7a114beead56">pro2::Pt::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hh_source.html#l00009">geometry.hh:9</a></div></div>
+<div class="ttc" id="astructpro2_1_1Pt_html_ac3bf243622bd81d35086e7adb53c9b74"><div class="ttname"><a href="structpro2_1_1Pt.html#ac3bf243622bd81d35086e7adb53c9b74">pro2::Pt::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hh_source.html#l00009">geometry.hh:9</a></div></div>
+<div class="ttc" id="astructpro2_1_1Rect_html"><div class="ttname"><a href="structpro2_1_1Rect.html">pro2::Rect</a></div><div class="ttdoc">Rectangle definit per coordenades esquerra, superior, dreta i inferior.</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hh_source.html#l00046">geometry.hh:46</a></div></div>
+<div class="ttc" id="autils_8hh_html"><div class="ttname"><a href="utils_8hh.html">utils.hh</a></div></div>
+<div class="ttc" id="awindow_8hh_html"><div class="ttname"><a href="window_8hh.html">window.hh</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

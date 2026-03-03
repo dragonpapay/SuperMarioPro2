@@ -1,0 +1,97 @@
+\hypertarget{game_8hh}{}\doxysection{Referencia del Archivo game.\+hh}
+\label{game_8hh}\index{game.hh@{game.hh}}
+
+
+Declaració principal de la classe game.  
+
+
+{\ttfamily \#include \char`\"{}Stack.\+hh\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Finder.\+hh\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mario.\+hh\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Floppy.\+hh\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Cd.\+hh\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Android.\+hh\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Bowser.\+hh\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}platform.\+hh\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}window.\+hh\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utils.\+hh\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Circuitfloor.\+hh\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Dictionary.\+hh\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Background.\+hh\char`\"{}}\newline
+Dependencia gráfica adjunta para game.\+hh\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8hh__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classGame}{Game}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumeraciones}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{game_8hh_ac5ce22c8b6620f1717edb145826177e4}{game\+\_\+state\+\_\+s}} \{ \newline
+\mbox{\hyperlink{game_8hh_ac5ce22c8b6620f1717edb145826177e4af095245f5cebc27a97a124345269fed8}{PLAYING}}
+, \mbox{\hyperlink{game_8hh_ac5ce22c8b6620f1717edb145826177e4ad4bb05915de3c370d3a33d4f51389655}{PAUSED}}
+, \mbox{\hyperlink{game_8hh_ac5ce22c8b6620f1717edb145826177e4a331b8560fd46647b08803ab7e2579ea5}{WINED}}
+, \mbox{\hyperlink{game_8hh_ac5ce22c8b6620f1717edb145826177e4a511c9bd7131b480222ccf0d9c5faa886}{WASTED}}
+, \newline
+\mbox{\hyperlink{game_8hh_ac5ce22c8b6620f1717edb145826177e4a262553c759e1d1a9398bc406b1fadcb7}{RESTART}}
+ \}
+\begin{DoxyCompactList}\small\item\em els estats que té game \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Declaració principal de la classe game. 
+
+
+
+\doxysubsection{Documentación de las enumeraciones}
+\mbox{\Hypertarget{game_8hh_ac5ce22c8b6620f1717edb145826177e4}\label{game_8hh_ac5ce22c8b6620f1717edb145826177e4}} 
+\index{game.hh@{game.hh}!game\_state\_s@{game\_state\_s}}
+\index{game\_state\_s@{game\_state\_s}!game.hh@{game.hh}}
+\doxysubsubsection{\texorpdfstring{game\_state\_s}{game\_state\_s}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{game_8hh_ac5ce22c8b6620f1717edb145826177e4}{game\+\_\+state\+\_\+s}}}
+
+
+
+els estats que té game 
+
+\begin{DoxyEnumFields}{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PLAYING@{PLAYING}!game.hh@{game.hh}}\index{game.hh@{game.hh}!PLAYING@{PLAYING}}}\mbox{\Hypertarget{game_8hh_ac5ce22c8b6620f1717edb145826177e4af095245f5cebc27a97a124345269fed8}\label{game_8hh_ac5ce22c8b6620f1717edb145826177e4af095245f5cebc27a97a124345269fed8}} 
+PLAYING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PAUSED@{PAUSED}!game.hh@{game.hh}}\index{game.hh@{game.hh}!PAUSED@{PAUSED}}}\mbox{\Hypertarget{game_8hh_ac5ce22c8b6620f1717edb145826177e4ad4bb05915de3c370d3a33d4f51389655}\label{game_8hh_ac5ce22c8b6620f1717edb145826177e4ad4bb05915de3c370d3a33d4f51389655}} 
+PAUSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WINED@{WINED}!game.hh@{game.hh}}\index{game.hh@{game.hh}!WINED@{WINED}}}\mbox{\Hypertarget{game_8hh_ac5ce22c8b6620f1717edb145826177e4a331b8560fd46647b08803ab7e2579ea5}\label{game_8hh_ac5ce22c8b6620f1717edb145826177e4a331b8560fd46647b08803ab7e2579ea5}} 
+WINED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WASTED@{WASTED}!game.hh@{game.hh}}\index{game.hh@{game.hh}!WASTED@{WASTED}}}\mbox{\Hypertarget{game_8hh_ac5ce22c8b6620f1717edb145826177e4a511c9bd7131b480222ccf0d9c5faa886}\label{game_8hh_ac5ce22c8b6620f1717edb145826177e4a511c9bd7131b480222ccf0d9c5faa886}} 
+WASTED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RESTART@{RESTART}!game.hh@{game.hh}}\index{game.hh@{game.hh}!RESTART@{RESTART}}}\mbox{\Hypertarget{game_8hh_ac5ce22c8b6620f1717edb145826177e4a262553c759e1d1a9398bc406b1fadcb7}\label{game_8hh_ac5ce22c8b6620f1717edb145826177e4a262553c759e1d1a9398bc406b1fadcb7}} 
+RESTART&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definición en la línea 31 del archivo game.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31                  \{}
+\DoxyCodeLine{32     \mbox{\hyperlink{game_8hh_ac5ce22c8b6620f1717edb145826177e4af095245f5cebc27a97a124345269fed8}{PLAYING}}, \mbox{\hyperlink{game_8hh_ac5ce22c8b6620f1717edb145826177e4ad4bb05915de3c370d3a33d4f51389655}{PAUSED}}, \mbox{\hyperlink{game_8hh_ac5ce22c8b6620f1717edb145826177e4a331b8560fd46647b08803ab7e2579ea5}{WINED}}, \mbox{\hyperlink{game_8hh_ac5ce22c8b6620f1717edb145826177e4a511c9bd7131b480222ccf0d9c5faa886}{WASTED}}, \mbox{\hyperlink{game_8hh_ac5ce22c8b6620f1717edb145826177e4a262553c759e1d1a9398bc406b1fadcb7}{RESTART}},}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \};}
+
+\end{DoxyCode}

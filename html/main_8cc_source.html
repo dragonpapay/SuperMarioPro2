@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SUPER MARIO BROS PRO2: Fichero Fuente main.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SUPER MARIO BROS PRO2
+   &#160;<span id="projectnumber">1</span>
+   </div>
+   <div id="projectbrief">Un juego basado en el primer super Mario Bros de la NES con tematica de componentes informaticos retro</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">main.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="main_8cc.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="game_8hh.html">game.hh</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="window_8hh.html">window.hh</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="main_8cc.html#af728b7647e0b8c49832983a31f9a2e9b">   10</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="main_8cc.html#a9649ab8139c4c2ea5c93625b30d92a05">WIDTH</a> = 480, <a class="code" href="main_8cc.html#af728b7647e0b8c49832983a31f9a2e9b">HEIGHT</a> = 320;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="main_8cc.html#a3166bb8af25e8c3ed92b68e2bd869d40">   11</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="main_8cc.html#a3166bb8af25e8c3ed92b68e2bd869d40">ZOOM</a> = 2;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="main_8cc.html#ac5090a6568797128b0a5545228bb8b75">   12</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="main_8cc.html#ac5090a6568797128b0a5545228bb8b75">FPS</a> = 48;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   14</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classpro2_1_1Window.html">pro2::Window</a> window(<span class="stringliteral">&quot;Mario Pro 2&quot;</span>, <a class="code" href="main_8cc.html#a9649ab8139c4c2ea5c93625b30d92a05">WIDTH</a>, <a class="code" href="main_8cc.html#af728b7647e0b8c49832983a31f9a2e9b">HEIGHT</a>, <a class="code" href="main_8cc.html#a3166bb8af25e8c3ed92b68e2bd869d40">ZOOM</a>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    window.<a class="code" href="classpro2_1_1Window.html#aaa39faf0a0dfa480661c314341638548">set_fps</a>(<a class="code" href="main_8cc.html#ac5090a6568797128b0a5545228bb8b75">FPS</a>);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classGame.html">Game</a> game(<a class="code" href="main_8cc.html#a9649ab8139c4c2ea5c93625b30d92a05">WIDTH</a>, <a class="code" href="main_8cc.html#af728b7647e0b8c49832983a31f9a2e9b">HEIGHT</a>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">while</span> (window.<a class="code" href="classpro2_1_1Window.html#a3a2e9797e7da3874fd62727531e711d6">next_frame</a>() &amp;&amp; !game.<a class="code" href="classGame.html#a48d38b110cb6558e69b1920bb31406db">is_finished</a>()) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        game.<a class="code" href="classGame.html#a3661c777f12e357cdc0b3727b2f73412">update</a>(window);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        game.<a class="code" href="classGame.html#af3e3428a12b9944fefb663f2fe560529">paint</a>(window);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">if</span>(game.<a class="code" href="classGame.html#aa9803d21a9c14764c70f07a73e3a7bc3">is_restarted</a>()){</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            game = <a class="code" href="classGame.html">Game</a>(<a class="code" href="main_8cc.html#a9649ab8139c4c2ea5c93625b30d92a05">WIDTH</a>, <a class="code" href="main_8cc.html#af728b7647e0b8c49832983a31f9a2e9b">HEIGHT</a>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            window.<a class="code" href="classpro2_1_1Window.html#a1393bc8d5c74455c1b25e3b38db7af92">set_camera_topleft</a>({0,0});</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="ttc" id="aclassGame_html"><div class="ttname"><a href="classGame.html">Game</a></div><div class="ttdef"><b>Definition:</b> <a href="game_8hh_source.html#l00036">game.hh:36</a></div></div>
+<div class="ttc" id="aclassGame_html_a3661c777f12e357cdc0b3727b2f73412"><div class="ttname"><a href="classGame.html#a3661c777f12e357cdc0b3727b2f73412">Game::update</a></div><div class="ttdeci">void update(pro2::Window &amp;window)</div><div class="ttdoc">Actualitza tot l’estat del joc.</div><div class="ttdef"><b>Definition:</b> <a href="game_8cc_source.html#l00390">game.cc:390</a></div></div>
+<div class="ttc" id="aclassGame_html_a48d38b110cb6558e69b1920bb31406db"><div class="ttname"><a href="classGame.html#a48d38b110cb6558e69b1920bb31406db">Game::is_finished</a></div><div class="ttdeci">bool is_finished() const</div><div class="ttdef"><b>Definition:</b> <a href="game_8hh_source.html#l00149">game.hh:149</a></div></div>
+<div class="ttc" id="aclassGame_html_aa9803d21a9c14764c70f07a73e3a7bc3"><div class="ttname"><a href="classGame.html#aa9803d21a9c14764c70f07a73e3a7bc3">Game::is_restarted</a></div><div class="ttdeci">bool is_restarted() const</div><div class="ttdef"><b>Definition:</b> <a href="game_8hh_source.html#l00152">game.hh:152</a></div></div>
+<div class="ttc" id="aclassGame_html_af3e3428a12b9944fefb663f2fe560529"><div class="ttname"><a href="classGame.html#af3e3428a12b9944fefb663f2fe560529">Game::paint</a></div><div class="ttdeci">void paint(pro2::Window &amp;window)</div><div class="ttdoc">Pinta tot l'estat del game.</div><div class="ttdef"><b>Definition:</b> <a href="game_8cc_source.html#l00419">game.cc:419</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html"><div class="ttname"><a href="classpro2_1_1Window.html">pro2::Window</a></div><div class="ttdef"><b>Definition:</b> <a href="window_8hh_source.html#l00071">window.hh:71</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a1393bc8d5c74455c1b25e3b38db7af92"><div class="ttname"><a href="classpro2_1_1Window.html#a1393bc8d5c74455c1b25e3b38db7af92">pro2::Window::set_camera_topleft</a></div><div class="ttdeci">void set_camera_topleft(Pt topleft)</div><div class="ttdoc">Establece la posición de la esquina superior izquierda de la cámara.</div><div class="ttdef"><b>Definition:</b> <a href="window_8hh_source.html#l00450">window.hh:450</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_a3a2e9797e7da3874fd62727531e711d6"><div class="ttname"><a href="classpro2_1_1Window.html#a3a2e9797e7da3874fd62727531e711d6">pro2::Window::next_frame</a></div><div class="ttdeci">bool next_frame()</div><div class="ttdoc">Gestiona las tareas necesarias para pasar al siguiente fotograma.</div><div class="ttdef"><b>Definition:</b> <a href="window_8cc_source.html#l00035">window.cc:35</a></div></div>
+<div class="ttc" id="aclasspro2_1_1Window_html_aaa39faf0a0dfa480661c314341638548"><div class="ttname"><a href="classpro2_1_1Window.html#aaa39faf0a0dfa480661c314341638548">pro2::Window::set_fps</a></div><div class="ttdeci">void set_fps(int fps)</div><div class="ttdoc">Cambia los FPS de refresco de la ventana.</div><div class="ttdef"><b>Definition:</b> <a href="window_8hh_source.html#l00401">window.hh:401</a></div></div>
+<div class="ttc" id="agame_8hh_html"><div class="ttname"><a href="game_8hh.html">game.hh</a></div><div class="ttdoc">Declaració principal de la classe game.</div></div>
+<div class="ttc" id="amain_8cc_html_a3166bb8af25e8c3ed92b68e2bd869d40"><div class="ttname"><a href="main_8cc.html#a3166bb8af25e8c3ed92b68e2bd869d40">ZOOM</a></div><div class="ttdeci">const int ZOOM</div><div class="ttdef"><b>Definition:</b> <a href="main_8cc_source.html#l00011">main.cc:11</a></div></div>
+<div class="ttc" id="amain_8cc_html_a9649ab8139c4c2ea5c93625b30d92a05"><div class="ttname"><a href="main_8cc.html#a9649ab8139c4c2ea5c93625b30d92a05">WIDTH</a></div><div class="ttdeci">const int WIDTH</div><div class="ttdef"><b>Definition:</b> <a href="main_8cc_source.html#l00010">main.cc:10</a></div></div>
+<div class="ttc" id="amain_8cc_html_ac5090a6568797128b0a5545228bb8b75"><div class="ttname"><a href="main_8cc.html#ac5090a6568797128b0a5545228bb8b75">FPS</a></div><div class="ttdeci">const int FPS</div><div class="ttdef"><b>Definition:</b> <a href="main_8cc_source.html#l00012">main.cc:12</a></div></div>
+<div class="ttc" id="amain_8cc_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="main_8cc_source.html#l00014">main.cc:14</a></div></div>
+<div class="ttc" id="amain_8cc_html_af728b7647e0b8c49832983a31f9a2e9b"><div class="ttname"><a href="main_8cc.html#af728b7647e0b8c49832983a31f9a2e9b">HEIGHT</a></div><div class="ttdeci">const int HEIGHT</div><div class="ttdef"><b>Definition:</b> <a href="main_8cc_source.html#l00010">main.cc:10</a></div></div>
+<div class="ttc" id="awindow_8hh_html"><div class="ttname"><a href="window_8hh.html">window.hh</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
